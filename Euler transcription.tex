@@ -11,6 +11,9 @@
 \usepackage[object=vectorian]{pgfornament}
 \usetikzlibrary{shapes.geometric,calc}
 
+\usepackage{perpage}
+\MakePerPage{footnote}
+
 \globalcounter{enumi}
 \newcommand{\switchenum}{\setcounter{enumi}{\arabic{enumi}-1}\switchcolumn}
 \renewcommand{\theenumi}{\S.\arabic{enumi}}
@@ -27,35 +30,66 @@
 
 \def\D{\mathrm{d}}
 
-\begin{document}
-	\par Uit \textit{Acta Academia Scientiarum Imperialis Petropolitanae 1778, pg 3} 
 
+
+\begin{document}
 	\begin{paracol}{2}
+	\par \textit{Nova Acta Eruditorum 1745, p. 523}
+	\par E79 (Eneström Index) 
 	\begin{center}
 		\par \pgfornament[width = 0.8\linewidth]{88}
 		
-		\par {\bf De Curvis Triangularibus}\\
+		\par {\bf Problema geometricum, propositum}\\
+		publice ab anonymo geometra
+	\end{center}
+	\switchcolumn
+	\par \textit{Nova Acta Eruditorum 1745, p. 523}
+	\par E79 (Eneström Index) 
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		
+		\par {\bf Voorstel tot een meetkundig probleem}\\
+		publiek door een anomnieme meetkundige
+	\end{center}
+	\switchcolumn*
+	
+	
+	\par Proposito puncto $F$ invenire omnes curves $AMBN$\footnote{TAB. III Fig. 3.} huius naturae, ut singuli radii ex $F$ egressi post duplicem reflectionem in $M$ \& $N$ in idem punctum $F$ revertantur.  Primum quidem perspicuum est omnes ellipses, quae in $F$ habeant alterutrum focum, quaesito satisfacere.  Sed praeterea dantur innumerabiles aliae curvae, eadem indole gaudentes, quarum investigatio limites analyseos non parum extendere videtur.
+		
+	\switchcolumn
+	\par Gegeven een punt $F$, vind alle krommen $AMBN$\footnote{TAB. III Fig. 3.} zodat, elke straal vanuit $F$, na twee terugkaatsingen in $M$ \& $N$, terug in het originele punt $F$ terechtkomt. Een eerste van zo'n soort krommen zijn alle ellipsen, die een brandpunt hebben in het punt $F$. Maar er kunnen ontelbaar veel andere krommen gegeven worden die dezelfde eigenschap hebben, de wijze om deze analytisch te onderzoeken is nog niet gezien.
+
+	\newpage
+	\switchcolumn*
+			
+	\par \textit{Acta Academia Scientiarum Imperialis Petropolitanae 1778, p. 3}
+	\par E513 (Eneström Index) 
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		
+		\par {\bf De curvis triangularibus}\\
 		Autore\\
 		\textsc{L. Euler}
 	\end{center}
 	\switchcolumn
-		
+	
+	\par \textit{Acta Academia Scientiarum Imperialis Petropolitanae 1778, p. 3} 
+	\par E513 (Eneström Index) 
 	\begin{center}
 		\par \pgfornament[width = 0.8\linewidth]{88}
 		
-		\par {\bf De Curvis Triangularibus}\\
+		\par {\bf Over de driehoekige krommen}\\
 		Auteur\\
 		\textsc{L. Euler}
 	\end{center}
 	\switchcolumn*
 
 	\par \begin{enumerate}[topsep=1px]
-		\item Curvas triangulares voco, quae tribus arcubus $AB$, $AC$ et $BC$ intus inflexis constant, qui in angulis $A$, $B$ et $C$ coeant, praeterea autem nullos alios ramos contineant. Huiusmodi ergo curvae ut sint continuae, siue quapiam aequatione, vel algebraica, vel etiam transcendente, exprimi queant, necesse est, ut in angulis $A$, $B$ et $C$ habeant cuspides acutissimas, ubi bini arcus coeuntes communi tangente sint praediti. Tales autem curvas innumerabiles exhiberi posse, tam algebraicas, quam transcendentes, iam olim ostendi, cum Problema de eiusmodi curvis, circa datum punctum lucidum describendis, proposuissem, ita ut omnes radii, a curvua bis reflexi, iterum in ipsum punctum lucidum revertantur, quod Problema variis solutionibus in Actis Lipsiensibus pro Annis 1746 et 1748 solutum reperitur. Hic enim tota solutio ad inventionem huiusmodi curuarum triangularium reducitur, quippe quibus causticae radiorum reflexorum formantur.
+		\item Curvas triangulares voco\footnote{Tab. I. Fig 1.}, quae tribus arcubus $AB$, $AC$ et $BC$ intus inflexis constant, qui in angulis $A$, $B$ et $C$ coeant, praeterea autem nullos alios ramos contineant. Huiusmodi ergo curvae ut sint continuae, siue quapiam aequatione, vel algebraica, vel etiam transcendente, exprimi queant, necesse est, ut in angulis $A$, $B$ et $C$ habeant cuspides acutissimas, ubi bini arcus coeuntes communi tangente sint praediti. Tales autem curvas innumerabiles exhiberi posse, tam algebraicas, quam transcendentes, iam olim ostendi, cum Problema de eiusmodi curvis, circa datum punctum lucidum describendis, proposuissem, ita ut omnes radii, a curvua bis reflexi, iterum in ipsum punctum lucidum revertantur, quod Problema variis solutionibus in Actis Lipsiensibus pro Annis 1746 et 1748 solutum reperitur. Hic enim tota solutio ad inventionem huiusmodi curvarum triangularium reducitur, quippe quibus causticae radiorum reflexorum formantur. 
 		
 		\switchenum
-		\item Ik noem driehoekige krommen, deze uit drie bogen $AB, AC$ en $BC$ naar binnen gebogen, die in de hoeken $A$, $B$ en $C$ samenkomen en die ook geen andere vertakkingen bevatten. Deze krommen van deze aard zijn continu en \textbf{kunnen uitgedrukt worden een zekere vergelijking}, hetzij algebraïsch, of zelfs transcendent
+		\item Ik noem driehoekige krommen\footnote{Tab. I. Fig 1.}, deze uit drie bogen $AB, AC$ en $BC$ naar binnen gebogen, die in de hoeken $A$, $B$ en $C$ samenkomen en die ook geen andere vertakkingen bevatten. Deze krommen van deze aard zijn continu en \textbf{kunnen uitgedrukt worden volgens zekere vergelijking}, hetzij algebraïsch, of zelfs transcendent, het is essentieel, dat ze in de hoeken $A$, $B$ en $C$ scherpe spitsen hebben, waar de twee bogen samenkomen bevatten ze een gemeenschappelijke raaklijn. Er kunnen ontelbare zulke krommen gemaakt worden, zowel algebraïsch als transcendent, een lange tijd geleden heb ik aangetoond dat Problemen van de soorten krommen, die een bepaald brandpunt beschrijven, te verklaren, waarbij elke straal tweemaal terugkaatst in de kromme en terugkeert naar hetzelfde brandpunt, voor het welke probleem meerdere oplossingen in Actis Lipsiensibus gedateerd 1746 en 1748 gevonden werden. Hier worden deze oplossingen herleid tot het vinden van driehoekige krommen, immers vormen deze een brandpunt waar elke straal in terugkaatst. 
 		
-		\par huiusmodi: van deze aard, redictur: wordt herleid, quippe:immers
 		\switchcolumn*
 		
 		\item Praeter eum usum autem, quem istiusmodi curvae triangulares in commemorato problemate catoptrico praestant, imprimis considerari merentur curvae, quae ex evolutione talis curvae triangularis $A B C$ nascuntur. Hunc in sinem vocemus longitudinem arcus $A B = c$, arcus $AC=b$ et arcus $BC=a$. Iam arcui $AB$ concipiatur filum applicatum, quod extra $A$ prolongetur usque in $F$, ita ut sit $AF=f$, et stilus in $F$ insertus promoveatur, donec arcus $AB$ fuerit evolutus, et filum perveniat in situm $Bg$, eritque $Bg = AF +$ arcu $AB = f+c$; tum motus stili continuetur et filum $Bg$ successive applicetur arcui $BC=a$, donec perveniat in $H$, eritque 
@@ -83,9 +117,8 @@
 		\[
 			BC+CH = Bg = f+c, \quad \text{zodat het is dat} \quad CH = f+c-a;
 		\]
-		
-		
-		\par catoptrico: gespiegeld?
+
+
 		\switchcolumn*
 		
 		\item Hinc igitur patet, curvuam, ex evolutione curvae triangularis $ABC$ natam, esse curvam in se redeuntem, et tractu uniformi praeditam, scilicet $F g H f$ $G h F$, si modo puncta $F$, $H$, $H$ extra curvam $ABC$ cadant. Atque hic ista insignis proprietas ante omnia se ossert: quod rectae $F$ $A$ $f$, $H$ $C$ $h$ et $G$ $B$ $g$ non solum utrinque ad curvam sint normales, uti ex natura evolutionis manifestum est, sed etiam, quod inter se sint aequales; est enim
