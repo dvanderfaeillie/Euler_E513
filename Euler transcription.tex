@@ -1,6 +1,7 @@
 \documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath, amsfonts, amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
 \usepackage{gensymb}
 \usepackage[margin=2.5cm, landscape]{geometry}
 \usepackage{graphicx}
@@ -8,11 +9,13 @@
 \usepackage{paracol}
 \usepackage{calc}
 \usepackage{enumitem}
-\usepackage[object=vectorian]{pgfornament}
-\usetikzlibrary{shapes.geometric,calc}
+\usepackage[hang, font ={small, it}, labelformat=empty]{caption}
+\renewcommand{\figurename}{Fig}
 
-\usepackage{perpage}
-\MakePerPage{footnote}
+\usepackage[object=vectorian]{pgfornament}
+
+\usepackage{tikz}
+\usepackage[uprightgreeks,frenchstyle,light,fulloldstylenums,veryoldstyle]{kpfonts}
 
 \globalcounter{enumi}
 \newcommand{\switchenum}{\setcounter{enumi}{\arabic{enumi}-1}\switchcolumn}
@@ -30,9 +33,10 @@
 
 \def\D{\mathrm{d}}
 
-
+\renewcommand{\rmdefault}{cmr}
 
 \begin{document}
+	
 	\begin{paracol}{2}
 	\par \textit{Nova Acta Eruditorum 1745, p. 523}
 	\par E79 (Eneström Index) 
@@ -54,10 +58,50 @@
 	\switchcolumn*
 	
 	
-	\par Proposito puncto $F$ invenire omnes curves $AMBN$\footnote{TAB. III Fig. 3.} huius naturae, ut singuli radii ex $F$ egressi post duplicem reflectionem in $M$ \& $N$ in idem punctum $F$ revertantur.  Primum quidem perspicuum est omnes ellipses, quae in $F$ habeant alterutrum focum, quaesito satisfacere.  Sed praeterea dantur innumerabiles aliae curvae, eadem indole gaudentes, quarum investigatio limites analyseos non parum extendere videtur.
+	\par Proposito puncto $F$ invenire omnes curves $AMBN$ huius naturae, ut singuli radii ex $F$ egressi post duplicem reflectionem in $M$ \& $N$ in idem punctum $F$ revertantur.  Primum quidem perspicuum est omnes ellipses, quae in $F$ habeant alterutrum focum, quaesito satisfacere.  Sed praeterea dantur innumerabiles aliae curvae, eadem indole gaudentes, quarum investigatio limites analyseos non parum extendere videtur.
 		
 	\switchcolumn
-	\par Gegeven een punt $F$, vind alle krommen $AMBN$\footnote{TAB. III Fig. 3.} zodat, elke straal vanuit $F$, na twee terugkaatsingen in $M$ \& $N$, terug in het originele punt $F$ terechtkomt. Een eerste van zo'n soort krommen zijn alle ellipsen, die een brandpunt hebben in het punt $F$. Maar er kunnen ontelbaar veel andere krommen gegeven worden die dezelfde eigenschap hebben, de wijze om deze analytisch te onderzoeken is nog niet gezien.
+	\par Gegeven een punt $F$, vind alle krommen $AMBN$ zodat, elke straal vanuit $F$, na twee terugkaatsingen in $M$ \& $N$, terug in het originele punt $F$ terechtkomt. Een eerste van zo'n soort krommen zijn alle ellipsen, die een brandpunt hebben in het punt $F$. Maar er kunnen ontelbaar veel andere krommen gegeven worden die dezelfde eigenschap hebben, de wijze om deze analytisch te onderzoeken is nog niet gezien.
+
+	\switchcolumn*
+			
+	\begin{figure}[h]
+		\centering
+		\par {
+			\fontfamily{jkplvos}\selectfont
+			\begin{tikzpicture}[yscale=0.8]
+			\draw [rotate around={0:(1.5,0)}] (1.5,0.) ellipse (2.33cm and 1.786cm);
+			\draw (0,0)-- (1.931,1.755);
+			\draw (1.931,1.755)-- (3.533,-0.876);
+			\draw (3.5330,-0.876)-- (0,0);
+			\draw (0,0) node [left] {\small $F$};
+			\draw (1.93,1.75) node [above] {\small $M$};
+			\draw (3.53,-0.87) node [below right] {\small $N$};
+			\draw (-0.83,0) node [left] {\small $A$};
+			\draw (3.67,0.64) node [above right] {\small $B$};
+			\end{tikzpicture}}
+		\fontfamily{cmr}\selectfont
+		\caption{Tab. III. Fig. 3.}
+	\end{figure}
+	\switchcolumn
+	\begin{figure}[h]
+		\centering
+		\par {
+			\fontfamily{jkplvos}\selectfont
+			\begin{tikzpicture}[yscale=0.8]
+			\draw [rotate around={0:(1.5,0)}] (1.5,0.) ellipse (2.33cm and 1.786cm);
+			\draw (0,0)-- (1.931,1.755);
+			\draw (1.931,1.755)-- (3.533,-0.876);
+			\draw (3.5330,-0.876)-- (0,0);
+			\draw (0,0) node [left] {\small $F$};
+			\draw (1.93,1.75) node [above] {\small $M$};
+			\draw (3.53,-0.87) node [below right] {\small $N$};
+			\draw (-0.83,0) node [left] {\small $A$};
+			\draw (3.67,0.64) node [above right] {\small $B$};
+			\end{tikzpicture}}
+		\fontfamily{cmr}\selectfont
+		\caption{Tab. III. Fig. 3.}
+	\end{figure}
 
 	\newpage
 	\switchcolumn*
@@ -85,43 +129,155 @@
 	\switchcolumn*
 
 	\par \begin{enumerate}[topsep=1px]
-		\item Curvas triangulares voco\footnote{Tab. I. Fig 1.}, quae tribus arcubus $AB$, $AC$ et $BC$ intus inflexis constant, qui in angulis $A$, $B$ et $C$ coeant, praeterea autem nullos alios ramos contineant. Huiusmodi ergo curvae ut sint continuae, siue quapiam aequatione, vel algebraica, vel etiam transcendente, exprimi queant, necesse est, ut in angulis $A$, $B$ et $C$ habeant cuspides acutissimas, ubi bini arcus coeuntes communi tangente sint praediti. Tales autem curvas innumerabiles exhiberi posse, tam algebraicas, quam transcendentes, iam olim ostendi, cum Problema de eiusmodi curvis, circa datum punctum lucidum describendis, proposuissem, ita ut omnes radii, a curvua bis reflexi, iterum in ipsum punctum lucidum revertantur, quod Problema variis solutionibus in Actis Lipsiensibus pro Annis 1746 et 1748 solutum reperitur. Hic enim tota solutio ad inventionem huiusmodi curvarum triangularium reducitur, quippe quibus causticae radiorum reflexorum formantur. 
-		
+		\item Curvas triangulares voco, quae tribus arcubus $AB$, $AC$ et $BC$ intus inflexis constant, qui in angulis $A$, $B$ et $C$ coeant, praeterea autem nullos alios ramos contineant. Huiusmodi ergo curvae ut sint continuae, sive quapiam aequatione, vel algebraica, vel etiam transcendente, exprimi queant, necesse est, ut in angulis $A$, $B$ et $C$ habeant cuspides acutissimas, ubi bini arcus coeuntes communi tangente sint praediti. Tales autem curvas innumerabiles exhiberi posse, tam algebraicas, quam transcendentes, iam olim ostendi, cum Problema de eiusmodi curvis, circa datum punctum lucidum describendis, proposuissem, ita ut omnes radii, a curvua bis reflexi, iterum in ipsum punctum lucidum revertantur, quod Problema variis solutionibus in Actis Lipsiensibus pro Annis 1746 et 1748 solutum reperitur. Hic enim tota solutio ad inventionem huiusmodi curvarum triangularium reducitur, quippe quibus causticae radiorum reflexorum formantur. 
+			
 		\switchenum
-		\item Ik noem driehoekige krommen\footnote{Tab. I. Fig 1.}, deze uit drie bogen $AB, AC$ en $BC$ naar binnen gebogen, die in de hoeken $A$, $B$ en $C$ samenkomen en die ook geen andere vertakkingen bevatten. Deze krommen van deze aard zijn continu en \textbf{kunnen uitgedrukt worden volgens zekere vergelijking}, hetzij algebraïsch, of zelfs transcendent, het is essentieel, dat ze in de hoeken $A$, $B$ en $C$ scherpe spitsen hebben, waar de twee bogen samenkomen bevatten ze een gemeenschappelijke raaklijn. Er kunnen ontelbare zulke krommen gemaakt worden, zowel algebraïsch als transcendent, een lange tijd geleden heb ik aangetoond dat Problemen van de soorten krommen, die een bepaald brandpunt beschrijven, te verklaren, waarbij elke straal tweemaal terugkaatst in de kromme en terugkeert naar hetzelfde brandpunt, voor het welke probleem meerdere oplossingen in Actis Lipsiensibus gedateerd 1746 en 1748 gevonden werden. Hier worden deze oplossingen herleid tot het vinden van driehoekige krommen, immers vormen deze een brandpunt waar elke straal in terugkaatst. 
+		\item Ik noem driehoekige krommen, deze uit drie bogen $AB, AC$ en $BC$ naar binnen gebogen, die in de hoeken $A$, $B$ en $C$ samenkomen en die ook geen andere vertakkingen bevatten. Deze krommen van deze aard zijn continu en \textbf{kunnen uitgedrukt worden volgens zekere vergelijking}, hetzij algebraïsch, of zelfs transcendent, het is essentieel, dat ze in de hoeken $A$, $B$ en $C$ scherpe spitsen hebben, waar de twee bogen samenkomen bevatten ze een gemeenschappelijke raaklijn. Er kunnen ontelbare zulke krommen gemaakt worden, zowel algebraïsch als transcendent, een lange tijd geleden heb ik aangetoond dat Problemen van de soorten krommen, die een bepaald brandpunt beschrijven, te verklaren, waarbij elke straal tweemaal terugkaatst in de kromme en terugkeert naar hetzelfde brandpunt, voor het welke probleem meerdere oplossingen in Actis Lipsiensibus gedateerd 1746 en 1748 gevonden werden. Hier worden deze oplossingen herleid tot het vinden van driehoekige krommen, immers vormen deze een brandpunt waar elke straal in terugkaatst. 
 		
 		\switchcolumn*
 		
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}[rotate=180, scale=1]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw (0,0) node [below right] {\small $C$};
+				\draw (2,0) node [below left] {\small $B$};
+				\draw (1,-1.732) node [above] {\small $A$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 1.}
+		\end{figure}
+		\switchcolumn
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}[rotate=180, scale=1]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw (0,0) node [below right] {\small $C$};
+				\draw (2,0) node [below left] {\small $B$};
+				\draw (1,-1.732) node [above] {\small $A$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 1.}
+		\end{figure}
+
+		\switchcolumn*
+		
 		\item Praeter eum usum autem, quem istiusmodi curvae triangulares in commemorato problemate catoptrico praestant, imprimis considerari merentur curvae, quae ex evolutione talis curvae triangularis $A B C$ nascuntur. Hunc in sinem vocemus longitudinem arcus $A B = c$, arcus $AC=b$ et arcus $BC=a$. Iam arcui $AB$ concipiatur filum applicatum, quod extra $A$ prolongetur usque in $F$, ita ut sit $AF=f$, et stilus in $F$ insertus promoveatur, donec arcus $AB$ fuerit evolutus, et filum perveniat in situm $Bg$, eritque $Bg = AF +$ arcu $AB = f+c$; tum motus stili continuetur et filum $Bg$ successive applicetur arcui $BC=a$, donec perveniat in $H$, eritque 
+		
 		\[
 			BC+CH = Bg = f+c, \quad \text{unde sit} \quad CH = f+c-a;
 		\]
-		\par quo cum fuerit perventum, filum applicetur arcui $CA$, ubi notari convenit, perinde esse, siue arcus $CA$ maior sit, siue minor arcu $CB$; semper enim filum totum arcum $CA$ occupare debet. Iam motus stili ex $H$ continuetur in $f$ donec filum $fA$ cuspidem $A$ tanget, tum igitur erit 
+		\par quo cum fuerit perventum, filum applicetur arcui $CA$, ubi notari convenit, perinde esse, sive arcus $CA$ maior sit, sive minor arcu $CB$; semper enim filum totum arcum $CA$ occupare debet. Iam motus stili ex $H$ continuetur in $f$ donec filum $fA$ cuspidem $A$ tanget, tum igitur erit 
 		\[
 			Af = CH + AC = f+c-a+b;
 		\]
+			
+		\switchenum
+		\item Afgezien van het gebruik van, het geven van krommen van een driehoekige aard bij de bepaling van het \textit{catoptrische} probleem, verdienen vooral de krommen, die als evolvente uit de driehoekige krommen $ABC$ geboren worden, beschouwd te worden. Hierbij zal ik de lengte van de boog benoemen als $AB = c$, boog $AC=b$ en boog $BC=a$. Bevestig nu een touw aan de boog $AB$, en verleng dit vanuit $A$ tot in $F$, zodat $AF=f$, en beweeg een pen ingebracht in $F$, tot de boog $AB$ ontwikkeld wordt, en de draad aankomt in positie $Bg$, en dus $Bg = AF + \text{ de boog } AB = f+c$; beweeg opnieuw de pen continu en bevestig opeenvolgend de draad $Bg$ aan de boog $BC=a$, tot het aankomt in $H$, en dan
+		\[
+			BC+CH = Bg = f+c, \quad \text{zodat het is dat} \quad CH = f+c-a;
+		\]
+		\par wanneer dit is bereikt, bevestig de draad aan de boog $CA$; waarbij we afspreken te noteren, als het is, dat de boog $CA$ langer is, of de kortere boog $CB$, dan zal de draad altijd de gehele boog $CA$ moeten innemen. Beweeg nu een pen uit $H$ continu tot in $f$, zodat de draad $fA$ de spits $A$ raakt, dan is het dat  
+		\[
+			Af = CH + AC = f+c-a+b;
+		\]
+		
+		\switchcolumn*
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw (1,-0.577) circle (1.712cm);
+				\draw (1,1.135)-- (1,-2.290);
+				\draw (2.483,-1.433)-- (-0.483,0.279);
+				\draw (-0.483,-1.434)-- (2.483,0.279);
+				\draw (2.579,0.085)-- (-0.712,-0.623);
+				\draw (0,0) node [below left, yshift=4pt, xshift=2pt] {\small $A$};
+				\draw (2,0) node [above] {\small $C$};
+				\draw (1,-1.732) node [below right, yshift=5pt] {\small $B$};
+				\draw (1,1.135) node [above] {\small $g$};
+				\draw (2.483,0.279) node [above right, xshift=-5pt] {\small $H$};
+				\draw (2.483,-1.434) node [below right, yshift=4pt] {\small $f$};
+				\draw (-0.483,0.279) node [above left, yshift=-3pt, xshift=1pt] {\small $F$};
+				\draw (-0.483,-1.434) node [below left] {\small $h$};
+				\draw (1,-2.290) node [below] {\small $G$};
+				\draw (1.563,-0.134) node [above] {\small $S$};
+				\draw (2.579,0.085) node [right] {\small $X$};
+				\draw (-0.712,-0.623) node [left] {\small $x$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 2.}
+		\end{figure}
+		\switchcolumn
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw (1,-0.577) circle (1.712cm);
+				\draw (1,1.135)-- (1,-2.290);
+				\draw (2.483,-1.433)-- (-0.483,0.279);
+				\draw (-0.483,-1.434)-- (2.483,0.279);
+				\draw (2.579,0.085)-- (-0.712,-0.623);
+				\draw (0,0) node [below left, yshift=4pt, xshift=2pt] {\small $A$};
+				\draw (2,0) node [above] {\small $C$};
+				\draw (1,-1.732) node [below right, yshift=5pt] {\small $B$};
+				\draw (1,1.135) node [above] {\small $g$};
+				\draw (2.483,0.279) node [above right, xshift=-5pt] {\small $H$};
+				\draw (2.483,-1.434) node [below right, yshift=4pt] {\small $f$};
+				\draw (-0.483,0.279) node [above left, yshift=-3pt, xshift=1pt] {\small $F$};
+				\draw (-0.483,-1.434) node [below left] {\small $h$};
+				\draw (1,-2.290) node [below] {\small $G$};
+				\draw (1.563,-0.134) node [above] {\small $S$};
+				\draw (2.579,0.085) node [right] {\small $X$};
+				\draw (-0.712,-0.623) node [left] {\small $x$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 2.}
+		\end{figure}
+		
+		\switchcolumn*
+		
 		\par Nunc igitur filum motum $Af$ succesive arcum $AB$ involuet, donec perueniat in $G$, eritque
 		\[
 			BG = Af - AB = f-a+b.
 		\]
-		\par Iam filum ab arcu $BA$ transferatur in arcum $BC$ et evoluatur, donec pervueniat in situm $Ch$, ubi erit
+		\par Iam filum ab arcu $BA$ transferatur in arcum $BC$ et evoluatur, donec perueniat in situm $Ch$, ubi erit
 		\[
 			Ch = BG + BC = f+b.
 		\]
-		\par Denique stilus ab $h$ promoveatur involuendo arcum $CA$, hocque modo revertetur in ipsum punctum $F$, ubi motus est inceptus: erit enim $AF = Ch-CA$, ideoque $AF=f$: erat autem utique $AF =f$.
+		\par Denique stilus ab $h$ promoveatur involvendo arcum $CA$, hocque modo revertetur in ipsum punctum $F$, ubi motus est inceptus: erit enim $AF = Ch-CA$, ideoque $AF=f$: erat autem utique $AF =f$.
 		
-		\switchenum
-		\item Naast het gebruik van de driehoekige krommen hierboven vermeldt \ldots 
-		\par catoptrico praestant, imprimis considerari merentur curvae, quae ex evolutione talis curvae triangularis $A B C$ nascuntur. 
-		\par Hierbij zal ik de lengte van de boog benoemen als $AB = c$, boog $AC=b$ en boog $BC=a$. Bevestig nu een touw aan de boog $AB$, en verleng dit vanuit $A$ tot in $F$, zodat $AF=f$, en beweeg een pen ingebracht in $F$, tot de boog $AB$ ontwikkeld wordt, en de draad aankomt in positie $Bg$, en dus $Bg = AF + \text{ de boog } AB = f+c$; beweeg opnieuw de pen continu en bevestig opeenvolgend de draad $Bg$ aan de boog $BC=a$, tot het aankomt in $H$, en dan
+		\switchcolumn
+		
+		\par Beweeg nu de draad $Af$ achtereenvolgens om de boog $AB$, tot deze $G$ bereikt, en dan
 		\[
-			BC+CH = Bg = f+c, \quad \text{zodat het is dat} \quad CH = f+c-a;
+			BG = Af - AB = f-a+b.
 		\]
-
-
-		\switchcolumn*
+		\par Breng nu de draad van de boog $BA$ naar de boog $BC$ en ontrol, tot de positie $Ch$ bereikt is, waar
+		\[
+			Ch = BG + BC = f+b.
+		\]
+		\par Beweeg tot slot de pen vanuit $h$ om de boog $CA$, op deze manier zullen we terugkeren naar het punt $F$, waar de beweging is gestart:  het zal dus zo zijn dat $AF = Ch-CA$, daarom $AF=f$: en natuurlijk was er $AF =f$.
 		
-		\item Hinc igitur patet, curvuam, ex evolutione curvae triangularis $ABC$ natam, esse curvam in se redeuntem, et tractu uniformi praeditam, scilicet $F g H f$ $G h F$, si modo puncta $F$, $H$, $H$ extra curvam $ABC$ cadant. Atque hic ista insignis proprietas ante omnia se ossert: quod rectae $F$ $A$ $f$, $H$ $C$ $h$ et $G$ $B$ $g$ non solum utrinque ad curvam sint normales, uti ex natura evolutionis manifestum est, sed etiam, quod inter se sint aequales; est enim
+		\switchcolumn*	
+		
+		\item Hinc igitur patet, curvuam, ex evolutione curvae triangularis $ABC$ natam, esse curvam in se redeuntem, et tractu uniformi praeditam, scilicet $F g H f G h F$, si modo puncta $F$, $H$, $H$ extra curvam $ABC$ cadant. Atque hic ista insignis proprietas ante omnia se offert: quod rectae $FAf$, $HCh$ et $GBg$ non solum utrinque ad curvam sint normales, uti ex natura evolutionis manifestum est, sed etiam, quod inter se sint aequales; est enim
 		\[
 			F A f = AF + Af = 2f + c - a + b,
 		\]
@@ -133,7 +289,7 @@
 		\[
 			G B g = BG + Bg = 2f + c - a + b.
 		\]
-		Verum haec proprietas multo latius patet. Si enim per quoduis punctum $S$ nostrae curvae triangularis producatur utrinque tangens $X S x$, ca etiam ex natura evolutionis utrinque ad curvam descriptam erit normalis; tum vero erit
+		Verum haec proprietas multo latius patet. Si enim per quoduis punctum $S$ nostrae curvae triangularis producatur utrinque tangens $X S x$, ea etiam ex natura evolutionis utrinque ad curvam descriptam erit normalis; tum vero erit
 		\[
 			SX = CS + CH = f + c - a = CS,
 		\]
@@ -143,21 +299,24 @@
 		\]
 		hinc tota recta
 		\[
-			Xx = 2f + c - a + CS + AS = 2f + c - a + b \text{ ob } AS + CS = b,
+			Xx = 2f + c - a + CS + AS = 2f + c - a + b \quad\text{ob}\quad AS + CS = b,
 		\]
 		quocirca curva, ex evolutione curvae triangularis $ABC$ nata, hac eximia gaudet proprietate: ut si ad cius punctum quodcunque $X$ ducatur normalis, donec curvae iterum occurrat in $x$, ea etiam in hoc puncto ad curvam sit normalis, ac praeterea tota hac recta $Xx$ ubique eandem habeat longitudinem $= 2f +c-a+b$, quae proprietas vulgo circulo tam propria esse videtur, ut vix in alias lineas curvas competere posse videatur.
 		
 		\switchenum
-		\item \ldots
-		
-		\par tum vero
+		\item Hier is het duidelijk dat, de krommen, uit de ontwikkeling van de driehoekige kromme $ABC$ geboren, terug te brengen zijn tot krommen, als spoor van gelijke grootte, namelijk $FgHfGhF$, als alleen de punten $F, H, G$ buiten de kromme $ABC$ vallen. Boven alles biedt het dit geval opmerkelijke eigenschappen: want de rechten $FAf$, $HCh$ en $GBg$ zijn niet alleen loodrecht aan weerskanten van de kromme, wat duidelijk is uit de aard van de ontwikkeling, maar ook, zijn ze gelijk aan elkaar; want er is
+		\[
+			F A f = AF + Af = 2f + c - a + b,
+		\]
+		maar ook
 		\[
 			{\color{red}H} C h = CH + Ch = 2f + c - a + b,
 		\]
-		
-		\par Maar dit heeft die eigenschappen die veel verder gaan. 
-		\par \ldots
-		
+		en gelijkaardig
+		\[
+			G B g = BG + Bg = 2f + c - a + b.
+		\]
+		\par Maar dit heeft die eigenschappen die veel verder gaan. Als door een punt $S$ van onze driehoekige kromme aan weerskanten een raaklijn $XSx$ wordt gemaakt, zal deze uit de aard van de ontwikkeling aan weerskanten van de kromme normaal zijn; dan is er 		
 		\[
 			SX = CS + CH = f + c - a {\color{red}\;+\;} CS,
 		\]
@@ -167,9 +326,9 @@
 		\]
 		zodat de totale rechte
 		\[
-			Xx = 2f + c - a + CS + AS = 2f + c - a + b \text{ ob } AS + CS = b,
+			Xx = 2f + c - a + CS + AS = 2f + c - a + b \quad\text{gezien}\quad AS + CS = b,
 		\]
-		\par Deze kromme, die ontstaan is als een involutie van de driehoekige kromme $ABC$, heeft de volgende buitengewone eigenschap: Als een normaal wordt geconstrueerd op een punt $X$ en de kromme wordt een tweede keer gesneden in een punt $x$, dan is ze ook daar normaal en bovendien heeft de afstand $Xx$ eenzelfde lengte $= 2f+c-a+b$, een eigenschap die zo verbonden wordt aan een cirkel dat het onmogelijk lijkt dat ze ook bestaat in andere krommes.
+		\par Deze kromme, die ontstaan is als een evolvent van de driehoekige kromme $ABC$, heeft de volgende buitengewone eigenschap: Als een normaal wordt geconstrueerd op een punt $X$ en de kromme wordt een tweede keer gesneden in een punt $x$, dan is ze ook daar normaal en bovendien heeft de afstand $Xx$ eenzelfde lengte $= 2f+c-a+b$, een eigenschap die zo verbonden wordt aan een cirkel dat het onmogelijk lijkt dat ze ook bestaat in andere krommes.
 		
 		\switchcolumn*
 		
@@ -187,26 +346,184 @@
 			&AF = k+a;  &&BG = k+b;   &&CH = k+c\\
 			&Af = k+b+c;  &&Bg = k+a+c; &&Ch = k+a+b
 		\end{align*}
-		\par zodat nu inderdaad de lengte van alle lijnen, normaal beschreven op de afgeleide kromme, $=2k+a+b+c$ zal zijn. Hier kan de waarde van $k$ naar wens aangepast worden, waaruit op een zelfde manier de driehoekige figuur de geboorte van ontelbare krommen beschrijft. Het is zelfs mogelijk dat $k$ negatieve waarden aanneemt zolang de formules $k+a; k+b$ en $k+c$ positieve waarden hebben; want als deze afstanden negatief zijn, dan heeft de beschreven kromme niet meer een cirkelvormig uitzicht, maar verdwijnt binnenin de kromme $ABC$
+		\par zodat nu inderdaad de lengte van alle lijnen, normaal beschreven op de afgeleide kromme, $=2k+a+b+c$ zal zijn. Hier kan de waarde van $k$ naar wens aangepast worden, waaruit op een zelfde manier de driehoekige figuur de geboorte van ontelbare krommen beschrijft. Het is zelfs mogelijk dat $k$ negatieve waarden aanneemt zolang de formules $k+a; k+b$ en $k+c$ positieve waarden hebben; want als deze afstanden negatief zijn, dan heeft de beschreven kromme niet meer een cirkelvormig uitzicht, maar verdwijnt binnenin de kromme $ABC$, en heeft zelfs drie spitsen $g,f,h$, \textbf{als het tekenen gemakkelijk toegelaten wordt uit de aard van de ontwikkeling.}
 		
 		\switchcolumn*
 		
-		\item Huiusmodi autem curvas, ex evolutione curvarum triangularium natas, quatenus cum circulo tam egregie conveniunt, brevitatis gratia \textit{Orbiformes} nominemus, hicque ante omnia observasse {\color{BurntOrange}iunabit}, ex qualibet curva orbiformi problema catoptricum supra memoratum infinitis modus facillime resolvi posse. Sit enim $FGH$ talis curva orbiformes quaecunque, intra qua punctum lucidum $X$ pro lubitu constituatur; tum ducta recta quacunque $Xx$, ad curvam utrinque normali, quae ergo constantem habebit magnitudinem, iungantur rectae $LX$ et $Lx$, eaeque bisecentur in punctis $O$ et $o$, unde ad eas normaliter educantur rectae $OZ$ et $oz$, rectae $Xx$ occurentes in punctis $Z$ et $z$; haecque duo puncta sita erunt in curva quaesita. Radius enim $LZ$, primu reflexus, fiet $Zz$, qui, denuo reflexus in $z$, in ipsum punctum lucidum $L$ remittetur, quemadmodum ex natura reflexionis haud difficulter demonstrare liceret, nisi hoc argumentatum iam uberrime esset pertractatum.
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}[scale=1.4]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw (0,0) node [above left, xshift=2pt, yshift=-2pt] {\small $A$};
+				\draw (2,0) node [above right, xshift=-2pt, yshift=-2pt] {\small $C$};
+				\draw (1,-1.732) node [below] {\small $B$};
+				\draw (1,-0.194) -- (1.332,-0.769) -- (0.668,-0.762) -- cycle;
+				\draw (0,0) -- (1.332,-0.769);
+				\draw (2,0) -- (0.668,-0.762);
+				\draw (1,-0.194) node [above] {\small $g$};
+				\draw (1.332,-0.769) node [below right, yshift=2pt] {\small $f$};
+				\draw (0.668,-0.762) node [below left, yshift=2pt] {\small $h$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 3.}
+		\end{figure}
+		\switchcolumn
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}[scale=1.4]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\draw (0,0) node [above left, xshift=2pt, yshift=-2pt] {\small $A$};
+				\draw (2,0) node [above right, xshift=-2pt, yshift=-2pt] {\small $C$};
+				\draw (1,-1.732) node [below] {\small $B$};
+				\draw (1,-0.194) -- (1.332,-0.769) -- (0.668,-0.762) -- cycle;
+				\draw (0,0) -- (1.332,-0.769);
+				\draw (2,0) -- (0.668,-0.762);
+				\draw (1,-0.194) node [above] {\small $g$};
+				\draw (1.332,-0.769) node [below right, yshift=2pt] {\small $f$};
+				\draw (0.668,-0.762) node [below left, yshift=2pt] {\small $h$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 3.}
+		\end{figure}
+		
+		
+		\switchcolumn*
+		
+		
+		
+		\item Huiusmodi autem curvas, ex evolutione curvarum triangularium natas, quatenus cum circulo tam egregie conveniunt, brevitatis gratia \textit{Orbiformes} nominemus, hicque ante omnia observasse iuvabit, ex qualibet curva orbiformi problema catoptricum supra memoratum infinitis modus facillime resolvi posse. Sit enim $FGH$ talis curva orbiformes quaecunque, intra qua punctum lucidum $X$ pro lubitu constituatur; tum ducta recta quacunque $Xx$, ad curvam utrinque normali, quae ergo constantem habebit magnitudinem, iungantur rectae $LX$ et $Lx$, eaeque bisecentur in punctis $O$ et $o$, unde ad eas normaliter educantur rectae $OZ$ et $oz$, rectae $Xx$ occurentes in punctis $Z$ et $z$; haecque duo puncta sita erunt in curva quaesita. Radius enim $LZ$, primu reflexus, fiet $Zz$, qui, denuo reflexus in $z$, in ipsum punctum lucidum $L$ remittetur, quemadmodum ex natura reflexionis haud difficulter demonstrare liceret, nisi hoc argumentatum iam uberrime esset pertractatum.
 		
 		\switchenum
-		\item De krommen van deze aard, geboren als involuties uit driehoekige krommen, die samen met de cirkel zo uitzonderlijk samenkomen, zal ik voor het gemak \textit{Orbiformen} noemen, en uit al deze observaties \ldots Uit de voorgenoemde probleem van de orbiformen kan het \textit{catoptrische} probleem op een oneindig aantal manieren opgelost worden. Als $FGH$ zo'n orbiform is, en hierbinnen uit een punt $X$ gewenste lichtstralen gevormd worden; dan heeft elke rechte $Xx$, langs beide kanten normaal aan de kromme, eenzelfde constante lengte, verbonden via de rechten $LX$ en $Lx$, en ze moeten middendoor verdeeld worden in de punten $O$ en $o$, en breng er de normale lijnen $OZ$ en $oz$ aan, rechten die $Xx$ in de punten $Z$ en $z$ ontmoeten; zodat twee punten van de kromme bekomen worden. Zo geldt voor de straal $LZ$
+		\item De krommen van deze aard, geboren als evolventen uit driehoekige krommen, voor zover ze uitzonderlijk met een cirkel kunnen overeenkomen, zal ik voor het gemak \textit{Orbiformen} noemen, \textbf{en al deze voorgaande observaties  kunnen helpen}, uit elke orbiforme kromme het voorgaande genoemde \textit{catoptrische} probleem op een oneindig aantal manieren opgelost worden. Als $FGH$ zo'n orbiform is, en hierbinnen uit een punt $X$ gewenste lichtstralen gevormd worden; dan heeft elke rechte $Xx$, langs beide kanten normaal aan de kromme, eenzelfde constante lengte, de rechten $LX$ en $Lx$ worden verbonden, en ze moeten middendoor verdeeld worden in de punten $O$ en $o$, en breng er de normale lijnen $OZ$ en $oz$ aan, rechten die $Xx$ in de punten $Z$ en $z$ ontmoeten; zodat twee punten van de gezochte kromme\footnote{catoprische kromme} \textbf{bekomen} worden. Voor een straal $LZ$, eenmaal weerkaatst, wordt $Zz$, die,  opnieuw weerkaatst in $z$, in hetzelfde punt $L$ wordt teruggebracht, deze manier is uit de aard van terugkaatsing niet moeilijk aan te tonen, \textbf{maar dit argument werd al overvloedig aangeraakt.}
+		\switchcolumn*
+		
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (0,0) circle (2cm);
+				\draw (0,-2)-- (0,2);
+				\draw (0,-2) -- (-1.362,0.675)-- (0,2);
+				\draw (0,0.638)-- (-1.361,0.674);
+				\draw (0,0.638)-- (-0.680,1.337);
+				\draw (-0.681,-0.663)-- (0,-0.316);
+				\draw (0,2) node [above] {\small $X$};
+				\draw (0,-2) node [below] {\small $x$};
+				\draw (-1.362,0.674) node [left, xshift=2pt] {\small $L$};
+				\draw (-0.680,-0.662) node [below left, xshift=2pt, yshift=2pt] {\small $o$};
+				\draw (-0.680,1.337) node [above left, xshift=2pt, yshift=-2pt] {\small $O$};
+				\draw (0,0.637) node [right, xshift=-2pt] {\small $Z$};
+				\draw (0,-0.316) node [right, xshift=-2pt] {\small $z$};
+				\draw (-2.,0.) node [below left] {\small $F$};
+				\draw (2.,0.) node [below right] {\small $G$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 4.}
+		\end{figure}
+		\switchcolumn
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (0,0) circle (2cm);
+				\draw (0,-2)-- (0,2);
+				\draw (0,-2) -- (-1.362,0.675)-- (0,2);
+				\draw (0,0.638)-- (-1.361,0.674);
+				\draw (0,0.638)-- (-0.680,1.337);
+				\draw (-0.681,-0.663)-- (0,-0.316);
+				\draw (0,2) node [above] {\small $X$};
+				\draw (0,-2) node [below] {\small $x$};
+				\draw (-1.362,0.674) node [left, xshift=2pt] {\small $L$};
+				\draw (-0.680,-0.662) node [below left, xshift=2pt, yshift=2pt] {\small $o$};
+				\draw (-0.680,1.337) node [above left, xshift=2pt, yshift=-2pt] {\small $O$};
+				\draw (0,0.637) node [right, xshift=-2pt] {\small $Z$};
+				\draw (0,-0.316) node [right, xshift=-2pt] {\small $z$};
+				\draw (-2.,0.) node [below left] {\small $F$};
+				\draw (2.,0.) node [below right] {\small $G$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 4.}
+		\end{figure}
+
 		\switchcolumn*
 
 		\item Ob hunc insignem usum curvarum triangularium utique optandum esset, ut methodus certa pateret, cuius ope huismodi curvas triangulares, quotquot libuerit, investigare liceret, id quod primo intuitu nimis difficile videre potest. Verum hunc investigationem invertamus, ac primo quaeramus curvas orbiformes, quales hactenus descripsimus; tum enim certi esse poterimus, earum evolutas huismodi fore curvas triangular quales desideramus, Praeterea vero etiam hoc modo istud commodum assequemur: ut, quoties curva orbiformis fuerit algebraica, toties quoque curva triangularis non solum fiat algebraica, sed insuper etiam rectificabilis, quandoquidem evolutae omnium curvarum algebraicarum simul rectificationem admittunt.
 		
 		\switchenum
-		\item Door het opmerkzaam gebruik van driehoekige krommen 
-		\par \ldots
-		\par wat op het eerste zicht zeer moeilijk in te zien is. Maar het onderzoek wordt omgedraaid, waar ten eerste de orbiforme krommen gezocht worden,  zoals tot dusver beschreven, want dan zijn we zeker dat we in staat zijn\ldots 
+		\item Door het buitengewone gebruik van driehoekige krommen, zou het zonder twijfel wenselijk zijn, om bepaalde methodes te bereiken die het mogelijk maken deze driehoekige krommen, zoveel je wil, mogelijk te te bepalen, wat op het eerste zicht zeer moeilijk in te zien is. Maar het onderzoek wordt omgedraaid, waar ten eerste de orbiforme krommen gezocht worden,  zoals tot dusver beschreven, \textbf{want dan zijn we zeker dat we in staat zijn, hun ontwikkeling van de soort driehoekige krommen zal zijn zoals we wensen, bovendien is dit op deze manier handig te bereiken}: zo wanneer de orbiforme kromme algebraïsch is, is ook de driehoekige kromme niet enkel algebraïsch, maar bovendien ook te herleiden, aangezien de ontwikkeling van alle algebraïsche krommen ook een herleiding toelaten.
 		
 		\switchcolumn*
 		
-		\item Sit igitur $FMfm$ talis curva orbiformis, qualem investigare nobis est propositum, in qua sumamus rectam $Ff$ pro axe fixo, qui utrinque ad curvam sit normalis cuius longitudinem ponamus $Ff=2f$. Tum ex puncto quocunque $M$ ad curvam ducatur normalis $Mm$ quae ergo etiam in $m$ ad curvam debet esse normalis, eiusque longitudo $Mm$ itidem sit $=2f$. Iam ex punctis $M$ et $m$ ad axem $Ff$ demittantur perpendicula $Pm$ et $pm$, ac pro puncto $M$ vocentur coordinatae $FP=X$ et $PM=Y$; at pro puncto $m$ sit $Fp=x$ et $pm = -y$, quia haec applicata in partem contrariam cadit. His positis talis aequatio inter $X$ et $Y$ desideratur, ut, si loco $X$ scribatur $x$, valor ipsius $Y$ sponte prodeat $=-y$. Nisi enim hoc fieret, tota curva $FMfm$ non esset continua. Sequenti autem modo hae quatuor quantitates a se inuicem pendent: Cum intervallum $PN$ sit subnormalis respectu puncti $M$, posito $\D Y = P \,\D X$, erit haec subnormalis $PN=PY$, hincque normalis $MN=Y\sqrt{1+PP}$. Simili modo  altero puncto $m$ erit $pN$ subnormalis retro posita; unde sumto $\D y=p\,\D x$ erit $pN = -py$; hinc normalis $mN = -y\sqrt{1+pp}$. Quia igitur triangula $PMN$ et $pmN$ sunt similia, erit $P=p$. Porro quia nuimus esse $Mm=2f$; ex $m$ agatur axi parallela $mS$, ipsi $MP$ productae occurens in $S$, et similitudo triangulorum $MNP$ et $MmS$ dabit $MS = \frac{2f}{\sqrt{1+pp}}$ et $mS = \frac{2fp}{\sqrt{1+pp}}$.
+		\item Sit igitur $FMfm$ talis curva orbiformis, qualem investigare nobis est propositum, in qua sumamus rectam $Ff$ pro axe fixo, qui utrinque ad curvam sit normalis cuius longitudinem ponamus $Ff=2f$. Tum ex puncto quocunque $M$ ad curvam ducatur normalis $Mm$ quae ergo etiam in $m$ ad curvam debet esse normalis, eiusque longitudo $Mm$ itidem sit $=2f$. Iam ex punctis $M$ et $m$ ad axem $Ff$ demittantur perpendicula $Pm$ et $pm$, ac pro puncto $M$ vocentur coordinatae $FP=X$ et $PM=Y$; at pro puncto $m$ sit $Fp=x$ et $pm = -y$, quia haec applicata in partem contrariam cadit. His positis talis aequatio inter $X$ et $Y$ desideratur, ut, si loco $X$ scribatur $x$, valor ipsius $Y$ sponte prodeat $=-y$. 
+		
+		\switchenum
+		\item Laat $FMfm$ een orbiforme kromme zijn, wat ons is voorgesteld te onderzoeken, waardoor we een rechte lijn $Ff$ drijven, die normaal is aan de kromme aan beide zijden, waarvan we de lengte $Ff=2f$ noemen. Dan voor elk ander punt $M$ wordt de normaal aan de kromme getekend zodat deze ook in $m$ normaal is aan de kromme, en deze lengte $Mm$ is ook $=2f$. Door de punten $M$ en $m$ wordt op de as $Ff$ de loodrechten $PM$ en $pm$ getekend, en noem de coördinaten van het punt $M$ via $FP=XF$ en $PM=Y$; in het punt $m$ is $Fp=x$ en $pm=-y$, dit is toegepast in tegengestelde richting. Zo'n vergelijking tussen de plaatsen $X$ en $Y$ is gewenst, zo, als de plaats $X$ als $x$ geschreven wordt, voor de waarde van $Y$ spontaan verschijnt $=-y$. \textbf{ Maar om dit te laten gebeuren, zou de gehele kromme $FMfm$ niet doorlopend zijn.} 
+		
+		\switchcolumn*
+		
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (0,0) circle (2cm);
+				\draw (-2,0)-- (2,0);
+				\draw (-1.019,1.721)-- (1.267,-1.547);
+				\draw (-1.019,1.721)-- (-1.020,-1.720);
+				\draw (-1.019,-1.547)-- (1.267,-1.547);
+				\draw (1.267,-1.547)-- (1.267,0.);
+				\draw (-1.0192,1.720) node [above] {\small $M$};
+				\draw (-2.,0.) node [left] {\small $F$};
+				\draw (2.,0.) node [right] {\small $f$};
+				\draw (-1.0193,0.) node [below left] {\small $P$};
+				%\draw (-1.0193,-1.721) node [above] {\small $e$};
+				\draw (1.267,-1.547) node [below right] {\small $m$};
+				\draw (0.184,0.) node [below left] {\small $N$};
+				\draw (1.267,0.) node [above] {\small $p$};
+				\draw (-1.019,-1.547) node [above right] {\small $S$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 5.}
+		\end{figure}
+		\switchcolumn
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (0,0) circle (2cm);
+				\draw (-2,0)-- (2,0);
+				\draw (-1.019,1.721)-- (1.267,-1.547);
+				\draw (-1.019,1.721)-- (-1.020,-1.720);
+				\draw (-1.019,-1.547)-- (1.267,-1.547);
+				\draw (1.267,-1.547)-- (1.267,0.);
+				\draw (-1.0192,1.720) node [above] {\small $M$};
+				\draw (-2.,0.) node [left] {\small $F$};
+				\draw (2.,0.) node [right] {\small $f$};
+				\draw (-1.0193,0.) node [below left] {\small $P$};
+				%\draw (-1.0193,-1.721) node [above] {\small $e$};
+				\draw (1.267,-1.547) node [below right] {\small $m$};
+				\draw (0.184,0.) node [below left] {\small $N$};
+				\draw (1.267,0.) node [above] {\small $p$};
+				\draw (-1.019,-1.547) node [above right] {\small $S$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 5.}
+		\end{figure}
+		
+		\switchcolumn*
+		
+		\par Nisi enim hoc fieret, tota curva $FMfm$ non esset continua. Sequenti autem modo hae quatuor quantitates a se inuicem pendent: Cum intervallum $PN$ sit subnormalis respectu puncti $M$, posito $\D Y = P \,\D X$, erit haec subnormalis $PN=PY$, hincque normalis $MN=Y\sqrt{1+PP}$. Simili modo  altero puncto $m$ erit $pN$ subnormalis retro posita; unde sumto $\D y=p\,\D x$ erit $pN = -py$; hinc normalis $mN = -y\sqrt{1+pp}$. Quia igitur triangula $PMN$ et $pmN$ sunt similia, erit $P=p$. Porro quia nuimus esse $Mm=2f$; ex $m$ agatur axi parallela $mS$, ipsi $MP$ productae occurens in $S$, et similitudo triangulorum $MNP$ et $MmS$ dabit $MS = \frac{2f}{\sqrt{1+pp}}$ et $mS = \frac{2fp}{\sqrt{1+pp}}$.
 		\par Cum igitur fit
 		\[
 			MS = MP + mp = Y-y  \quad \text{et} \quad mS = Fp-FP = x-X
@@ -215,17 +532,28 @@
 		\[
 			Y-y = \frac{2f}{\sqrt{1+pp}} \quad \text{et}\quad x-X = \frac{2fp}{\sqrt{1+pp}},
 		\]
-
+		
 		\par praeterea vero, uti iam notauimus, debet esse
 		\[
 			\frac{\D Y}{\D X} = P = p \quad \text{et} \quad \frac{\D y}{\D x} = p.
 		\]
 		
-		\switchenum
-		\item Laat $FMfm$ een orbiforme kromme zijn \ldots , waardoor we een rechte lijn $Ff$ drijven, die normaal is aan de kromme aan beide zijden, waarvan we de lengte $Ff=2f$ noemen. Dan voor elk ander punt $M$ wordt de normaal aan de kromme getekend zodat deze ook in $m$ normaal is aan de kromme, en deze lengte $Mm$ is ook $=2f$. Door de punten $M$ en $m$ wordt op de as $Ff$ de loodrechten $PM$ en $pm$ getekend, en noem de coördinaten van het punt $M$ via $FP=XF$ en $PM=Y$; in het punt $m$ is $Fp=x$ en $pm=-y$, dit is toegepast in tegengestelde richting.\ldots
-		\par Er volgt de manier waarop deze vier eenheid met elkaar in verband staan: Omdat de afstand van het punt $M$ tot $PN$ subnormaal is, is positie $\D Y = P \,\D X$ \ldots hieruit volgt $MN = Y\sqrt{1+PP}$. 
+		\switchcolumn
 		
-		
+		\par Er volgt de manier waarop deze vier eenheden met elkaar in verband staan: Omdat de afstand van het punt $M$ tot $PN$ subnormaal is, is positie $\D Y = P \,\D X$ , hieruit volgt voor de subnormaal\footnote{Verwarrend van Euler dat het maal-teken niet genoteerd wordt en hier dus een product van scalair en afstand rechts staat.} $PN = P\cdot Y$,  vandaar de normaal $MN = Y\sqrt{1+PP}$. Op gelijkaardige manier zal voor het andere punt $m$ de subnormaal $pN$ terug bepaald zijn; neemt men $\D y = p \, \D x$, dan\footnote{Dezelfde verwarring neemt hier plaats.} $pN=-p\cdot y$; hierdoor geldt voor de normaal $Mn=-y\sqrt{1+pp}$. Omdat de driehoeken $PMN$ en $pmN$ gelijkvormig zijn, geldt $P=p$. Omdat we verder weten dat $Mm=2f$; maak uit $m$ evenwijdig aan de as, \textbf{$MP$ zichzelf verlengend onmoeten in $S$}, en de gelijkvormige driehoeken $MNP$ en $MmS$ leiden tot $MS = \frac{2f}{\sqrt{1+pp}}$ et $mS = \frac{2fp}{\sqrt{1+pp}}$.
+		\par Aangezien derhalve het wordt dat
+		\[
+			MS = MP + mp = Y-y  \quad \text{en} \quad mS = Fp-FP = x-X
+		\]
+		hieruit volgt
+		\[
+			Y-y = \frac{2f}{\sqrt{1+pp}} \quad \text{en}\quad x-X = \frac{2fp}{\sqrt{1+pp}},
+		\]
+		\par daarnaast echter, zoals we al hebben opgemerkt, moet het zijn dat
+		\[
+			\frac{\D Y}{\D X} = P = p \quad \text{en} \quad \frac{\D y}{\D x} = p.
+		\]
+				
 		\switchcolumn*
 		
 		\item Cum igitur inuenerimus differentias coordinatarum $Y-y$ et $x-X$, statuamus earum summas $X+x= 2Q$ et $Y+y=2R$, hincque singulas coordinatas adipiscemur ita expressas:
@@ -261,9 +589,9 @@
 			\D x &= \D Q + \frac{f\,\D p}{(1+pp)^\frac{3}{2}};\\
 			\D y &= \D R + \frac{fp\,\D p}{(1+pp)^\frac{3}{2}}.\\
 		\end{align*}
-		\par Waardoor het zo moet zijn dat $\D Y=p\,\D X$ et $\D y=p\,\D x$, wat wordt
+		\par Waarbij het zo moet zijn dat $\D Y=p\,\D X$ et $\D y=p\,\D x$, wat wordt
 		\begin{align*}
-			\D R - \frac{fp\,\D p}{(1+pp)^\frac{3}{2}} &= p\operatorname{d}Q - \frac{fp\, \D p}{(1+pp)^\frac{3}{2}} \quad \text{et}\\
+			\D R - \frac{fp\,\D p}{(1+pp)^\frac{3}{2}} &= p\operatorname{d}Q - \frac{fp\, \D p}{(1+pp)^\frac{3}{2}} \quad \text{en}\\
 			\D R + \frac{fp\,\D p}{(1+pp)^\frac{3}{2}} &= p\,\D Q + \frac{fp\,\D p}{(1+pp)^\frac{3}{2}}.
 		\end{align*}
 		\par Uit beide van deze vergelijkingen volgt $\D R = p \, \D Q$, zodat $R= \int p \,\D Q$.
@@ -277,10 +605,10 @@
 		\[
 			X = Q- \frac{fp}{\sqrt{1+pp}} \quad \text{et} \quad Y = R + \frac{f}{\sqrt{1+pp}},
 		\]
-		manifestum est, has ex illis nasci, si modo formulae radicalis $\sqrt{1+pp}$ signum immutetur. Quare cum haec formula per suam naturam sit ambigua, priores formulae, pro $x$ et $y$ inventae, posteriores pro $X$ et $Y$ iam sponte involuunt, ita ut eadem aequatio rationalis tam pro $x$ et $y$ quam pro $X$ et $Y$ necessario sit prodituro. Ad hoc autem necesse est, ut nesque $Q$ neque $R$ eandem formulam $\sqrt{1+pp}$ involuant, quia alioquin etiam signum harum litterarum mutari oporteret. Hinc igitur ista regula statui potest: ut pro $Q$ functio rationalis ipsius $p$ accipi debeat.
+		manifestum est, has ex illis nasci, si modo formulae radicalis $\sqrt{1+pp}$ signum immutetur. Quare cum haec formula per suam naturam sit ambigua, priores formulae, pro $x$ et $y$ inventae, posteriores pro $X$ et $Y$ iam sponte involuunt, ita ut eadem aequatio rationalis tam pro $x$ et $y$ quam pro $X$ et $Y$ necessario sit proditura. Ad hoc autem necesse est, ut neque $Q$ neque $R$ eandem formulam $\sqrt{1+pp}$ involuant, quia alioquin etiam signum harum litterarum mutari oporteret. Hinc igitur ista regula statui potest: ut pro $Q$ functio rationalis ipsius $p$ accipi debeat.
 		
 		\switchenum
-		\item Als ik voldoe aan alle voorwaarden, laat onze keuze van hoeveelheid $Q$ toe, en hierdoor\ldots formule $p\,\D Q$ kan geïntegreerd worden, omdat we een algebraïsche kromme wensen. Zo vinden we voor de coördinaten $x$ en $y$:
+		\item Als ik derhalve voldoe aan alle voorwaarden, laat dit ons een keuze van hoeveelheid $Q$ toe, en kan daarom in de plaats wat dan ook van functie van $p$ aanvaarden, als het toegelaten is de formule $p\,\D Q$ te integreren, omdat we een algebraïsche kromme wensen. Zo vinden we voor de coördinaten $x$ en $y$:
 		\[
 			x = Q + \frac{fp}{\sqrt{1+pp}} \quad\text{et}\quad y = R - \frac{f}{\sqrt{1+pp}}
 		\]
@@ -288,7 +616,7 @@
 		\[
 			X = Q- \frac{fp}{\sqrt{1+pp}} \quad \text{et} \quad Y = R + \frac{f}{\sqrt{1+pp}},		
 		\]
-		wat geboren is uit het vorige, waarbij enkel het teken van de wortelvorm $\sqrt{1+pp}$ gewijzigd is. Waarom is deze formule van nature ambigue, voor \ldots  Voor deze reden is het een regel die voorgeschreven mag worden: voor functie $Q$ aanvaard rationale $p$.
+		wat geboren is uit het vorige, waarbij enkel het teken van de wortelvorm $\sqrt{1+pp}$ gewijzigd is. Waarom is deze formule van nature onzeker\footnote{Niet vast bepaald? Inwisselbaar?}, eerste formules, voor $x$ en $y$ die gevonden zijn, impliceren spontaan de volgende voor $X$ en $Y$,zodat dezelfde rationale vergelijkingen zo voor $x$ en $y$, als voor $X$ en $Y$ niet noodzakelijk wordt gemaakt. Hiervoor is het meer bepaald noodzakelijk dat noch $Q$ noch $R$ dezelfde formule $\sqrt{1+pp}$ \textbf{betrekken}, want anders wordt ook het teken van deze letter gewijzigd.  Voor deze reden is het een regel die voorgeschreven mag worden: zo moet voor $Q$ een rationale functie van $p$ aanvaard worden.
 		
 		
 		\switchcolumn*
@@ -304,7 +632,7 @@
 		\[
 			x = \frac{\D S}{\D p} + \frac{fp}{\sqrt{1+pp}}, \quad y = \frac{p\,\D S}{\D p} -S - \frac{f}{\sqrt{1+pp}};
 		\]
-		en voor $S$ \ldots 
+		\textbf{wanneer we voor $S$ sommige rationale functies van $p$, of minstens zodanig, kunnen nemen, wat hoewel de formule $\sqrt{1+pp}$ onbepaald is, dezelfde waarde behoudt.}
 		
 		\switchcolumn*
 		
@@ -312,26 +640,31 @@
 		\[
 			\frac{\alpha+\beta}{A+B}\frac{p+\gamma }{p+C} \frac{p p+\delta}{p p+D} \frac{p^3+\text{etc}.}{p^3+\text{etc}.}
 		\]
-		\par aequari opportet, cuius denominator nullum habeat factorem simplicem realem; si enim factorem talem haberet puta $p-n$, tum, sumto $p=n$, valor ipsius $S$ fieret infinitus. Deinde summa potestas ipsius $p$ in numeratore haud debet esse major quam in denominatore; aliter enim, casu $p=\infty$, alor ipsius $S$ iterum in infinitum excresceret. Praeterea vero etiam exponentes fracti ipsius $p$ admitti quidem possent, ita tamen, ut nullum membrum ambiguum obtineat valorem, quia alioquin eidem valori ipsius $p$ plures tam abscissae quam applicatae convenire possent; hoc enim casu curva non pst unam revolutionem, sed demum post duas plureque in se rediret; tum autem eius evoluta non amplius foret curva triangularis, sed vel pentagona, vel heptagona, vel enneagona vel etc. id quod insituto nostro adversatur.
+		\par aequari opportet, cuius denominator nullum habeat factorem simplicem realem; si enim factorem talem haberet puta $p-n$, tum, sumto $p=n$, valor ipsius $S$ fieret infinitus. Deinde summa potestas ipsius $p$ in numeratore haud debet esse major quam in denominatore; aliter enim, casu $p=\infty$, alor ipsius $S$ iterum in infinitum excresceret. Praeterea vero etiam exponentes fracti ipsius $p$ admitti quidem possent, ita tamen, ut nullum membrum ambiguum obtineat valorem, quia alioquin eidem valori ipsius $p$ plures tam abscissae quam applicatae convenire possent; hoc enim casu curva non post unam revolutionem, sed demum post duas pluresue in se rediret; tum autem eius evoluta non amplius foret curva triangularis, sed vel pentagona, vel heptagona, vel enneagona vel etc. id quod insituto nostro adversatur.
 		
 		\switchenum
-		\item Het is verplicht wegens de natuur van de wereld, hetgeen we beschouwen \ldots om uiteindelijk de functie $S$ op te breken als:
+		\item Het is vereist wegens het essentie de cirkel, hetgeen we beschouwen, als de kromme in zichzelf terugkeert, en zich nooit oneindig verspreid\footnote{Met andere woorden, de kromme moet zich opnieuw bij zichzelf aansluiten als bij een cirkel.}, de functie $S$ die moet worden voorbereid, dat noch de absis $x$ noch de toevoeging $y$ ooit in staat zijn oneindig te worden, \textbf{om uiteindelijk de functie $S$ op te breken als:}
 		\[
 			\frac{\alpha+\beta}{A+B}\frac{p+\gamma }{p+C} \frac{p p+\delta}{p p+D} \frac{p^3+\text{etc}.}{p^3+\text{etc}.}
 		\]
-		\par het is evengoed nodig dat, als de noemer nul bevat de factoren reëel vereenvoudigen; als er zo'n factor bevat is, bijvoorbeeld $p-n$, dan, in het geval dat $p=n$, zal de waarde van $S$ oneindig worden. Vandaar de macht van $p$ in de teller groter moet zijn dan in de noemer; anderzijds, in het geval dat $p=\infty$, dan zal de waarde van $S$ opnieuw naar oneindig groeien. \ldots
+		\par het is evengoed nodig dat, als de noemer nul bevat de factoren reëel vereenvoudigen; als er zo'n factor bevat is, bijvoorbeeld $p-n$, dan, in het geval dat $p=n$, zal de waarde van $S$ oneindig worden. Vandaar de macht van $p$ in de teller groter moet zijn dan in de noemer; anderzijds, in het geval dat $p=\infty$, dan zal de waarde van $S$ opnieuw naar oneindig groeien. Meer bepaald kunnen ook breuken als exponent van $p$ toegelaten worden, zodanig dat, er geen onbepaalde delen als waarde bekomen worden, daarnaast is zelfs het mogelijk dat voor meerdere waarden van $p$ zo de abscis als toevoeging samen komen; maar in dit geval zal de kromme uiteindelijk niet na één onwenteling, maar na twee of meer in zichzelf terugkomen;  dan meer bepaal zal zijn evolute niet meer de driehoekige kromme, maar wel de vijfhoekige, of zevenhoekige, of negenhoekige of etc. wat tegen onze opzet is.
 		
 
 		\switchcolumn*
 		
-		\item Ex hac constructione generali, in qua continentur omnes curvae orbiformes, et quidem simplices, quae post unam revolutionem in se redeunt, facile erit formulas elicere pro descriptione curvarum triangularium; cum enim evolutae harum curvarum orbiformium certe sint figurae triangulares, tantum opus est, ut in evolutas istarum curvarum inquiramus. Quia autem omnes illae curvae, pro quovis valore litterae $f$, ex evolutione eiusdem curvae triangularis nascuntur, litera $f$ non in determinationem evolutae ingreditur; unde in formulis nostris, pro $x$ et $y$ inventis, partes, hanc litteram $f$ involuentes, tuto omittere licebit; sicque pro hac inventigatione habebimus tantum
+		\item Ex hac constructione generali, in qua continentur omnes curvae orbiformes, et quidem simplices, quae post unam ontwikkeling in se redeunt, facile erit formulas elicere pro descriptione curvarum triangularium; cum enim evolutae harum curvarum orbiformium certe sint figurae triangulares, tantum opus est, ut in evolutas istarum curvarum inquiramus. Quia autem omnes illae curvae, pro quovis valore litterae $f$, ex evolutione eiusdem curvae triangularis nascuntur, littera $f$ non in determinationem evolutae ingreditur; unde in formulis nostris, pro $x$ et $y$ inventis, partes, hanc litteram $f$ involventes, tuto omittere licebit; sicque pro hac inventigatione habebimus tantum
 		\[
 			x = \frac{\D S}{\D P} \quad\text{et} \quad y = \frac{p\,\D S}{\D p}-S,
 		\]
-		\par quam ob rem naturam evolutae, ex his valoribus oriundae, investigasse sufficiet. \ldots
+		\par quam ob rem naturam evolutae, ex his valoribus oriundae, investigasse sufficiet. 
 		
 		\switchenum
-		\item Uit dit volgt een algemene constructie, waarin alle orbiforme krommen bevat zitten, en dit vereenvoudigt, na een revolutie om zichzelf, gemakkelijk in formules die driehoekige krommen beschrijven. \ldots 
+		\item Uit dit volgt een algemene constructie, waarin alle orbiforme krommen bevat zitten, en dit vereenvoudigt, na een revolutie om zichzelf, gemakkelijk in formules die driehoekige krommen beschrijven. Want met de evolute van deze orbiforme kromme zijn er zeker driehoekige figuren, alleen is het noodzakelijk, dat we moeten zoeken naar de evoluten van deze kromme. Omdat al die krommen, voor elke waarde van de letter $f$, uit de evolvente van eenzelfde driehoekige kromme geboren zijn, is de letter $f$ niet bepalend in de evolute bevat; en in onze formule, voor de gevonden $x$ en $y$, is het toegestaan de delen , die de letter $f$ bevatten, geheel weg te laten; en dus hebben we voor dit onderzoek alleen
+		\[
+			x = \frac{\D S}{\D P} \quad\text{et} \quad y = \frac{p\,\D S}{\D p}-S,
+		\]
+		wat voldoende is om de zaak van de natuurlijke evolute, uit deze waarden voortkomend, te onderzoeken.
+		
 		\switchcolumn*
 		
 		\item Sit igitur $FMfm$ talis curvas, in qua sit abscissa $FP=x=\frac{\D S}{\D p}$, applicata $PM=y=\frac{p\,\D }{\D p}-S$, et ducta normali $Mm$ erit subnormalis
@@ -374,13 +707,13 @@
 		\[
 			\sing \phi = \frac{1}{\sqrt{1+pp}} \quad \text{et} \quad \cosg \phi = \frac{p}{\sqrt{1+pp}}
 		\]
-		\par dan geldt ook $\D \phi = -\frac{\D p}{1+pp}$. Stel nu voor het gemak de afkorting $FN=v$, het is geweten dat het centrum van de osculatiecirkel in $M$, in het punt $U$ is, dan is het zo
+		\par dan geldt ook $\D \phi = -\frac{\D p}{1+pp}$. Stel nu voor het gemak de afkorting $FN=v$, het is geweten dat het centrum van de osculatiecirkel in $M$, in het punt $U$ is, dan is het zo\footnote{Waar komt dit vandaag?}
 		\[
 			NU = \frac{\D v\sing \phi}{\D \phi};
 		\]
 		\par Maar als, het element $\D p$ constant genomen wordt, is
 		\begin{align*}
-			\D  v &= \frac{\D \D  S}{\D p}(1+pp)+p\,\D S-S\,\D p \quad \text{et}\\
+			\D  v &= \frac{\D \D  S}{\D p}(1+pp)+p\,\D S-S\,\D p \quad \text{en}\\
 			\frac{\sing \phi}{\D \phi} &= -\frac{\sqrt{1+pp}}{\D p}
 		\end{align*}
 		\par en de lijn zal zijn
@@ -388,6 +721,60 @@
 			NU = -\frac{\D\D S}{\D p^2} (1+pp)^{\frac{3}{2}}-\frac{p\,\D S}{\D p} \sqrt{1+pp} + S\sqrt{1+pp}
 		\]
 		\par voor het gemak van afkorting schrijven we voor de formule $r$, zodat er geldt $NU=r$.
+
+		\switchcolumn*
+		
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (124.73955121402813:0.7631107015839075) arc (124.73955121402813:180.:0.7631107015839075);
+				\draw (0,0) circle (2cm);
+				\draw (-1.1396938257701044,1.643501744295242)-- (1.1396938257701044,-1.643501744295242);
+				\draw (1.0499141426476895,-1.5140344588914103)-- (1.0499141426476895,0.);
+				\draw (-1.1396938257701044,0.)-- (-1.1396938257701044,1.643501744295242);
+				\draw (-2,0)-- (2,0);
+				
+				\draw (0,0) node [below left] {\small $N$};
+				\draw (-2,0) node [left] {\small $F$};
+				\draw (2,0) node [right] {\small $f$};
+				\draw (-1.1396938257701044,1.643501744295242) node [above] {\small $M$};
+				\draw (1.1396938257701044,-1.643501744295242) node [below right] {\small $m$};
+				\draw (-1.1396938257701044,0.) node [below] {\small $P$};
+				\draw (1.0499141426476895,-1.5140344588914103) node [below left,yshift=3pt] {\small $U$};
+				\draw (1.0499141426476895,0.) node [above] {\small $T$};
+				\draw (-0.4,0.2) node {\small $\phi$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 6.}
+		\end{figure}
+		\switchcolumn
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (124.73955121402813:0.7631107015839075) arc (124.73955121402813:180.:0.7631107015839075);
+				\draw (0,0) circle (2cm);
+				\draw (-1.1396938257701044,1.643501744295242)-- (1.1396938257701044,-1.643501744295242);
+				\draw (1.0499141426476895,-1.5140344588914103)-- (1.0499141426476895,0.);
+				\draw (-1.1396938257701044,0.)-- (-1.1396938257701044,1.643501744295242);
+				\draw (-2,0)-- (2,0);
+				
+				\draw (0,0) node [below left] {\small $N$};
+				\draw (-2,0) node [left] {\small $F$};
+				\draw (2,0) node [right] {\small $f$};
+				\draw (-1.1396938257701044,1.643501744295242) node [above] {\small $M$};
+				\draw (1.1396938257701044,-1.643501744295242) node [below right] {\small $m$};
+				\draw (-1.1396938257701044,0.) node [below] {\small $P$};
+				\draw (1.0499141426476895,-1.5140344588914103) node [below left,yshift=3pt] {\small $U$};
+				\draw (1.0499141426476895,0.) node [above] {\small $T$};
+				\draw (-0.4,0.2) node {\small $\phi$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 6.}
+		\end{figure}
 
 		\switchcolumn*
 		
@@ -426,7 +813,7 @@
 		\[
 			t = \frac{a+5app-2ap^4}{(1+pp)^2}\quad \text{et} \quad u = \frac{6ap}{(1+pp)^2}.
 		\]
-		\par Hinc primo patet, siue $p$ sumatur positve siue negative, abscissam $t$ eandem manere, applicatam vero $u$ hoc casu in partem contrariam cadere, unde noster $FT$ huius curvae erit diameter. Deinde, sumto $p=0$ fiet $t=a$ et $u=0$; at si capiatur $p$ inifite parvum, fiet
+		\par Hinc primo patet, sive $p$ sumatur positve sive negative, abscissam $t$ eandem manere, applicatam vero $u$ hoc casu in partem contrariam cadere, unde noster $FT$ huius curvae erit diameter. Deinde, sumto $p=0$ fiet $t=a$ et $u=0$; at si capiatur $p$ inifite parvum, fiet
 		\[
 			t = a + 3app\quad \text{et} \quad u= 6ap.
 		\]
@@ -434,12 +821,12 @@
 		\[
 			\D.\frac{p}{(1+pp)^2} = \frac{\D p(1-3pp)}{(1+pp)^3}
 		\]
-		hoc eueniet, ubi $3pp=1$, siue $p=\frac{1}{\sqrt{3}}$; tum autem fiet abscissa $t=\frac{11}{8}a$ et $u=\frac{9\sqrt{3}}{8}a$. Ergo ducta chorda $BC$, axem secante in $E$, erit $FE= \frac{11}{8}a$ et $EB=EC=\frac{9\sqrt{3}}{8}a$. Quod si iam quoque ducantur chordae $BD=CD = \frac{\sqrt{9\sqrt{3}}}{8}a$; ex quo patet, chordas omnes $BD, CD$ et $BC$ esse inter se aequales. Referet ergo haec curva triangularis triangulum aequilaterum.
+		hoc eueniet, ubi $3pp=1$, sive $p=\frac{1}{\sqrt{3}}$; tum autem fiet abscissa $t=\frac{11}{8}a$ et $u=\frac{9\sqrt{3}}{8}a$. Ergo ducta chorda $BC$, axem secante in $E$, erit $FE= \frac{11}{8}a$ et $EB=EC=\frac{9\sqrt{3}}{8}a$. Quod si iam quoque ducantur chordae $BD=CD = \frac{\sqrt{9\sqrt{3}}}{8}a$; ex quo patet, chordas omnes $BD, CD$ et $BC$ esse inter se aequales. Referet ergo haec curva triangularis triangulum aequilaterum.
 		
 		\switchenum
-		\item Zoals dit onderzoeksvoorbeeld illustreert, hebben we
+		\item We illustreren dit onderzoek met een voorbeeld, laat ons
 		\begin{align*}
-			S &= \frac{ap}{1+pp}, \quad\text{eritque}\\
+			S &= \frac{ap}{1+pp}, \quad\text{en dan}\\
 			\frac{\D S}{\D p} &= \frac{a(1-pp)}{(1+pp)^2} \quad \text{et} \quad \frac{\D \D S}{\D p^2} = \frac{2ap^3-6ap}{(1+pp)^3}
 		\end{align*}
 
@@ -456,6 +843,58 @@
 			\D.\frac{p}{(1+pp)^2} = \frac{\D p(1-3pp)}{(1+pp)^3}
 		\]
 		leidt dit tot, als $3pp=1$, of $p=\frac{1}{\sqrt{3}}$, dan wordt de abscis $t=\frac{11}{8}a$ en $u=\frac{9\sqrt{3}}{8}a$. Daardoor zal de koorde $BC$ de as snijden in $E$, en zal $FE=\frac{11}{8}a$ zijn en $EB=EC=\frac{9\sqrt{3}}{8}a$. Trekken we nu ook de koorden $BD$ en $CD$, met $DE=\frac{27}{8}a$ dan $BD^2 = \frac{972}{64}aa$, en dus $BD=CD = \frac{9\sqrt{3}}{\color{red}4}a$; het is duidelijk, alle koorden $BD, CD$ en $BC$ zijn ondereen gelijk. Daarom is deze driehoekige kromme dus bevat in een gelijkzijdige driehoek.
+
+		\switchcolumn*
+		
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (-1.592,0.)-- (1.123,1.568);
+				\draw (1.123,1.568)-- (1.123,-1.568);
+				\draw (1.123,-1.568)-- (-1.592,0);
+				\draw [shift={(2.028,0)}] plot[domain=2.094:4.1891,variable=\t]({1.*1.8107218179771583*cos(\t r)+0.*1.8107218179771583*sin(\t r)},{0.*1.8107218179771583*cos(\t r)+1.*1.8107218179771583*sin(\t r)});
+				\draw [shift={(-2.82,4.994)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+1.*5.145122693791882*sin(\t r)});
+				\draw [shift={(-2.8279022506987714,-4.994723411507955)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+-1.*5.145122693791882*sin(\t r)});
+				\draw (-1.593,0)-- (1.124,0);
+				\draw (0.880,1.427) -- (0.880,0);
+				\draw (1.123,1.568) node [above right] {\small $B$};
+				\draw (1.123,-1.568) node [below right] {\small $C$};
+				\draw (-1.592,0) node [left] {\small $D$};
+				\draw (1.123,0) node [right] {\small $E$};
+				\draw (0.217,0) node [below left] {\small $A$};
+				\draw (0.880,1.427) node [above] {\small $M$};
+				\draw (0.880,0) node [below] {\small $F$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 7.}
+		\end{figure}
+		\switchcolumn
+		\begin{figure}[h]
+			\centering
+			\par {
+				\fontfamily{jkplvos}\selectfont
+				\begin{tikzpicture}
+				\draw (-1.592,0.)-- (1.123,1.568);
+				\draw (1.123,1.568)-- (1.123,-1.568);
+				\draw (1.123,-1.568)-- (-1.592,0);
+				\draw [shift={(2.028,0)}] plot[domain=2.094:4.1891,variable=\t]({1.*1.8107218179771583*cos(\t r)+0.*1.8107218179771583*sin(\t r)},{0.*1.8107218179771583*cos(\t r)+1.*1.8107218179771583*sin(\t r)});
+				\draw [shift={(-2.82,4.994)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+1.*5.145122693791882*sin(\t r)});
+				\draw [shift={(-2.8279022506987714,-4.994723411507955)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+-1.*5.145122693791882*sin(\t r)});
+				\draw (-1.593,0)-- (1.124,0);
+				\draw (0.880,1.427) -- (0.880,0);
+				\draw (1.123,1.568) node [above right] {\small $B$};
+				\draw (1.123,-1.568) node [below right] {\small $C$};
+				\draw (-1.592,0) node [left] {\small $D$};
+				\draw (1.123,0) node [right] {\small $E$};
+				\draw (0.217,0) node [below left] {\small $A$};
+				\draw (0.880,1.427) node [above] {\small $M$};
+				\draw (0.880,0) node [below] {\small $F$};
+				\end{tikzpicture}}
+			\fontfamily{cmr}\selectfont
+			\caption{Tab. I. Fig. 7.}
+		\end{figure}
 
 		\switchcolumn*
 		
@@ -487,7 +926,7 @@
 		
 		\switchcolumn*
 		
-		\item Quia igitur est $\D t=p \,\D u$, iisdem casibus, quibus sit $\frac{\D t}{\D p}=0$, etiam fiet $\frac{\D u}{\D p}= 0$; unde patet, ubicunque abscissa $t$ fuerit vel maxima vel minima, ibidem quoque fore applicatam maximam vel minimam, quae propietas utique in cuspides conuenit. Ex quo colligimus, ubicunque ambae coordinatae $p$ et $q$ simul fiunt vel maximae vel minimae, ibi quoque existere cuspides nostrae curvae; quare cum curva habeat tres cuspides, in tribus quoque locis tam $t$ quam $u$ maximum fieri necesse est.
+		\item Quia igitur est $\D t=p \,\D u$, iisdem casibus, quibus sit $\frac{\D t}{\D p}=0$, etiam fiet $\frac{\D u}{\D p}= 0$; unde patet, ubicunque abscissa $t$ fuerit vel maxima vel minima, ibidem quoque fore applicatam maximam vel minimam, quae propietas utique in cuspides convenit. Ex quo colligimus, ubicunque ambae coordinatae $p$ et $q$ simul fiunt vel maximae vel minimae, ibi quoque existere cuspides nostrae curvae; quare cum curva habeat tres cuspides, in tribus quoque locis tam $t$ quam $u$ maximum fieri necesse est.
 		
 		\switchenum
 		\item Omdat het zo is dat $\D t=p\, \D u$, de gevallen waarbij het zo is dat $\frac{\D t}{\D p}=0$, en is het ook zo dat $\frac{\D u}{\D p}= 0$; het is dus duidelijk dat, wanneer de abscis $t$ ofwel maximaal ofwel minimaal is, op dezelfde plaats maximaal ofwel minimaal zal zijn, wat de eigenschappen in de spitsen doet samenvallen. Van wat we verzamelen, zijn beide coördinaten $p$ en $q$ dus gelijktijdig ofwel maximaal ofwel minimaal, daar bestaan dan ook de spitsen van onze krommen; en gezien de kromme 3 spitsen hebben, moeten zowel $t$ als $u$ in 3 plaatsen maximaal zijn.
@@ -581,10 +1020,9 @@
 		\]
 		\par waarvan de drie wortels onze drie spitsen onthullen.
 		
-		\newpage %%%Temporary fix
 		\switchcolumn*
 		
-		\item Ponamus iam huius aequationis radices esse: I\degree. $p=\alpha$, II\degree. $p=\beta$ ac III\degree. $p=\gamma$, siue aequemus formulam inventum huic producto:
+		\item Ponamus iam huius aequationis radices esse: I\degree. $p=\alpha$, II\degree. $p=\beta$ ac III\degree. $p=\gamma$, sive aequemus formulam inventum huic producto:
 		\[
 			2Cg(a-p)(\beta-p)(\gamma-p)
 		\]
@@ -650,7 +1088,7 @@
 			&\gamma = 0 \text{ et } \beta = -\alpha, \quad \text{unde sit} \quad \alpha\beta\gamma = 0;\\
 			&\quad \alpha\beta+\alpha \gamma+\beta \gamma = -\alpha^2 \quad \text{et} \quad \alpha+\beta+ \gamma = 0,
 		\end{align*}
-		\par eritque postrema aequatio $3f = 3\alpha \alpha f g$, siue $f=\alpha \alpha fg$; unde sequitur vel $f= 0$, vel $g= \frac{1}{\alpha \alpha}$. Consideremus primo casum $f=0$, fietque $A = -\frac{0}{0}$, unde littera $A$ non determinatur, vel potius fit $A = 0$, porroque $B=0$, unde colligitur $b=0$, siue etiam $b$ non determinatur; tum vero erit $a=0$. Quia autem aequationem postremam per $f$ multiplicauimus, hic valor $f=0$ lubricus est habendus. Sumamus igitur alterum valorem $g= \frac{1}{\alpha \alpha}$, et quia debet esse $ff<4g$, sequitur esse debere $f< \frac{2}{\alpha}$; hinc vero fiet $A=0$ et $B=0$, ideoque $b-af = 0$, et $-2ag = 0$, unde sit $a = 0$.
+		\par eritque postrema aequatio $3f = 3\alpha \alpha f g$, sive $f=\alpha \alpha fg$; unde sequitur vel $f= 0$, vel $g= \frac{1}{\alpha \alpha}$. Consideremus primo casum $f=0$, fietque $A = -\frac{0}{0}$, unde littera $A$ non determinatur, vel potius fit $A = 0$, porroque $B=0$, unde colligitur $b=0$, sive etiam $b$ non determinatur; tum vero erit $a=0$. Quia autem aequationem postremam per $f$ multiplicauimus, hic valor $f=0$ lubricus est habendus. Sumamus igitur alterum valorem $g= \frac{1}{\alpha \alpha}$, et quia debet esse $ff<4g$, sequitur esse debere $f< \frac{2}{\alpha}$; hinc vero fiet $A=0$ et $B=0$, ideoque $b-af = 0$, et $-2ag = 0$, unde sit $a = 0$.
 		
 		\switchenum
 			\item Alvorens we de algemene bespreking van de bepalingen voortzetten, evalueren we het speciale geval, waarbij
@@ -794,7 +1232,7 @@
 		\]
 		\par unde si pro cuspidibus inveniendis ponamus $\frac{\operatorname{d}u}{\operatorname{d}p} = 0$, habebimus hanc aequationem:
 		\begin{align*}
-			&2bp^3-6b\alpha \alpha p -2a \alpha \alpha +6a pp = 0, \quad \text{siue} \quad bp^3+3app\\
+			&2bp^3-6b\alpha \alpha p -2a \alpha \alpha +6a pp = 0, \quad \text{sive} \quad bp^3+3app\\
 			&\qquad-3b\alpha \alpha p - a\alpha \alpha = 0,
 		\end{align*}
 		\par cuius ergo ternas radices quaeri oportet, quod cum per regulam \textit{Cardani} difficulter praestetur, trisectione anguli utamur, quem in finem fingamus esse $p=r+s\cosg \phi$ eritque
@@ -811,7 +1249,7 @@
 			&-3b\alpha \alpha r\\
 			&-a \alpha \alpha.
 		\end{align*}
-		\par Nunc definiantur litterae $r$ et $s$ ita, ut membra intermedia, tam $\cosg \phi$ quam $\cosg 2\phi$ involuentia, seorsim evanescant, unde hae duae aequationes oriuntur:
+		\par Nunc definiantur litterae $r$ et $s$ ita, ut membra intermedia, tam $\cosg \phi$ quam $\cosg 2\phi$ involventia, seorsim evanescant, unde hae duae aequationes oriuntur:
 		\begin{align*}
 			\text{I}\degree.\; &3brrs + \frac{3}{4}bs^3+6ars-3b\alpha \alpha s = 0;\\
 			\text{II}\degree.\;& \frac{3}{2}brss+\frac{3}{2}ass = 0;
@@ -1275,7 +1713,7 @@
 		\par De gevonden waarden zijn dus
 		\begin{align*}
 			\text{I}. \;& \sqrt{nnAA-1} = \frac{3AA+BB-CC}{4\triangle};\\
-			\text{II}. \; & \sqrt{nnBB-1} = \frac{3BB+AA-CC}{4\triangle} \qquad \text{et}\\
+			\text{II}. \; & \sqrt{nnBB-1} = \frac{3BB+AA-CC}{4\triangle} \qquad \text{en}\\
 			\text{III}. \;& \sqrt{nnCC-4} = \frac{2AA-2BB}{4};
 		\end{align*}
 		\par kortom blijkt uit deze dat de waarde
