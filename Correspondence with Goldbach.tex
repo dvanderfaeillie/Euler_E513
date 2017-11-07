@@ -1,0 +1,240 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{gensymb}
+\usepackage[margin=2.5cm, landscape]{geometry}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{paracol}
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage[hang, font ={small, it}, labelformat=empty]{caption}
+\renewcommand{\figurename}{Fig}
+
+\usepackage[object=vectorian]{pgfornament}
+
+\usepackage{tikz}
+\usepackage[uprightgreeks,frenchstyle,light,fulloldstylenums,veryoldstyle]{kpfonts}
+
+\setlength{\parskip}{1ex}
+\setlength{\parindent}{0pt}
+
+\DeclareMathOperator{\tang}{tang.}
+\DeclareMathOperator{\cotg}{cot.}
+\DeclareMathOperator{\sing}{sin.}
+\DeclareMathOperator{\cosg}{cos.}
+
+\pagestyle{empty}
+
+\def\D{\mathrm{d}}
+\newcommand*{\bfrac}[2]{\genfrac{}{}{0pt}{}{#1}{#2}}
+
+\renewcommand{\rmdefault}{cmr}
+
+\begin{document}
+	
+	\begin{paracol}{2}		
+	
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Lettre LXXIX}
+		\par {\textsc{Euler} à \textsc{Goldbach} }
+	\end{center}
+	\switchcolumn
+	
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Brief LXXIX}
+		\par {\textsc{Euler} aan \textsc{Goldbach} }
+	\end{center}
+	\switchcolumn*
+
+	\par \ldots
+	\par Ich bin letztens auf dieses problema gefallen: Circa datum punctum radians $R$ curvan describere ejusmodi, ut singuli radii ex $R$ egressi post duplicem reflexionem in $M$ et $N$ in ipsum punctum $R$ revertantur. Es gibt ausser der Ellipse, alterum focum in $R$ habente, noch unendlich viel andere Linien quaesitu satisfacientes, sowohl algebraicae als transcendentes; un dieses problema däucht mich eines von den schersten in hoc genere zu seyn.
+	\par \ldots
+			
+	\switchcolumn
+	\par \ldots
+		
+	\switchcolumn*
+	
+	\begin{figure}[h]
+		\centering
+		\par {
+			\fontfamily{jkplvos}\selectfont
+			\begin{tikzpicture}[rotate=180, scale=1]
+			\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw (0,0) node [below right] {\small $C$};
+			\draw (2,0) node [below left] {\small $B$};
+			\draw (1,-1.732) node [above] {\small $A$};
+			\end{tikzpicture}}
+		\fontfamily{cmr}\selectfont
+		\caption{Fig. 10}
+	\end{figure}
+	\switchcolumn
+	\begin{figure}[h]
+		\centering
+		\par {
+			\fontfamily{jkplvos}\selectfont
+			\begin{tikzpicture}[rotate=180, scale=1]
+			\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw (0,0) node [below right] {\small $C$};
+			\draw (2,0) node [below left] {\small $B$};
+			\draw (1,-1.732) node [above] {\small $A$};
+			\end{tikzpicture}}
+		\fontfamily{cmr}\selectfont
+		\caption{Fig. 10}
+	\end{figure}
+
+	\switchcolumn*
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Lettre LXXX}
+		\par {\textsc{Goldbach} à \textsc{Euler} }
+	\end{center}
+	\switchcolumn
+	
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Brief LXXX}
+		\par {\textsc{Goldbach} aan \textsc{Euler} }
+	\end{center}
+	\switchcolumn*
+	
+	\par \ldots
+	\par Was das andere problema betrifft, so wird die curva nachfolgende propietates haben:
+	\begin{enumerate}
+		\item muss, posita $AB=x, BC=y, HA=a, AG=b, y$ eine solche function ipsius $x$ seyn, dass positis $x=-a$ et $x=b, y=0$ werde.
+		\item Weil die pars axis inter radium incidentem $AC$ et radium reflexum $CD$ intercepta, nehmlich $AD$ per $x$ et $y$ ope normalis $CN$ bekannt wird, folglich posita $AD=u$, $u$ per $x$ et $y$ data ist, so muss auch positis $AF=x', FE=y'$ die inter radios $AE$ et $ED$ intercepta eadem pars axis $AD$ per $x'$ et $y'$ gegeben seyn, durch welche Aequation $y'$ eliminirt wird.
+		\item Fiat $\bfrac{CB}{y}:\bfrac{BD}{u-x}::\bfrac{DF}{x'-u}:\bfrac{EF=y'}{\frac{(u-x)(x'-y)}{y'}}$, wodurch $x'$ eliminirt wird. Wenn endlich auch
+		\item die summa radiorum incidentis et reflexi usque ad axem entweder constans (wie in der ellipsi), oder certa cuidam functioni ipsius $x$ gleich gesetz wird, so kan dadurch auch $y$ per $x$ determiniret werd, wiewohl ich dieses alles jetzo nicht gnugsam einsehe und Ew. besseren Beurtheilung überlasse.
+	\end{enumerate}
+	
+	\switchcolumn
+	\par \ldots
+	
+	\switchcolumn*
+	
+	\begin{figure}[h]
+		\centering
+		\par {
+			\fontfamily{jkplvos}\selectfont
+			\begin{tikzpicture}[rotate=180, scale=1]
+			\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw (0,0) node [below right] {\small $C$};
+			\draw (2,0) node [below left] {\small $B$};
+			\draw (1,-1.732) node [above] {\small $A$};
+			\end{tikzpicture}}
+		\fontfamily{cmr}\selectfont
+		\caption{Fig. 11}
+	\end{figure}
+	\switchcolumn
+	\begin{figure}[h]
+		\centering
+		\par {
+			\fontfamily{jkplvos}\selectfont
+			\begin{tikzpicture}[rotate=180, scale=1]
+			\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+			\draw (0,0) node [below right] {\small $C$};
+			\draw (2,0) node [below left] {\small $B$};
+			\draw (1,-1.732) node [above] {\small $A$};
+			\end{tikzpicture}}
+		\fontfamily{cmr}\selectfont
+		\caption{Fig. 11}
+	\end{figure}
+	
+	\switchcolumn*
+		\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Lettre LXXXI}
+		\par {\textsc{Euler} à \textsc{Goldbach} }
+	\end{center}
+	\switchcolumn
+	
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Brief LXXXI}
+		\par {\textsc{Euler} aan \textsc{Goldbach} }
+	\end{center}
+	\switchcolumn*
+
+	\par \ldots
+	\par Was das andere problema anlangt, welches jetzt in den Actis Lipsiensibus herausskomt, da die radii ex puncto dato emantes post duplicem reflexionem in eben dasseble Punct zurückkommen sollen, so hat das tentamen Ew. seine volle Richtigheit, und dienet, um die curvam infra axem constitatum zu finden, wenn die obere als bekannt angenommen wird. Die grösste Schwierigkeit aber beruhet darauf, dass beyde curvae eandum curvam continuam aussmachen, welcher Umstand von Ew. nicht in Betrachtung gezogen worden. Ich habe anfänglich die Solution auch auf eben diese Art tentirt, die formulae werden aber allzu weitläufig und verwirrt, als dass ich dieser letzten Bedingung hätte ein Genüge leisten können. Ich glaubte, dass die Annehmung einer Axe daran schuldig wäre, indem man wenig hinreichenden Grund hat, waarom man vielmehr diese, als eine andere Linie für die Axe annehmen soltte. Daher habe ich diese Betrachtung völlig beiseit gesetzt und meine Solution folgendergestalt vorgenommen:
+	
+	
+	\switchcolumn
+	\par \ldots
+	
+	\switchcolumn*
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Lettre LXXXVII}
+		\par {\textsc{Euler} à \textsc{Goldbach} }
+	\end{center}
+	\switchcolumn
+	
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Brief LXXXVII}
+		\par {\textsc{Euler} aan \textsc{Goldbach} }
+	\end{center}
+	\switchcolumn*
+	
+	\par \ldots
+	\par Ueber das problema catoptricum nehme die Freyheit Ew. meine Solution himit zu übersenden, deren analysis alle Umstände hinlänglich erläutern wird.
+	\par \ldots
+	\par Est ergo haec caustica linea quarti ordinis, quae ex aequatione
+	\[
+		q = \frac{(9c\mp \sqrt{9cc+12cp})\sqrt{3c-2p\pm \sqrt{9cc+12cp}}}{2\sqrt{6c}}
+	\]
+	non difficulter construetur.
+	\par Curva haec est tricuspidata triangulo aequilatero inscripta uti haec figura adjecta repraesentat, et curva problemati satisfaciens oritur, si filum huic curvae complicetur, alterque terminus in $C$ figatur, sicque per evolutionem fili describetur.
+	
+	\switchcolumn
+	\par \ldots
+	\par Over het catoptrische probleem neem ik de vrijheid u mijn oplossing met te zenden, wiens analyse alle omstandigheden adequaat zal verklaren.
+	\par \ldots
+	
+	\par Deze kromme is een driespitsig ingeschreven in een gelijkzijdige driehoek, die de aangrenzende figuur vertegenwoordigd, en een kromme laat verschijnen die voldoet aan het probleem, als een draad in deze kromme volgens deze kromme wordt gebogen, het andere uiteinde bevestigd in $C$, te beschrijven door zo de draad te ontwikkelen.
+	
+	\switchcolumn*
+		\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Lettre CXVII}
+		\par {\textsc{Euler} à \textsc{Goldbach} (25 juni 1748)}
+	\end{center}
+	\switchcolumn
+	
+	\begin{center}
+		\par \pgfornament[width = 0.8\linewidth]{88}
+		\par {\bf Brief CXVII}
+		\par {\textsc{Euler} aan \textsc{Goldbach} (25 juni 1748)}
+	\end{center}
+	\switchcolumn*
+	
+	\par \ldots
+	\par Hr. Oechliz aus Leipzig, welcher nach St. Petersburg zur mathesi sublimiori berufen worden, die Vocation aber ausgeschalgen, hat eine sehr schöne Solution des schon längst erwähnten problematis catoptrici erfunden, welche Ew. unfehlbar gefallen wird.
+	
+	\par Es sey MN eine von den gesuchte curvis, welche alle radios ex puncto fixo $C$ emissos post geminam reflexionem in $M$ et $N$ factam in idem punctum $C$ remittat. Man verlängere $MN$ beiderseits in $E$ et $F$, so dass $ME=CM$ et $NF=CN$, so wird die longitudo $EF$ constant seyn und die Puncte $E$ und $F$ werden in einer solchen krummen Linie $EIF$ seyn, dass die grade Linie $EF$ beiderseits auf dieselbe perpendiculär fällt. Die ganze Sache kommt also darauf an, das man solche krumme Linien $EIF$ finde, dass die auf ein jegliches Punct derselben gezogenen Perpendicular-Linien $EF$ dieselbe krumme Linie nochmal in $F$ ad angulos rectos durchschneiden. Denn diese Eigenschaft schliesst jene sschon in sich, dass die quantitas lineae hujus $EF$ constant seyn müsse. Man sieht nun alsbald, dass die Linie $EIf$ ein Circul seyn könne, dessen diameter $=EF$; es gibt aber noch uneindlich viel andere krumme Linien, welche diese Eigenschaft mit dem Circul gemein haben, wie ich bald ziegen werde.
+	
+	\par Hat man aber eine solche krumme Linie $EIF$ gefunden, so kann daraus sehr leicht die gesuchte krumme Linie $MN$ gefunden werden, un das auf uneindlich vilerley Art. Denn man kann das punctum radians $C$ nach Belieben annehmen, und wenn man daraus ad terminos Lineae $EF$ die graden Linien $CE$ un $CF$ zieht, dieselben in $G$ und $H$ in zwey gleiche Theile schneidet, aus den Puncten $G$ und $H$ auf dieselben die Perpendicular-Linien $GM$ und $HN$ aufrichtet, bis solche der $EF$ begegnen, so sind nicht nur die Puncte $M$ und $N$ in der gesuchten Linie $MN$, sondern $GM$ und $HN$ sind auch tangentes derselben. Nimmt man für $EIF$ ein Circul an, diametri $EF$, so wird $MN$ eine ellipsis, deren foci sind das punctum radians $C$ und das centrum circuli $EIF$.
+	
+	\par Um aber alle mögliche krumme Linien $EAF$ zu finden, welche von ihren normalibus $ERF$ nochmal in $F$ normaliter durchschnitten werden, so setze ich die abscissas $AP=x, AQ=X$, die applicatas $PE=y, QF=-Y$, (weil diese ad partes oppositas axis fällt). So is die subnormalis $PR=\frac{y\, \D y}{\D x}$ und die subnormalis $QR=\frac{-Y\, \D Y}{\D X}$. Da nun $PE:PR = QF:QR$, so wird $y:\frac{y\, \D y}{\D x} = -Y:\frac{-Y\, \D Y}{\D x}$, folglich $\frac{\d y}{\D x} = \frac{\D Y}{\D X}$. Jetzt setze ich $\D x = p\, \D y$, so wird auch $\D X = p\, \D Y$ und $PR=\frac{y}{p}, QR=\frac{-Y}{p}$; also $PQ=\frac{y-Y}{p}=$
+	
+	\switchcolumn
+	\par \ldots
+	\par 
+	
+	\switchcolumn*
+\end{paracol}
+
+\end{document}
