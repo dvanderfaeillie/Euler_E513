@@ -64,7 +64,7 @@
 		\item Curvas triangulares voco, quae tribus arcubus $AB$, $AC$ et $BC$ intus inflexis constant, qui in angulis $A$, $B$ et $C$ coeant, praeterea autem nullos alios ramos contineant. Huiusmodi ergo curvae ut sint continuae, sive quapiam aequatione, vel algebraica, vel etiam transcendente, exprimi queant, necesse est, ut in angulis $A$, $B$ et $C$ habeant cuspides acutissimas, ubi bini arcus coeuntes communi tangente sint praediti. Tales autem curvas innumerabiles exhiberi posse, tam algebraicas, quam transcendentes, iam olim ostendi, cum Problema de eiusmodi curvis, circa datum punctum lucidum describendis, proposuissem, ita ut omnes radii, a curvua bis reflexi, iterum in ipsum punctum lucidum revertantur, quod Problema variis solutionibus in Actis Lipsiensibus pro Annis 1746 et 1748 solutum reperitur. Hic enim tota solutio ad inventionem huiusmodi curvarum triangularium reducitur, quippe quibus causticae radiorum reflexorum formantur. 
 			
 		\switchenum
-		\item Ik noem driehoekige krommen, deze uit drie bogen $AB, AC$ en $BC$ naar binnen gebogen, die in de hoeken $A$, $B$ en $C$ samenkomen en die ook geen andere vertakkingen bevatten. Deze krommen van deze aard zijn continu en \textbf{kunnen uitgedrukt worden volgens zekere vergelijking}, hetzij algebraïsch, of zelfs transcendent, het is essentieel, dat ze in de hoeken $A$, $B$ en $C$ scherpe spitsen hebben, waar de twee bogen samenkomen bevatten ze een gemeenschappelijke raaklijn. Er kunnen ontelbare zulke krommen gemaakt worden, zowel algebraïsch als transcendent, een lange tijd geleden heb ik aangetoond dat Problemen van de soorten krommen, die een bepaald brandpunt beschrijven, te verklaren, waarbij elke straal tweemaal terugkaatst in de kromme en terugkeert naar hetzelfde brandpunt, voor het welke probleem meerdere oplossingen in Actis Lipsiensibus gedateerd 1746 en 1748 gevonden werden. Hier worden deze oplossingen herleid tot het vinden van driehoekige krommen, immers vormen deze een brandpunt waar elke straal in terugkaatst. 
+		\item Ik noem driehoekige krommen, deze uit drie bogen $AB, AC$ en $BC$ naar binnen gebogen, die in de hoeken $A$, $B$ en $C$ samenkomen en die ook geen andere vertakkingen bevatten. Deze krommen van deze aard om ononderbroken te zijn, kunnen uitgedrukt worden volgens zekere vergelijking, hetzij algebraïsch, of zelfs transcendent, het is essentieel, dat ze in de hoeken $A$, $B$ en $C$ scherpe spitsen hebben, waar de twee bogen samenkomen bevatten ze een gemeenschappelijke raaklijn. Er kunnen ontelbare zulke krommen gemaakt worden, zowel algebraïsch als transcendent, een lange tijd geleden heb ik aangetoond dat problemen van de soorten krommen, die een bepaald brandpunt omschrijven, te verklaren, waarbij elke straal tweemaal terugkaatst in de kromme en terugkeert naar hetzelfde brandpunt, voor het welke probleem meerdere oplossingen in Actis Lipsiensibus gedateerd 1746 en 1748 gevonden werden. Hier worden deze oplossingen herleid tot het vinden van driehoekige krommen, immers worden deze gevormd als caustiek door deze teruggekaatste stralen.
 		
 		\switchcolumn*
 		
@@ -72,13 +72,13 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw (0,0) node [below right] {\small $C$};
-				\draw (2,0) node [below left] {\small $B$};
-				\draw (1,-1.732) node [above] {\small $A$};
+				\begin{tikzpicture}[rotate=180, scale=1, font=\scriptsize]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw (0,0) node [below right] {$C$};
+				\draw (2,0) node [below left] {$B$};
+				\draw (1,-1.732) node [above] {$A$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 1.}
@@ -88,13 +88,13 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw (0,0) node [below right] {\small $C$};
-				\draw (2,0) node [below left] {\small $B$};
-				\draw (1,-1.732) node [above] {\small $A$};
+				\begin{tikzpicture}[rotate=180, scale=1, font=\scriptsize]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw (0,0) node [below right] {$C$};
+				\draw (2,0) node [below left] {$B$};
+				\draw (1,-1.732) node [above] {$A$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 1.}
@@ -113,7 +113,7 @@
 		\]
 			
 		\switchenum
-		\item Afgezien van het gebruik van, het geven van krommen van een driehoekige aard bij de bepaling van het \textit{catoptrische} probleem, verdienen vooral de krommen, die als evolvente uit de driehoekige krommen $ABC$ geboren worden, beschouwd te worden. Hierbij zal ik de lengte van de boog benoemen als $AB = c$, boog $AC=b$ en boog $BC=a$. Bevestig nu een touw aan de boog $AB$, en verleng dit vanuit $A$ tot in $F$, zodat $AF=f$, en beweeg een pen ingebracht in $F$, tot de boog $AB$ ontwikkeld wordt, en de draad aankomt in positie $Bg$, en dus $Bg = AF + \text{ de boog } AB = f+c$; beweeg opnieuw de pen continu en bevestig opeenvolgend de draad $Bg$ aan de boog $BC=a$, tot het aankomt in $H$, en dan
+		\item Afgezien van het gebruik van, het geven van krommen van een driehoekige aard bij de bepaling van het \textit{catoptrische} probleem, verdienen vooraf de krommen, die als evolvente uit de driehoekige krommen $ABC$ geboren worden, beschouwd te worden. Hierbij zal ik de lengte van de boog benoemen als $AB = c$, boog $AC=b$ en boog $BC=a$. Bevestig nu een touw aan de boog $AB$, en verleng dit vanuit $A$ tot in $F$, zodat $AF=f$, en beweeg een pen ingebracht in $F$, tot de boog $AB$ ontwikkeld wordt, en de draad aankomt in positie $Bg$, en dus $Bg = AF + \text{ de boog } AB = f+c$; beweeg opnieuw de pen continu en bevestig opeenvolgend de draad $Bg$ aan de boog $BC=a$, tot het aankomt in $H$, en dan
 		\[
 			BC+CH = Bg = f+c, \quad \text{zodat het is dat} \quad CH = f+c-a;
 		\]
@@ -127,27 +127,27 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}
-				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\begin{tikzpicture}[font=\scriptsize]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
 				\draw (1,-0.577) circle (1.712cm);
 				\draw (1,1.135)-- (1,-2.290);
 				\draw (2.483,-1.433)-- (-0.483,0.279);
 				\draw (-0.483,-1.434)-- (2.483,0.279);
 				\draw (2.579,0.085)-- (-0.712,-0.623);
-				\draw (0,0) node [below left, yshift=4pt, xshift=2pt] {\small $A$};
-				\draw (2,0) node [above] {\small $C$};
-				\draw (1,-1.732) node [below right, yshift=5pt] {\small $B$};
-				\draw (1,1.135) node [above] {\small $g$};
-				\draw (2.483,0.279) node [above right, xshift=-5pt] {\small $H$};
-				\draw (2.483,-1.434) node [below right, yshift=4pt] {\small $f$};
-				\draw (-0.483,0.279) node [above left, yshift=-3pt, xshift=1pt] {\small $F$};
-				\draw (-0.483,-1.434) node [below left] {\small $h$};
-				\draw (1,-2.290) node [below] {\small $G$};
-				\draw (1.563,-0.134) node [above] {\small $S$};
-				\draw (2.579,0.085) node [right] {\small $X$};
-				\draw (-0.712,-0.623) node [left] {\small $x$};
+				\draw (0,0) node [below left, yshift=4pt, xshift=2pt] {$A$};
+				\draw (2,0) node [above] {$C$};
+				\draw (1,-1.732) node [below right, yshift=5pt] {$B$};
+				\draw (1,1.135) node [above] {$g$};
+				\draw (2.483,0.279) node [above right, xshift=-5pt] {$H$};
+				\draw (2.483,-1.434) node [below right, yshift=4pt] {$f$};
+				\draw (-0.483,0.279) node [above left, yshift=-3pt, xshift=1pt] {$F$};
+				\draw (-0.483,-1.434) node [below left] {$h$};
+				\draw (1,-2.290) node [below] {$G$};
+				\draw (1.563,-0.134) node [above] {$S$};
+				\draw (2.579,0.085) node [right] {$X$};
+				\draw (-0.712,-0.623) node [left] {$x$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 2.}
@@ -157,27 +157,27 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}
-				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
+				\begin{tikzpicture}[font=\scriptsize]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
 				\draw (1,-0.577) circle (1.712cm);
 				\draw (1,1.135)-- (1,-2.290);
 				\draw (2.483,-1.433)-- (-0.483,0.279);
 				\draw (-0.483,-1.434)-- (2.483,0.279);
 				\draw (2.579,0.085)-- (-0.712,-0.623);
-				\draw (0,0) node [below left, yshift=4pt, xshift=2pt] {\small $A$};
-				\draw (2,0) node [above] {\small $C$};
-				\draw (1,-1.732) node [below right, yshift=5pt] {\small $B$};
-				\draw (1,1.135) node [above] {\small $g$};
-				\draw (2.483,0.279) node [above right, xshift=-5pt] {\small $H$};
-				\draw (2.483,-1.434) node [below right, yshift=4pt] {\small $f$};
-				\draw (-0.483,0.279) node [above left, yshift=-3pt, xshift=1pt] {\small $F$};
-				\draw (-0.483,-1.434) node [below left] {\small $h$};
-				\draw (1,-2.290) node [below] {\small $G$};
-				\draw (1.563,-0.134) node [above] {\small $S$};
-				\draw (2.579,0.085) node [right] {\small $X$};
-				\draw (-0.712,-0.623) node [left] {\small $x$};
+				\draw (0,0) node [below left, yshift=4pt, xshift=2pt] {$A$};
+				\draw (2,0) node [above] {$C$};
+				\draw (1,-1.732) node [below right, yshift=5pt] {$B$};
+				\draw (1,1.135) node [above] {$g$};
+				\draw (2.483,0.279) node [above right, xshift=-5pt] {$H$};
+				\draw (2.483,-1.434) node [below right, yshift=4pt] {$f$};
+				\draw (-0.483,0.279) node [above left, yshift=-3pt, xshift=1pt] {$F$};
+				\draw (-0.483,-1.434) node [below left] {$h$};
+				\draw (1,-2.290) node [below] {$G$};
+				\draw (1.563,-0.134) node [above] {$S$};
+				\draw (2.579,0.085) node [right] {$X$};
+				\draw (-0.712,-0.623) node [left] {$x$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 2.}
@@ -288,19 +288,21 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=1.4]
-				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw (0,0) node [above left, xshift=2pt, yshift=-2pt] {\small $A$};
-				\draw (2,0) node [above right, xshift=-2pt, yshift=-2pt] {\small $C$};
-				\draw (1,-1.732) node [below] {\small $B$};
-				\draw (1,-0.194) -- (1.332,-0.769) -- (0.668,-0.762) -- cycle;
+				\begin{tikzpicture}[scale=1.4, font=\scriptsize]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				
+				\draw (1,-0.194) -- (1.332,-0.769) -- (0.668,-0.769) -- cycle;
 				\draw (0,0) -- (1.332,-0.769);
 				\draw (2,0) -- (0.668,-0.762);
-				\draw (1,-0.194) node [above] {\small $g$};
-				\draw (1.332,-0.769) node [below right, yshift=2pt] {\small $f$};
-				\draw (0.668,-0.762) node [below left, yshift=2pt] {\small $h$};
+				
+				\draw (0,0) node [above left, xshift=2pt, yshift=-2pt] {$A$};
+				\draw (2,0) node [above right, xshift=-2pt, yshift=-2pt] {$C$};
+				\draw (1,-1.732) node [below] {$B$};
+				\draw (1,-0.194) node [above] {$g$};
+				\draw (1.332,-0.769) node [below right, yshift=2pt] {$f$};
+				\draw (0.668,-0.762) node [below left, yshift=2pt] {$h$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 3.}
@@ -310,19 +312,21 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=1.4]
-				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({1.*2.678*cos(\t r)+0.*2.677*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({1.*2.678*cos(\t r)+0.*2.678*sin(\t r)},{0.*2.678*cos(\t r)+1.*2.678*sin(\t r)});
-				\draw (0,0) node [above left, xshift=2pt, yshift=-2pt] {\small $A$};
-				\draw (2,0) node [above right, xshift=-2pt, yshift=-2pt] {\small $C$};
-				\draw (1,-1.732) node [below] {\small $B$};
-				\draw (1,-0.194) -- (1.332,-0.769) -- (0.668,-0.762) -- cycle;
+				\begin{tikzpicture}[scale=1.4, font=\scriptsize]
+				\draw [shift={(-1.651,-2.108)}]  plot[domain=0.141:0.906,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(1,2.484)}]  plot[domain=4.330:5.095,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				\draw [shift={(3.651,-2.108)}]  plot[domain=2.235:3.001,variable=\t]({2.678*cos(\t r)},{2.678*sin(\t r)});
+				
+				\draw (1,-0.194) -- (1.332,-0.769) -- (0.668,-0.769) -- cycle;
 				\draw (0,0) -- (1.332,-0.769);
 				\draw (2,0) -- (0.668,-0.762);
-				\draw (1,-0.194) node [above] {\small $g$};
-				\draw (1.332,-0.769) node [below right, yshift=2pt] {\small $f$};
-				\draw (0.668,-0.762) node [below left, yshift=2pt] {\small $h$};
+				
+				\draw (0,0) node [above left, xshift=2pt, yshift=-2pt] {$A$};
+				\draw (2,0) node [above right, xshift=-2pt, yshift=-2pt] {$C$};
+				\draw (1,-1.732) node [below] {$B$};
+				\draw (1,-0.194) node [above] {$g$};
+				\draw (1.332,-0.769) node [below right, yshift=2pt] {$f$};
+				\draw (0.668,-0.762) node [below left, yshift=2pt] {$h$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 3.}
@@ -343,22 +347,22 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
 				\draw (0,0) circle (2cm);
 				\draw (0,-2)-- (0,2);
 				\draw (0,-2) -- (-1.362,0.675)-- (0,2);
 				\draw (0,0.638)-- (-1.361,0.674);
 				\draw (0,0.638)-- (-0.680,1.337);
 				\draw (-0.681,-0.663)-- (0,-0.316);
-				\draw (0,2) node [above] {\small $X$};
-				\draw (0,-2) node [below] {\small $x$};
-				\draw (-1.362,0.674) node [left, xshift=2pt] {\small $L$};
-				\draw (-0.680,-0.662) node [below left, xshift=2pt, yshift=2pt] {\small $o$};
-				\draw (-0.680,1.337) node [above left, xshift=2pt, yshift=-2pt] {\small $O$};
-				\draw (0,0.637) node [right, xshift=-2pt] {\small $Z$};
-				\draw (0,-0.316) node [right, xshift=-2pt] {\small $z$};
-				\draw (-2.,0.) node [below left] {\small $F$};
-				\draw (2.,0.) node [below right] {\small $G$};
+				\draw (0,2) node [above] {$X$};
+				\draw (0,-2) node [below] {$x$};
+				\draw (-1.362,0.674) node [left, xshift=2pt] {$L$};
+				\draw (-0.680,-0.662) node [below left, xshift=2pt, yshift=2pt] {$o$};
+				\draw (-0.680,1.337) node [above left, xshift=2pt, yshift=-2pt] {$O$};
+				\draw (0,0.637) node [right, xshift=-2pt] {$Z$};
+				\draw (0,-0.316) node [right, xshift=-2pt] {$z$};
+				\draw (-2.,0.) node [below left] {$F$};
+				\draw (2.,0.) node [below right] {$G$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 4.}
@@ -368,22 +372,22 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
 				\draw (0,0) circle (2cm);
 				\draw (0,-2)-- (0,2);
 				\draw (0,-2) -- (-1.362,0.675)-- (0,2);
 				\draw (0,0.638)-- (-1.361,0.674);
 				\draw (0,0.638)-- (-0.680,1.337);
 				\draw (-0.681,-0.663)-- (0,-0.316);
-				\draw (0,2) node [above] {\small $X$};
-				\draw (0,-2) node [below] {\small $x$};
-				\draw (-1.362,0.674) node [left, xshift=2pt] {\small $L$};
-				\draw (-0.680,-0.662) node [below left, xshift=2pt, yshift=2pt] {\small $o$};
-				\draw (-0.680,1.337) node [above left, xshift=2pt, yshift=-2pt] {\small $O$};
-				\draw (0,0.637) node [right, xshift=-2pt] {\small $Z$};
-				\draw (0,-0.316) node [right, xshift=-2pt] {\small $z$};
-				\draw (-2.,0.) node [below left] {\small $F$};
-				\draw (2.,0.) node [below right] {\small $G$};
+				\draw (0,2) node [above] {$X$};
+				\draw (0,-2) node [below] {$x$};
+				\draw (-1.362,0.674) node [left, xshift=2pt] {$L$};
+				\draw (-0.680,-0.662) node [below left, xshift=2pt, yshift=2pt] {$o$};
+				\draw (-0.680,1.337) node [above left, xshift=2pt, yshift=-2pt] {$O$};
+				\draw (0,0.637) node [right, xshift=-2pt] {$Z$};
+				\draw (0,-0.316) node [right, xshift=-2pt] {$z$};
+				\draw (-2.,0.) node [below left] {$F$};
+				\draw (2.,0.) node [below right] {$G$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 4.}
@@ -394,14 +398,14 @@
 		\item Ob hunc insignem usum curvarum triangularium utique optandum esset, ut methodus certa pateret, cuius ope huismodi curvas triangulares, quotquot libuerit, investigare liceret, id quod primo intuitu nimis difficile videre potest. Verum hunc investigationem invertamus, ac primo quaeramus curvas orbiformes, quales hactenus descripsimus; tum enim certi esse poterimus, earum evolutas huismodi fore curvas triangular quales desideramus, Praeterea vero etiam hoc modo istud commodum assequemur: ut, quoties curva orbiformis fuerit algebraica, toties quoque curva triangularis non solum fiat algebraica, sed insuper etiam rectificabilis, quandoquidem evolutae omnium curvarum algebraicarum simul rectificationem admittunt.
 		
 		\switchenum
-		\item Door het buitengewone gebruik van driehoekige krommen, zou het zonder twijfel wenselijk zijn, om bepaalde methodes te bereiken die het mogelijk maken deze driehoekige krommen, zoveel je wil, mogelijk te te bepalen, wat op het eerste zicht zeer moeilijk in te zien is. Maar het onderzoek wordt omgedraaid, waar ten eerste de orbiforme krommen gezocht worden,  zoals tot dusver beschreven, \textbf{want dan zijn we zeker dat we in staat zijn, hun ontwikkeling van de soort driehoekige krommen zal zijn zoals we wensen, bovendien is dit op deze manier handig te bereiken}: zo wanneer de orbiforme kromme algebraïsch is, is ook de driehoekige kromme niet enkel algebraïsch, maar bovendien ook te herleiden, aangezien de ontwikkeling van alle algebraïsche krommen ook een herleiding toelaten.
+		\item Door het buitengewone gebruik van driehoekige krommen, zou het zonder twijfel wenselijk zijn, om bepaalde methodes te bereiken die het mogelijk maken deze driehoekige krommen, zoveel je wil, mogelijk te te bepalen, wat op het eerste zicht zeer moeilijk in te zien is. Maar het onderzoek wordt omgedraaid, waar ten eerste de orbiforme krommen gezocht worden,  zoals tot dusver beschreven, \textbf{want dan zijn we zeker dat we in staat zijn, hun ontwikkeling van de soort driehoekige krommen zal zijn zoals we wensen, bovendien is dit op deze manier handig te bereiken}: zo wanneer de orbiforme kromme algebraïsch is, is ook de driehoekige kromme niet enkel algebraïsch, maar er bovendien ook naar te herleiden, aangezien de ontwikkeling van alle algebraïsche krommen ook zo'n herleiding toelaten.
 		
 		\switchcolumn*
 		
-		\item Sit igitur $FMfm$ talis curva orbiformis, qualem investigare nobis est propositum, in qua sumamus rectam $Ff$ pro axe fixo, qui utrinque ad curvam sit normalis cuius longitudinem ponamus $Ff=2f$. Tum ex puncto quocunque $M$ ad curvam ducatur normalis $Mm$ quae ergo etiam in $m$ ad curvam debet esse normalis, eiusque longitudo $Mm$ itidem sit $=2f$. Iam ex punctis $M$ et $m$ ad axem $Ff$ demittantur perpendicula $Pm$ et $pm$, ac pro puncto $M$ vocentur coordinatae $FP=X$ et $PM=Y$; at pro puncto $m$ sit $Fp=x$ et $pm = -y$, quia haec applicata in partem contrariam cadit. His positis talis aequatio inter $X$ et $Y$ desideratur, ut, si loco $X$ scribatur $x$, valor ipsius $Y$ sponte prodeat $=-y$. 
+		\item Sit igitur $FMfm$ talis curva orbiformis, qualem investigare nobis est propositum, in qua sumamus rectam $Ff$ pro axe fixo, qui utrinque ad curvam sit normalis cuius longitudinem ponamus $Ff=2f$. Tum ex puncto quocunque $M$ ad curvam ducatur normalis $Mm$ quae ergo etiam in $m$ ad curvam debet esse normalis, eiusque longitudo $Mm$ itidem sit $=2f$. Iam ex punctis $M$ et $m$ ad axem $Ff$ demittantur perpendicula $Pm$ et $pm$, ac pro puncto $M$ vocentur coordinatae $FP=X$ et $PM=Y$; at pro puncto $m$ sit $Fp=x$ et $pm = -y$, quia haec applicata in partem contrariam cadit. His positis talis aequatio inter $X$ et $Y$ desideratur, ut, si loco $X$ scribatur $x$, valor ipsius $Y$ sponte prodeat $=-y$. Nisi enim hoc fieret, tota curva $FMfm$ non esset continua.
 		
 		\switchenum
-		\item Laat $FMfm$ een orbiforme kromme zijn, wat ons is voorgesteld te onderzoeken, waardoor we een rechte lijn $Ff$ drijven, die normaal is aan de kromme aan beide zijden, waarvan we de lengte $Ff=2f$ noemen. Dan voor elk ander punt $M$ wordt de normaal aan de kromme getekend zodat deze ook in $m$ normaal is aan de kromme, en deze lengte $Mm$ is ook $=2f$. Door de punten $M$ en $m$ wordt op de as $Ff$ de loodrechten $PM$ en $pm$ getekend, en noem de coördinaten van het punt $M$ via $FP=XF$ en $PM=Y$; in het punt $m$ is $Fp=x$ en $pm=-y$, dit is toegepast in tegengestelde richting. Zo'n vergelijking tussen de plaatsen $X$ en $Y$ is gewenst, zo, als de plaats $X$ als $x$ geschreven wordt, voor de waarde van $Y$ spontaan verschijnt $=-y$. \textbf{ Maar om dit te laten gebeuren, zou de gehele kromme $FMfm$ niet doorlopend zijn.} 
+		\item Laat $FMfm$ een orbiforme kromme zijn, wat ons is voorgesteld te onderzoeken, waardoor we een rechte lijn $Ff$ drijven, die normaal is aan de kromme aan beide zijden, waarvan we de lengte $Ff=2f$ noemen. Dan voor elk ander punt $M$ wordt de normaal aan de kromme getekend zodat deze ook in $m$ normaal is aan de kromme, en deze lengte $Mm$ is ook $=2f$. Door de punten $M$ en $m$ wordt op de as $Ff$ de loodrechten $PM$ en $pm$ getekend, en noem de coördinaten van het punt $M$ via $FP=X$ en $PM=Y$; in het punt $m$ is $Fp=x$ en $pm=-y$, dit is toegepast in tegengestelde richting. Zo'n verband tussen de plaatsen $X$ en $Y$ is gewenst, zo, als de plaats $X$ als $x$ geschreven wordt, voor de waarde van $Y$ spontaan verschijnt $=-y$. Want als dit niet zo zou zijn, zou de gehele kromme $FMfm$ niet doorlopend zijn.
 		
 		\switchcolumn*
 		
@@ -409,22 +413,21 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
 				\draw (0,0) circle (2cm);
 				\draw (-2,0)-- (2,0);
 				\draw (-1.019,1.721)-- (1.267,-1.547);
 				\draw (-1.019,1.721)-- (-1.020,-1.720);
 				\draw (-1.019,-1.547)-- (1.267,-1.547);
 				\draw (1.267,-1.547)-- (1.267,0.);
-				\draw (-1.0192,1.720) node [above] {\small $M$};
-				\draw (-2.,0.) node [left] {\small $F$};
-				\draw (2.,0.) node [right] {\small $f$};
-				\draw (-1.0193,0.) node [below left] {\small $P$};
-				%\draw (-1.0193,-1.721) node [above] {\small $e$};
-				\draw (1.267,-1.547) node [below right] {\small $m$};
-				\draw (0.184,0.) node [below left] {\small $N$};
-				\draw (1.267,0.) node [above] {\small $p$};
-				\draw (-1.019,-1.547) node [above right] {\small $S$};
+				\draw (-1.0192,1.720) node [above] {$M$};
+				\draw (-2.,0.) node [left] {$F$};
+				\draw (2.,0.) node [right] {$f$};
+				\draw (-1.0193,0.) node [below left] {$P$};
+				\draw (1.267,-1.547) node [below right] {$m$};
+				\draw (0.184,0.) node [below left] {$N$};
+				\draw (1.267,0.) node [above] {$p$};
+				\draw (-1.019,-1.547) node [above right] {$S$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 5.}
@@ -434,22 +437,21 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
 				\draw (0,0) circle (2cm);
 				\draw (-2,0)-- (2,0);
 				\draw (-1.019,1.721)-- (1.267,-1.547);
 				\draw (-1.019,1.721)-- (-1.020,-1.720);
 				\draw (-1.019,-1.547)-- (1.267,-1.547);
 				\draw (1.267,-1.547)-- (1.267,0.);
-				\draw (-1.0192,1.720) node [above] {\small $M$};
-				\draw (-2.,0.) node [left] {\small $F$};
-				\draw (2.,0.) node [right] {\small $f$};
-				\draw (-1.0193,0.) node [below left] {\small $P$};
-				%\draw (-1.0193,-1.721) node [above] {\small $e$};
-				\draw (1.267,-1.547) node [below right] {\small $m$};
-				\draw (0.184,0.) node [below left] {\small $N$};
-				\draw (1.267,0.) node [above] {\small $p$};
-				\draw (-1.019,-1.547) node [above right] {\small $S$};
+				\draw (-1.0192,1.720) node [above] {$M$};
+				\draw (-2.,0.) node [left] {$F$};
+				\draw (2.,0.) node [right] {$f$};
+				\draw (-1.0193,0.) node [below left] {$P$};
+				\draw (1.267,-1.547) node [below right] {$m$};
+				\draw (0.184,0.) node [below left] {$N$};
+				\draw (1.267,0.) node [above] {$p$};
+				\draw (-1.019,-1.547) node [above right] {$S$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 5.}
@@ -457,7 +459,7 @@
 		
 		\switchcolumn*
 		
-		\par Nisi enim hoc fieret, tota curva $FMfm$ non esset continua. Sequenti autem modo hae quatuor quantitates a se inuicem pendent: Cum intervallum $PN$ sit subnormalis respectu puncti $M$, posito $\D Y = P \,\D X$, erit haec subnormalis $PN=PY$, hincque normalis $MN=Y\sqrt{1+PP}$. Simili modo  altero puncto $m$ erit $pN$ subnormalis retro posita; unde sumto $\D y=p\,\D x$ erit $pN = -py$; hinc normalis $mN = -y\sqrt{1+pp}$. Quia igitur triangula $PMN$ et $pmN$ sunt similia, erit $P=p$. 
+		\par Sequenti autem modo hae quatuor quantitates a se inuicem pendent: Cum intervallum $PN$ sit subnormalis respectu puncti $M$, posito $\D Y = P \,\D X$, erit haec subnormalis $PN=PY$, hincque normalis $MN=Y\sqrt{1+PP}$. Simili modo  altero puncto $m$ erit $pN$ subnormalis retro posita; unde sumto $\D y=p\,\D x$ erit $pN = -py$; hinc normalis $mN = -y\sqrt{1+pp}$. Quia igitur triangula $PMN$ et $pmN$ sunt similia, erit $P=p$. 
 		
 		\newpage
 		
@@ -478,17 +480,17 @@
 		
 		\switchcolumn
 		
-		\par Er volgt de manier waarop deze vier eenheden met elkaar in verband staan: Omdat de afstand van het punt $M$ tot $PN$ subnormaal is, is positie $\D Y = P \,\D X$ , hieruit volgt voor de subnormaal\footnote{Verwarrend van Euler dat het maal-teken niet genoteerd wordt en hier dus een product van scalair en afstand rechts staat.} $PN = P\cdot Y$,  vandaar de normaal $MN = Y\sqrt{1+PP}$. Op gelijkaardige manier zal voor het andere punt $m$ de subnormaal $pN$ terug bepaald zijn; neemt men $\D y = p \, \D x$, dan\footnote{Dezelfde verwarring neemt hier plaats.} $pN=-p\cdot y$; hierdoor geldt voor de normaal $Mn=-y\sqrt{1+pp}$. Omdat de driehoeken $PMN$ en $pmN$ gelijkvormig zijn, geldt $P=p$. 
+		\par Er volgt de manier waarop deze vier eenheden met elkaar in verband staan: het interval $PN$ is de subnormaal ten opzichte van $M$, zodat positie $\D Y = P\, \D X$, hieruit volgt voor de subnormaal\footnote{Verwarrend van Euler dat het maal-teken niet genoteerd wordt en hier dus een product van scalair en afstand rechts staat.} $PN = P\cdot Y$,  vandaar de normaal $MN = Y\sqrt{1+P^2}$. Op gelijkaardige manier zal voor het andere punt $m$ de subnormaal $pN$ terug bepaald zijn; neemt men $\D y = p \, \D x$, dan\footnote{Dezelfde verwarring neemt hier plaats.} $pN=-p\cdot y$; hierdoor geldt voor de normaal $Mn=-y\sqrt{1+p^2}$. Omdat de driehoeken $PMN$ en $pmN$ gelijkvormig zijn, geldt $P=p$. 
 		
 		\newpage
-		Omdat we verder weten dat $Mm=2f$; maak uit $m$ evenwijdig aan de as, \textbf{$MP$ zichzelf verlengend onmoeten in $S$}, en de gelijkvormige driehoeken $MNP$ en $MmS$ leiden tot $MS = \frac{2f}{\sqrt{1+pp}}$ et $mS = \frac{2fp}{\sqrt{1+pp}}$.
+		Omdat we verder weten dat $Mm=2f$; maak uit $m$ een evenwijdige aan de as, die het verlengde van $MP$ zal ontmoeten in $S$, en de gelijkvormige driehoeken $MNP$ en $MmS$ leiden tot $MS = \frac{2f}{\sqrt{1+p^2}}$ et $mS = \frac{2fp}{\sqrt{1+p^2}}$.
 		\par Aangezien derhalve het wordt dat
 		\[
 			MS = MP + mp = Y-y  \quad \text{en} \quad mS = Fp-FP = x-X
 		\]
 		hieruit volgt
 		\[
-			Y-y = \frac{2f}{\sqrt{1+pp}} \quad \text{en}\quad x-X = \frac{2fp}{\sqrt{1+pp}},
+			Y-y = \frac{2f}{\sqrt{1+p^2}} \quad \text{en}\quad x-X = \frac{2fp}{\sqrt{1+p^2}},
 		\]
 		\par daarnaast echter, zoals we al hebben opgemerkt, moet het zijn dat
 		\[
@@ -520,20 +522,20 @@
 		\switchenum
 		\item We vinden zo als verschil van coördinaten $Y-y$ en $x-X$, waarvan we de sommen $X+x=2Q$ en $Y+y=2R$ vastleggen, er volgt dat de enkele coördinaten uitgedrukt kunnen worden als:
 		\begin{align*}
-			X &= Q - \frac{fp}{\sqrt{1+pp}}; \quad Y = R + \frac{f}{\sqrt{1+pp}};\\
-			x &= Q+\frac{fp}{\sqrt{1+pp}}; \quad y= R- \frac{f}{\sqrt{1+pp}}.
+			X &= Q - \frac{fp}{\sqrt{1+p^2}}; \quad Y = R + \frac{f}{\sqrt{1+p^2}};\\
+			x &= Q+\frac{fp}{\sqrt{1+p^2}}; \quad y= R- \frac{f}{\sqrt{1+p^2}}.
 		\end{align*}
 		\par Dit afleiden leidt tot:
 		\begin{align*}
-			\D X &= \D Q - \frac{f\,\D p}{(1+pp)^\frac{3}{2}};\\
-			\D Y &= \D R-\frac{fp\,\D p}{(1+pp)^\frac{3}{2}};\\
-			\D x &= \D Q + \frac{f\,\D p}{(1+pp)^\frac{3}{2}};\\
-			\D y &= \D R + \frac{fp\,\D p}{(1+pp)^\frac{3}{2}}.\\
+			\D X &= \D Q - \frac{f\,\D p}{(1+p^2)^\frac{3}{2}};\\
+			\D Y &= \D R-\frac{fp\,\D p}{(1+p^2)^\frac{3}{2}};\\
+			\D x &= \D Q + \frac{f\,\D p}{(1+p^2)^\frac{3}{2}};\\
+			\D y &= \D R + \frac{fp\,\D p}{(1+p^2)^\frac{3}{2}}.\\
 		\end{align*}
 		\par Waarbij het zo moet zijn dat $\D Y=p\,\D X$ et $\D y=p\,\D x$, wat wordt
 		\begin{align*}
-			\D R - \frac{fp\,\D p}{(1+pp)^\frac{3}{2}} &= p\operatorname{d}Q - \frac{fp\, \D p}{(1+pp)^\frac{3}{2}} \quad \text{en}\\
-			\D R + \frac{fp\,\D p}{(1+pp)^\frac{3}{2}} &= p\,\D Q + \frac{fp\,\D p}{(1+pp)^\frac{3}{2}}.
+			\D R - \frac{fp\,\D p}{(1+p^2)^\frac{3}{2}} &= p\operatorname{d}Q - \frac{fp\, \D p}{(1+p^2)^\frac{3}{2}} \quad \text{en}\\
+			\D R + \frac{fp\,\D p}{(1+p^2)^\frac{3}{2}} &= p\,\D Q + \frac{fp\,\D p}{(1+p^2)^\frac{3}{2}}.
 		\end{align*}
 		\par Uit beide van deze vergelijkingen volgt $\D R = p \, \D Q$, zodat $R= \int p \,\D Q$.
 		\switchcolumn*
@@ -551,16 +553,16 @@
 		\switchenum
 		\item Als ik derhalve voldoe aan alle voorwaarden, laat dit ons een keuze van hoeveelheid $Q$ toe, en kan daarom in de plaats wat dan ook van functie van $p$ aanvaarden, als het toegelaten is de formule $p\,\D Q$ te integreren, omdat we een algebraïsche kromme wensen. Zo vinden we voor de coördinaten $x$ en $y$:
 		\[
-			x = Q + \frac{fp}{\sqrt{1+pp}} \quad\text{et}\quad y = R - \frac{f}{\sqrt{1+pp}}
+			x = Q + \frac{fp}{\sqrt{1+p^2}} \quad\text{en}\quad y = R - \frac{f}{\sqrt{1+p^2}}
 		\]
 		als $R=\int p \,\D Q$ bestaat; voor zeker zijn de andere coördinaten duidelijk
 		\[
-			X = Q- \frac{fp}{\sqrt{1+pp}} \quad \text{et} \quad Y = R + \frac{f}{\sqrt{1+pp}},		
+			X = Q- \frac{fp}{\sqrt{1+p^2}} \quad \text{en} \quad Y = R + \frac{f}{\sqrt{1+p^2}},		
 		\]
 		
 		\newpage
 		
-		wat geboren is uit het vorige, waarbij enkel het teken van de wortelvorm $\sqrt{1+pp}$ gewijzigd is. Waarom is deze formule van nature onzeker\footnote{Niet vast bepaald? Inwisselbaar?}, eerste formules, voor $x$ en $y$ die gevonden zijn, impliceren spontaan de volgende voor $X$ en $Y$,zodat dezelfde rationale vergelijkingen zo voor $x$ en $y$, als voor $X$ en $Y$ niet noodzakelijk wordt gemaakt. Hiervoor is het meer bepaald noodzakelijk dat noch $Q$ noch $R$ dezelfde formule $\sqrt{1+pp}$ \textbf{betrekken}, want anders wordt ook het teken van deze letter gewijzigd.  Voor deze reden is het een regel die voorgeschreven mag worden: zo moet voor $Q$ een rationale functie van $p$ aanvaard worden.
+		wat geboren is uit het vorige, waarbij enkel het teken van de wortelvorm $\sqrt{1+p^2}$ gewijzigd is. Waarom is deze formule van nature onzeker\footnote{Niet vast bepaald? Inwisselbaar?}, eerste formules, voor $x$ en $y$ die gevonden zijn, impliceren spontaan de volgende voor $X$ en $Y$, zodat dezelfde rationale vergelijkingen zo voor $x$ en $y$, als voor $X$ en $Y$ niet noodzakelijk wordt gemaakt. Hiervoor is het meer bepaald noodzakelijk dat noch $Q$ noch $R$ dezelfde formule $\sqrt{1+p^2}$ \textbf{betrekken}, want anders wordt ook het teken van deze letter gewijzigd.  Voor deze reden is het een regel die voorgeschreven mag worden: zo moet voor $Q$ een rationale functie van $p$ aanvaard worden.
 		
 		
 		\switchcolumn*
@@ -574,9 +576,9 @@
 		\switchenum
 		\item Om een algebraïsche kromme te verkrijgen, moet het zijn dat $R = \int p \,\D Q = pQ - \int Q \,\D p$; we krijgen  $\int Q \,\D p = S$, stel met $S$ een zekere rationale functie voor van $p$, en dan $Q = \frac{\D S}{\D p}$, vandaar verder $R = \frac{p\,\D S}{\D p}-S$. En dus vervolgens voor de orbiforme kromme kunnen we aantonen dat beide coördinaten $x$ en $y$ verkregen worden door: 
 		\[
-			x = \frac{\D S}{\D p} + \frac{fp}{\sqrt{1+pp}}, \quad y = \frac{p\,\D S}{\D p} -S - \frac{f}{\sqrt{1+pp}};
+			x = \frac{\D S}{\D p} + \frac{fp}{\sqrt{1+p^2}}, \quad y = \frac{p\,\D S}{\D p} -S - \frac{f}{\sqrt{1+p^2}};
 		\]
-		\textbf{wanneer we voor $S$ sommige rationale functies van $p$, of minstens zodanig, kunnen nemen, wat hoewel de formule $\sqrt{1+pp}$ onbepaald is, dezelfde waarde behoudt.}
+		\textbf{wanneer we voor $S$ sommige rationale functies van $p$, of minstens zodanig, kunnen nemen, wat hoewel de formule $\sqrt{1+p^2}$ onbepaald is, dezelfde waarde behoudt.}
 		
 		\switchcolumn*
 		
@@ -593,7 +595,7 @@
 		\switchenum
 		\item Het is vereist wegens het essentie de cirkel, hetgeen we beschouwen, als de kromme in zichzelf terugkeert, en zich nooit oneindig verspreid\footnote{Met andere woorden, de kromme moet zich opnieuw bij zichzelf aansluiten als bij een cirkel.}, de functie $S$ die moet worden voorbereid, dat noch de absis $x$ noch de ordinaat $y$ ooit in staat zijn oneindig te worden, \textbf{om uiteindelijk de functie $S$ op te breken als:}
 		\[
-			\frac{\alpha+\beta}{A+B}\frac{p+\gamma }{p+C} \frac{p p+\delta}{p p+D} \frac{p^3+\text{etc}.}{p^3+\text{etc}.}
+			\frac{\alpha+\beta}{A+B}\frac{p+\gamma }{p+C} \frac{p^2+\delta}{p^2+D} \frac{p^3+\text{etc}.}{p^3+\text{etc}.}
 		\]
 		\par het is evengoed nodig dat, als de noemer nul bevat de factoren reëel vereenvoudigen; als er zo'n factor bevat is, bijvoorbeeld $p-n$, dan, in het geval dat $p=n$, zal de waarde van $S$ oneindig worden. Vandaar de macht van $p$ in de teller groter moet zijn dan in de noemer; anderzijds, in het geval dat $p=\infty$, dan zal de waarde van $S$ opnieuw naar oneindig groeien.
 		
@@ -604,14 +606,14 @@
 
 		\switchcolumn*
 		
-		\item Ex hac constructione generali, in qua continentur omnes curvae orbiformes, et quidem simplices, quae post unam ontwikkeling in se redeunt, facile erit formulas elicere pro descriptione curvarum triangularium; cum enim evolutae harum curvarum orbiformium certe sint figurae triangulares, tantum opus est, ut in evolutas istarum curvarum inquiramus. Quia autem omnes illae curvae, pro quovis valore litterae $f$, ex evolutione eiusdem curvae triangularis nascuntur, littera $f$ non in determinationem evolutae ingreditur; unde in formulis nostris, pro $x$ et $y$ inventis, partes, hanc litteram $f$ involventes, tuto omittere licebit; sicque pro hac inventigatione habebimus tantum
+		\item Ex hac constructione generali, in qua continentur omnes curvae orbiformes, et quidem simplices, quae post unam revolutionem in se redeunt, facile erit formulas elicere pro descriptione curvarum triangularium; cum enim evolutae harum curvarum orbiformium certe sint figurae triangulares, tantum opus est, ut in evolutas istarum curvarum inquiramus. Quia autem omnes illae curvae, pro quovis valore litterae $f$, ex evolutione eiusdem curvae triangularis nascuntur, littera $f$ non in determinationem evolutae ingreditur; unde in formulis nostris, pro $x$ et $y$ inventis, partes, hanc litteram $f$ involventes, tuto omittere licebit; sicque pro hac inventigatione habebimus tantum
 		\[
 			x = \frac{\D S}{\D P} \quad\text{et} \quad y = \frac{p\,\D S}{\D p}-S,
 		\]
 		\par quam ob rem naturam evolutae, ex his valoribus oriundae, investigasse sufficiet. 
 		
 		\switchenum
-		\item Uit dit volgt een algemene constructie, waarin alle orbiforme krommen bevat zitten, en dit vereenvoudigt, na een revolutie om zichzelf, gemakkelijk in formules die driehoekige krommen beschrijven. Want met de evolute van deze orbiforme kromme zijn er zeker driehoekige figuren, alleen is het noodzakelijk, dat we moeten zoeken naar de evoluten van deze kromme. Omdat al die krommen, voor elke waarde van de letter $f$, uit de evolvente van eenzelfde driehoekige kromme geboren zijn, is de letter $f$ niet bepalend in de evolute bevat; en in onze formule, voor de gevonden $x$ en $y$, is het toegestaan de delen , die de letter $f$ bevatten, geheel weg te laten; en dus hebben we voor dit onderzoek alleen
+		\item Uit dit volgt een algemene constructie, waarin alle orbiforme krommen bevat zitten, en dit vereenvoudigt, na een omwenteling om zichzelf, gemakkelijk in formules die driehoekige krommen beschrijven. Want met de evolute van deze orbiforme kromme zijn er zeker driehoekige figuren, alleen is het noodzakelijk, dat we moeten zoeken naar de evoluten van deze kromme. Omdat al die krommen, voor elke waarde van de letter $f$, uit de evolvente van eenzelfde driehoekige kromme geboren zijn, is de letter $f$ niet bepalend in de evolute bevat; en in onze formule, voor de gevonden $x$ en $y$, is het toegestaan de delen , die de letter $f$ bevatten, geheel weg te laten; en dus hebben we voor dit onderzoek alleen
 		\[
 			x = \frac{\D S}{\D P} \quad\text{et} \quad y = \frac{p\,\D S}{\D p}-S,
 		\]
@@ -627,50 +629,55 @@
 		\[
 			FN = \frac{\D S}{\D p}(1+pp)-pS.
 		\]
-		\par Ponamus nunc angulum $FNM = \phi$, erit $\tang \phi = \frac{1}{p}$, ideoque $p=\cotg \phi = \frac{\cosg \phi}{\sing \phi}$, unde fit
-		\[
-			\sing \phi = \frac{1}{\sqrt{1+pp}} \quad \text{et} \quad \cosg \phi = \frac{p}{\sqrt{1+pp}}
-		\]
-		tum vero etiam $\D \phi = -\frac{\D p}{1+pp}$. Quod si iam brevitatis gratia ponamus $FN=v$, notum est, centrum circuli, curvam in $M$ osculantis, fore in puncto $U$, ita ut sit
-		\[
-			NU = \frac{\D v\sing \phi}{\D \phi};
-		\]
-		Cum autem, sumto elemento $\D p$ constante, sit
-		\begin{align*}
-			\D  v &= \frac{\D \D  S}{\D p}(1+pp)+p\,\D S-S\,\D p \quad \text{et}\\
-			\frac{\sing \phi}{\D \phi} &= -\frac{\sqrt{1+pp}}{\D p}
-		\end{align*}
-		erit recta
-		\[
-			NU = -\frac{\D\D S}{\D p^2} (1+pp)^{\frac{3}{2}}-\frac{p\,\D S}{\D p} \sqrt{1+pp} + S\sqrt{1+pp}
-		\]
-		\par pro qua formula brevitatis ergo scribamus $r$, ita ut vit sit $NU=r$.
-		
+				
 		\switchenum
-		\item Laat nu $FMfm$ een dergelijke curve zijn, waarin de abscis $FP=x=\frac{\D S}{\D p}$, benoem $PM=y=\frac{p\, \D S}{\D p}-S$, en uit de normaal $Mn$ ontstaat de subnormaal
+		\item Laat nu $FMfm$ een dergelijke\footnote{orbiforme} curve zijn, waarin de abscis $FP=x=\frac{\D S}{\D p}$, benoem $PM=y=\frac{p\, \D S}{\D p}-S$, en uit de normaal $Mn$ ontstaat de subnormaal
 		\[
-			PN = py = \frac{pp\,\D S}{\D p}-pS
+			PN = py = \frac{p^2\,\D S}{\D p}-pS
 		\]
 		\par zodat de lijn
 		\[
-			FN = \frac{\D S}{\D p}(1+pp)-pS.
+			FN = \frac{\D S}{\D p}(1+p^2)-pS.
 		\]
-		\par Benoem nu de hoek $FNM = \phi$, zodat $\tang \phi = \frac{1}{p}$, zodat $p = \cotg \phi = \frac{\cosg \phi}{\sing \phi}$, en dit resulteert in
+		\newpage
+		
+		\switchcolumn*
+		\par Ponamus nunc angulum $FNM = \phi$, erit $\tang \phi = \frac{1}{p}$, ideoque $p=\cotg \phi = \frac{\cosg \phi}{\sing \phi}$, unde fit
 		\[
-			\sing \phi = \frac{1}{\sqrt{1+pp}} \quad \text{et} \quad \cosg \phi = \frac{p}{\sqrt{1+pp}}
+		\sing \phi = \frac{1}{\sqrt{1+pp}} \quad \text{et} \quad \cosg \phi = \frac{p}{\sqrt{1+pp}}
 		\]
-		\par dan geldt ook $\D \phi = -\frac{\D p}{1+pp}$. Stel nu voor het gemak de afkorting $FN=v$, het is geweten dat het centrum van de osculatiecirkel in $M$, in het punt $U$ is, dan is het zo\footnote{Waar komt dit vandaan?}
+		tum vero etiam $\D \phi = -\frac{\D p}{1+pp}$. Quod si iam brevitatis gratia ponamus $FN=v$, notum est, centrum circuli, curvam in $M$ osculantis, fore in puncto $U$, ita ut sit
 		\[
-			NU = \frac{\D v\sing \phi}{\D \phi};
+		NU = \frac{\D v\sing \phi}{\D \phi};
+		\]
+		Cum autem, sumto elemento $\D p$ constante, sit
+		\begin{align*}
+		\D  v &= \frac{\D \D  S}{\D p}(1+pp)+p\,\D S-S\,\D p \quad \text{et}\\
+		\frac{\sing \phi}{\D \phi} &= -\frac{\sqrt{1+pp}}{\D p}
+		\end{align*}
+		erit recta
+		\[
+		NU = -\frac{\D\D S}{\D p^2} (1+pp)^{\frac{3}{2}}-\frac{p\,\D S}{\D p} \sqrt{1+pp} + S\sqrt{1+pp}
+		\]
+		\par pro qua formula brevitatis ergo scribamus $r$, ita ut vit sit $NU=r$.
+		\switchcolumn
+		
+		\par Benoem nu de hoek $FNM = \phi$, zodat $\tan \phi = \frac{1}{p}$, zodat $p = \cot \phi = \frac{\cos \phi}{\sin \phi}$, en dit resulteert in
+		\[
+			\sin \phi = \frac{1}{\sqrt{1+p^2}} \quad \text{et} \quad \cos \phi = \frac{p}{\sqrt{1+p^2}}
+		\]
+		\par dan geldt ook $\D \phi = -\frac{\D p}{1+p^2}$. Stel nu voor het gemak de afkorting $FN=v$, het is geweten dat het centrum van de osculatiecirkel in $M$, in het punt $U$ is, dan is het zo
+		\[
+			NU = \frac{\D v \cdot \sin \phi}{\D \phi};
 		\]
 		\par Maar als, het element $\D p$ constant genomen wordt, is
 		\begin{align*}
-			\D  v &= \frac{\D \D  S}{\D p}(1+pp)+p\,\D S-S\,\D p \quad \text{en}\\
-			\frac{\sing \phi}{\D \phi} &= -\frac{\sqrt{1+pp}}{\D p}
+			\D  v &= \frac{\D^2  S}{\D p}(1+p^2)+p\,\D S-S\,\D p \quad \text{en}\\
+			\frac{\sin \phi}{\D \phi} &= -\frac{\sqrt{1+p^2}}{\D p}
 		\end{align*}
 		\par en de lijn zal zijn
 		\[
-			NU = -\frac{\D\D S}{\D p^2} (1+pp)^{\frac{3}{2}}-\frac{p\,\D S}{\D p} \sqrt{1+pp} + S\sqrt{1+pp}
+			NU = -\frac{\D^2 S}{\D p^2} (1+p^2)^{\frac{3}{2}}-\frac{p\,\D S}{\D p} \sqrt{1+p^2} + S\sqrt{1+p^2}
 		\]
 		\par voor het gemak van afkorting schrijven we voor de formule $r$, zodat er geldt $NU=r$.
 
@@ -680,23 +687,23 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
-				\draw (124.73955121402813:0.7631107015839075) arc (124.73955121402813:180.:0.7631107015839075);
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
+				\draw (124.740:0.763) arc (124.740:180:0.763);
 				\draw (0,0) circle (2cm);
-				\draw (-1.1396938257701044,1.643501744295242)-- (1.1396938257701044,-1.643501744295242);
-				\draw (1.0499141426476895,-1.5140344588914103)-- (1.0499141426476895,0.);
-				\draw (-1.1396938257701044,0.)-- (-1.1396938257701044,1.643501744295242);
+				\draw (-1.140,1.643)-- (1.140,-1.643);
+				\draw (1.050,-1.514)-- (1.050,0);
+				\draw (-1.140,0)-- (-1.140,1.644);
 				\draw (-2,0)-- (2,0);
 				
-				\draw (0,0) node [below left] {\small $N$};
-				\draw (-2,0) node [left] {\small $F$};
-				\draw (2,0) node [right] {\small $f$};
-				\draw (-1.1396938257701044,1.643501744295242) node [above] {\small $M$};
-				\draw (1.1396938257701044,-1.643501744295242) node [below right] {\small $m$};
-				\draw (-1.1396938257701044,0.) node [below] {\small $P$};
-				\draw (1.0499141426476895,-1.5140344588914103) node [below left,yshift=3pt] {\small $U$};
-				\draw (1.0499141426476895,0.) node [above] {\small $T$};
-				\draw (-0.4,0.2) node {\small $\phi$};
+				\draw (0,0) node [below left] {$N$};
+				\draw (-2,0) node [left] {$F$};
+				\draw (2,0) node [right] {$f$};
+				\draw (-1.140,1.643) node [above] {$M$};
+				\draw (1.140,-1.643) node [below right] {$m$};
+				\draw (-1.140,0) node [below] {$P$};
+				\draw (1.050,-1.514) node [below left,yshift=3pt] {$U$};
+				\draw (1.0450,0) node [above] {$T$};
+				\draw (-0.4,0.2) node {$\phi$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 6.}
@@ -706,23 +713,23 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
-				\draw (124.73955121402813:0.7631107015839075) arc (124.73955121402813:180.:0.7631107015839075);
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
+				\draw (124.740:0.763) arc (124.740:180:0.763);
 				\draw (0,0) circle (2cm);
-				\draw (-1.1396938257701044,1.643501744295242)-- (1.1396938257701044,-1.643501744295242);
-				\draw (1.0499141426476895,-1.5140344588914103)-- (1.0499141426476895,0.);
-				\draw (-1.1396938257701044,0.)-- (-1.1396938257701044,1.643501744295242);
+				\draw (-1.140,1.643)-- (1.140,-1.643);
+				\draw (1.050,-1.514)-- (1.050,0);
+				\draw (-1.140,0)-- (-1.140,1.644);
 				\draw (-2,0)-- (2,0);
 				
-				\draw (0,0) node [below left] {\small $N$};
-				\draw (-2,0) node [left] {\small $F$};
-				\draw (2,0) node [right] {\small $f$};
-				\draw (-1.1396938257701044,1.643501744295242) node [above] {\small $M$};
-				\draw (1.1396938257701044,-1.643501744295242) node [below right] {\small $m$};
-				\draw (-1.1396938257701044,0.) node [below] {\small $P$};
-				\draw (1.0499141426476895,-1.5140344588914103) node [below left,yshift=3pt] {\small $U$};
-				\draw (1.0499141426476895,0.) node [above] {\small $T$};
-				\draw (-0.4,0.2) node {\small $\phi$};
+				\draw (0,0) node [below left] {$N$};
+				\draw (-2,0) node [left] {$F$};
+				\draw (2,0) node [right] {$f$};
+				\draw (-1.140,1.643) node [above] {$M$};
+				\draw (1.140,-1.643) node [below right] {$m$};
+				\draw (-1.140,0) node [below] {$P$};
+				\draw (1.050,-1.514) node [below left,yshift=3pt] {$U$};
+				\draw (1.0450,0) node [above] {$T$};
+				\draw (-0.4,0.2) node {$\phi$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 6.}
@@ -754,20 +761,20 @@
 		\newpage
 		\item We zijn op zoek naar, het vinden van het punt $U$, wat de evolute zal zijn, daarvoor leiden we een loodlijn $UT$ op de as, en voor de evolute noemen we de abscis $FT=t$ en ordinaat $TU=u$, zodat het is
 		\begin{align*}
-			NT &= NU \cosg \phi = \frac{pr}{\sqrt{1+pp}} \quad \text{en}\\
-			TU &= NU \sing \phi = \frac{r}{\sqrt{1+pp}}
+			NT &= NU \cos \phi = \frac{pr}{\sqrt{1+p^2}} \quad \text{en}\\
+			TU &= NU \sin \phi = \frac{r}{\sqrt{1+p^2}}
 		\end{align*}
 		en, substitueer op de plaats van $r$ de gevonden waarde, bereikt de abscis
 		\[
-			t = FN + NT = \frac{\D S}{\D p} - \frac{p\,\D\D S}{\D p^2} (1+pp),
+			t = FN + NT = \frac{\D S}{\D p} - \frac{p\,\D^2 S}{\D p^2} (1+p^2),
 		\]
 		vervolgens de waarde van de ordinaat
 		\[
-			u = S - \frac{p\, \D S}{\D p}-\frac{\D \D S}{\D p^2}(1+pp);
+			u = S - \frac{p\, \D S}{\D p}-\frac{\D^2 S}{\D p^2}(1+p^2);
 		\]
 		hieruit zien we dat
 		\[
-			t-pu = \frac{\D S}{\D p}(1+pp)-pS.
+			t-pu = \frac{\D S}{\D p}(1+p^2)-pS.
 		\]
 		\par Dus met behulp van deze formules, als een geschikte functie voor $S$ uit $p$ genomen wordt, kunnen we zo de abscis $FT=t$ als de ordinaat $TU=u$ toewijzen, die een driehoekige kromme bepalen. Zolang voor $S$ geschikte waarden aanvaard worden, zoals hierboven aangegeven.
 		
@@ -787,55 +794,44 @@
 		\[
 			t = a + 3app\quad \text{et} \quad u= 6ap.
 		\]
-		\par Porro, sumto $p=\frac{1}{2}$, erit $t=\frac{34}{25}a$ et $u=\frac{48}{25}a$; sin autem $p=1$ erit $t=a$ et $u=\frac{3}{2}a$. Sit denique $p=\infty$, eritque $t=-2a$ et $u=0$. Hinc patet, curvam huismodi figuram esse habituram, qualem in figura ei dedimus, ternas cuspides habentem, $B,C,D$, existente $FD=2a$ et $FA=a$. Pro alteris cuspidibus $B$ et $C$ quaeratur locus, ubi applicata $u$ fit maxima, et cum sit
-		\[
-			\D.\frac{p}{(1+pp)^2} = \frac{\D p(1-3pp)}{(1+pp)^3}
-		\]
-		hoc eueniet, ubi $3pp=1$, sive $p=\frac{1}{\sqrt{3}}$; tum autem fiet abscissa $t=\frac{11}{8}a$ et $u=\frac{9\sqrt{3}}{8}a$. Ergo ducta chorda $BC$, axem secante in $E$, erit $FE= \frac{11}{8}a$ et $EB=EC=\frac{9\sqrt{3}}{8}a$. Quod si iam quoque ducantur chordae $BD=CD = \frac{\sqrt{9\sqrt{3}}}{8}a$; ex quo patet, chordas omnes $BD, CD$ et $BC$ esse inter se aequales. Referet ergo haec curva triangularis triangulum aequilaterum.
 		
 		\switchenum
 		\item We illustreren dit onderzoek met een voorbeeld, laat ons
 		\begin{align*}
-			S &= \frac{ap}{1+pp}, \quad\text{en dan}\\
-			\frac{\D S}{\D p} &= \frac{a(1-pp)}{(1+pp)^2} \quad \text{et} \quad \frac{\D \D S}{\D p^2} = \frac{2ap^3-6ap}{(1+pp)^3}
+			S &= \frac{ap}{1+p^2}, \quad\text{en dan}\\
+			\frac{\D S}{\D p} &= \frac{a(1-p^2)}{(1+p^2)^2} \quad \text{en} \quad \frac{\D^2 S}{\D p^2} = \frac{2ap^3-6ap}{(1+p^2)^3}
 		\end{align*}
-
+		
 		hieruit zien we dat
 		\[
-			t = \frac{a+5app-2ap^4}{(1+pp)^2}\quad \text{et} \quad u = \frac{6ap}{(1+pp)^2}.
+			t = \frac{a+5ap^2-2ap^4}{(1+p^2)^2}\quad \text{en} \quad u = \frac{6ap}{(1+p^2)^2}.
 		\]
 		\par Het is duidelijk dat, nemen we $p$ positief of negatief, de abscis $t$ hetzelfde blijft, echter zal $u$ in deze gevallen in tegengestelde delen vallen, en onze as $FT$ van de kromme is de diameter. Dan veronderstel $p=0$ zal $t=a$ en $u=0$; nemen we $p$ nu oneindig klein, dan
 		\[
-			t = a + 3app\quad \text{et} \quad u= 6ap.
+			t = a + 3ap^2\quad \text{en} \quad u= 6ap.
 		\]
-		\par Verder als $p=\frac{1}{2}$, geldt $t = \frac{34}{25}a$ en $u= \frac{48}{25}a$; maar als $p=1$ geldt $t=a$ en $u=\frac{3}{2}a$. Als uiteindelijk $p=\infty$, dan $t=-2a$ en $u=0$. Hieruit blijkt dat deze figuur een kromme bezit, wat in de figuur, drie spitse punten heeft, $B,C,D$, waarbij $FD=2a$ en $FA=a$. Voor de andere spitsen $B$ en $C$ zoeken een plaats, wanneer $u$ maximaal is, en gezien het zo is is dat:
-		\[
-			\D.\frac{p}{(1+pp)^2} = \frac{\D p(1-3pp)}{(1+pp)^3}
-		\]
-		leidt dit tot, als $3pp=1$, of $p=\frac{1}{\sqrt{3}}$, dan wordt de abscis $t=\frac{11}{8}a$ en $u=\frac{9\sqrt{3}}{8}a$. Daardoor zal de koorde $BC$ de as snijden in $E$, en zal $FE=\frac{11}{8}a$ zijn en $EB=EC=\frac{9\sqrt{3}}{8}a$. Trekken we nu ook de koorden $BD$ en $CD$, met $DE=\frac{27}{8}a$ dan $BD^2 = \frac{972}{64}aa$, en dus $BD=CD = \frac{9\sqrt{3}}{\color{red}4}a$; het is duidelijk, alle koorden $BD, CD$ en $BC$ zijn ondereen gelijk. Daarom is deze driehoekige kromme dus bevat in een gelijkzijdige driehoek.
-
-		\switchcolumn*
 		
+		\switchcolumn*
 		\begin{figure}[h]
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.9]
+				\begin{tikzpicture}[scale=0.9, font=\scriptsize]
 				\draw (-1.592,0.)-- (1.123,1.568);
 				\draw (1.123,1.568)-- (1.123,-1.568);
 				\draw (1.123,-1.568)-- (-1.592,0);
-				\draw [shift={(2.028,0)}] plot[domain=2.094:4.1891,variable=\t]({1.*1.8107218179771583*cos(\t r)+0.*1.8107218179771583*sin(\t r)},{0.*1.8107218179771583*cos(\t r)+1.*1.8107218179771583*sin(\t r)});
-				\draw [shift={(-2.82,4.994)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+1.*5.145122693791882*sin(\t r)});
-				\draw [shift={(-2.8279022506987714,-4.994723411507955)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+-1.*5.145122693791882*sin(\t r)});
+				\draw [shift={(2.028,0)}] plot[domain=2.09:4.189,variable=\t]({1.81*cos(\t r)},{1.81*sin(\t r)});
+				\draw [shift={(-2.82,4.994)}]  plot[domain=4.954:5.517,variable=\t]({5.145*cos(\t r)},{5.145*sin(\t r)});
+				\draw [shift={(-2.83,-4.99)}]  plot[domain=4.954:5.517,variable=\t]({5.14*cos(\t r)},{-5.145*sin(\t r)});
 				\draw (-1.593,0)-- (1.124,0);
 				\draw (0.880,1.427) -- (0.880,0);
-				\draw (1.123,1.568) node [above right] {\small $B$};
-				\draw (1.123,-1.568) node [below right] {\small $C$};
-				\draw (-1.592,0) node [left] {\small $D$};
-				\draw (1.123,0) node [right] {\small $E$};
-				\draw (0.217,0) node [below left] {\small $A$};
-				\draw (0.880,1.427) node [above] {\small $M$};
-				\draw (0.880,0) node [below] {\small $F$};
+				\draw (1.123,1.568) node [above right] {$B$};
+				\draw (1.123,-1.568) node [below right] {$C$};
+				\draw (-1.592,0) node [left] {$D$};
+				\draw (1.123,0) node [right] {$E$};
+				\draw (0.217,0) node [below left] {$A$};
+				\draw (0.880,1.427) node [above] {$M$};
+				\draw (0.880,0) node [below] {$F$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 7.}
@@ -845,29 +841,45 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.9]
+				\begin{tikzpicture}[scale=0.9, font=\scriptsize]
 				\draw (-1.592,0.)-- (1.123,1.568);
 				\draw (1.123,1.568)-- (1.123,-1.568);
 				\draw (1.123,-1.568)-- (-1.592,0);
-				\draw [shift={(2.028,0)}] plot[domain=2.094:4.1891,variable=\t]({1.*1.8107218179771583*cos(\t r)+0.*1.8107218179771583*sin(\t r)},{0.*1.8107218179771583*cos(\t r)+1.*1.8107218179771583*sin(\t r)});
-				\draw [shift={(-2.82,4.994)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+1.*5.145122693791882*sin(\t r)});
-				\draw [shift={(-2.8279022506987714,-4.994723411507955)}]  plot[domain=4.954772812894923:5.517202699071053,variable=\t]({1.*5.145122693791882*cos(\t r)+0.*5.145122693791882*sin(\t r)},{0.*5.145122693791882*cos(\t r)+-1.*5.145122693791882*sin(\t r)});
+				\draw [shift={(2.028,0)}] plot[domain=2.09:4.189,variable=\t]({1.81*cos(\t r)},{1.81*sin(\t r)});
+				\draw [shift={(-2.82,4.994)}]  plot[domain=4.954:5.517,variable=\t]({5.145*cos(\t r)},{5.145*sin(\t r)});
+				\draw [shift={(-2.83,-4.99)}]  plot[domain=4.954:5.517,variable=\t]({5.14*cos(\t r)},{-5.145*sin(\t r)});
 				\draw (-1.593,0)-- (1.124,0);
 				\draw (0.880,1.427) -- (0.880,0);
-				\draw (1.123,1.568) node [above right] {\small $B$};
-				\draw (1.123,-1.568) node [below right] {\small $C$};
-				\draw (-1.592,0) node [left] {\small $D$};
-				\draw (1.123,0) node [right] {\small $E$};
-				\draw (0.217,0) node [below left] {\small $A$};
-				\draw (0.880,1.427) node [above] {\small $M$};
-				\draw (0.880,0) node [below] {\small $F$};
+				\draw (1.123,1.568) node [above right] {$B$};
+				\draw (1.123,-1.568) node [below right] {$C$};
+				\draw (-1.592,0) node [left] {$D$};
+				\draw (1.123,0) node [right] {$E$};
+				\draw (0.217,0) node [below left] {$A$};
+				\draw (0.880,1.427) node [above] {$M$};
+				\draw (0.880,0) node [below] {$F$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 7.}
 		\end{figure}
-
+		
 		\switchcolumn*
+		
+		\par Porro, sumto $p=\frac{1}{2}$, erit $t=\frac{34}{25}a$ et $u=\frac{48}{25}a$; sin autem $p=1$ erit $t=a$ et $u=\frac{3}{2}a$. Sit denique $p=\infty$, eritque $t=-2a$ et $u=0$. Hinc patet, curvam huismodi figuram esse habituram, qualem in figura ei dedimus, ternas cuspides habentem, $B,C,D$, existente $FD=2a$ et $FA=a$. Pro alteris cuspidibus $B$ et $C$ quaeratur locus, ubi applicata $u$ fit maxima, et cum sit
+		\[
+			\D.\frac{p}{(1+pp)^2} = \frac{\D p(1-3pp)}{(1+pp)^3}
+		\]
+		hoc eueniet, ubi $3pp=1$, sive $p=\frac{1}{\sqrt{3}}$; tum autem fiet abscissa $t=\frac{11}{8}a$ et $u=\frac{9\sqrt{3}}{8}a$. Ergo ducta chorda $BC$, axem secante in $E$, erit $FE= \frac{11}{8}a$ et $EB=EC=\frac{9\sqrt{3}}{8}a$. Quod si iam quoque ducantur chordae $BD=CD = \frac{\sqrt{9\sqrt{3}}}{8}a$; ex quo patet, chordas omnes $BD, CD$ et $BC$ esse inter se aequales. Referet ergo haec curva triangularis triangulum aequilaterum.
+		
+		\switchcolumn
+		
+		\par Verder als $p=\frac{1}{2}$, geldt $t = \frac{34}{25}a$ en $u= \frac{48}{25}a$; maar als $p=1$ geldt $t=a$ en $u=\frac{3}{2}a$. Als uiteindelijk $p=\infty$, dan $t=-2a$ en $u=0$. Hieruit blijkt dat deze figuur een kromme bezit, wat in de figuur, drie spitse punten heeft, $B,C,D$, bepaal nu $FD=2a$ en $FA=a$. Voor de andere spitsen $B$ en $C$ zoeken een plaats, wanneer $u$ maximaal is, en gezien het zo is is dat:
+		\[
+			\D\left[\frac{p}{(1+p^2)^2}\right] = \frac{\D p\cdot (1-3p^2)}{(1+p^2)^3}
+		\]
+		leidt dit tot, als $3pp=1$, of $p=\frac{1}{\sqrt{3}}$, dan wordt de abscis $t=\frac{11}{8}a$ en $u=\frac{9\sqrt{3}}{8}a$. Daardoor zal de koorde $BC$ de as snijden in $E$, en zal $FE=\frac{11}{8}a$ zijn en $EB=EC=\frac{9\sqrt{3}}{8}a$. Trekken we nu ook de koorden $BD$ en $CD$, met $DE=\frac{27}{8}a$ dan $BD^2 = \frac{972}{64}a^2$, en dus $BD=CD = \frac{9\sqrt{3}}{\color{red}4}a$; het is duidelijk, alle koorden $BD, CD$ en $BC$ zijn ondereen gelijk. Daarom is deze driehoekige kromme dus bevat in een gelijkzijdige driehoek.
+
 		\newpage
+		\switchcolumn*
 		
 		\item Accuratius autem in symptomata nostrae curvae triangularis inquiramus, et quoniam pro coordinatis $FT=t$ et $TU=u$ has invenimus formulas:
 		\begin{align*}
@@ -879,46 +891,46 @@
 			\D t &= -\frac{3pp\, \D\D S}{\D p}-\frac{p(1+pp)\, \D^3S}{\D p^2} \quad \text{et}\\
 			p\, \D u &= - \frac{3pp \, \D \D S}{\D p} - \frac{p(1+pp)\, \D^3S}{\D p^2}.
 		\end{align*}
-		ideoque reuera $\D t=p\, \D u$.
+		ideoque revera $\D t=p\, \D u$.
 		
 		\switchenum
 		\newpage
 		
 		\item We onderzoeken meer preciezer de eigenschappen van onze driehoekige kromme, en omdat we voor de coördinaten $FT=t$ en $TU=u$ de formules hebben gevonden:
 		\begin{align*}
-			t & = \frac{\D S}{\D p}-\frac{p\,\D \D S}{\D p^2}(1+pp)\quad\text{en}\\
-			u & = S-\frac{p\,\D S}{\D p}-\frac{\D\D S}{\D p^2}(1+pp)
+			t & = \frac{\D S}{\D p}-\frac{p\,\D^2 S}{\D p^2}(1+p^2)\quad\text{en}\\
+			u & = S-\frac{p\,\D S}{\D p}-\frac{\D^2 S}{\D p^2}(1+p^2)
 		\end{align*}
-		\par Merk nu eerst op dat de rechte $NU$ rakend is aan de kromme in $U$,die aangezien de hellingshoek met de as $TNU=\phi$ is, die cotangens $p$ heeft, dan is het noodzakelijk dat $\frac{\D u}{\D t} = \tang \phi = \frac{1}{p}$, en dus $\D t = p \, \D u$. Dit volgt ook uit de formules 
+		\par merk nu allereerst op dat de rechte $NU$ rakend is aan de kromme in $U$, die aangezien de hellingshoek met de as $TNU=\phi$ is, die cotangens $p$ heeft, dan is het noodzakelijk dat $\frac{\D u}{\D t} = \tan \phi = \frac{1}{p}$, en dus $\D t = p \, \D u$. Dit volgt ook uit de formules 
 
 		\begin{align*}
-			\D t &= -\frac{3pp\, \D\D S}{\D p}-\frac{p(1+pp)\, \D^3S}{\D p^2} \quad \text{en}\\
-			p\, \D u &= - \frac{3pp \, \D \D S}{\D p} - \frac{p(1+pp)\, \D^3S}{\D p^2}.
+			\D t &= -\frac{3p^2\, \D^2 S}{\D p}-\frac{p(1+p^2)\, \D^3S}{\D p^2} \quad \text{en}\\
+			p\, \D u &= - \frac{3p^2 \, \D^2 S}{\D p} - \frac{p(1+p^2)\, \D^3S}{\D p^2}.
 		\end{align*}
-		\par Zodat in het echt $\D t=p\, \D u$.
+		\par Zodat werkelijk $\D t=p\, \D u$.
 		\switchcolumn*
 		
 		\begin{figure}[h]
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
-				\draw (124.73955121402813:0.7631107015839075) arc (124.73955121402813:180.:0.7631107015839075);
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
+				\draw (124.740:0.763) arc (124.740:180:0.763);
 				\draw (0,0) circle (2cm);
-				\draw (-1.1396938257701044,1.643501744295242)-- (1.1396938257701044,-1.643501744295242);
-				\draw (1.0499141426476895,-1.5140344588914103)-- (1.0499141426476895,0.);
-				\draw (-1.1396938257701044,0.)-- (-1.1396938257701044,1.643501744295242);
+				\draw (-1.140,1.643)-- (1.140,-1.643);
+				\draw (1.050,-1.514)-- (1.050,0);
+				\draw (-1.140,0)-- (-1.140,1.644);
 				\draw (-2,0)-- (2,0);
 				
-				\draw (0,0) node [below left] {\small $N$};
-				\draw (-2,0) node [left] {\small $F$};
-				\draw (2,0) node [right] {\small $f$};
-				\draw (-1.1396938257701044,1.643501744295242) node [above] {\small $M$};
-				\draw (1.1396938257701044,-1.643501744295242) node [below right] {\small $m$};
-				\draw (-1.1396938257701044,0.) node [below] {\small $P$};
-				\draw (1.0499141426476895,-1.5140344588914103) node [below left,yshift=3pt] {\small $U$};
-				\draw (1.0499141426476895,0.) node [above] {\small $T$};
-				\draw (-0.4,0.2) node {\small $\phi$};
+				\draw (0,0) node [below left] {$N$};
+				\draw (-2,0) node [left] {$F$};
+				\draw (2,0) node [right] {$f$};
+				\draw (-1.140,1.643) node [above] {$M$};
+				\draw (1.140,-1.643) node [below right] {$m$};
+				\draw (-1.140,0) node [below] {$P$};
+				\draw (1.050,-1.514) node [below left,yshift=3pt] {$U$};
+				\draw (1.0450,0) node [above] {$T$};
+				\draw (-0.4,0.2) node {$\phi$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 6.}
@@ -928,23 +940,23 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[scale=0.8]
-				\draw (124.73955121402813:0.7631107015839075) arc (124.73955121402813:180.:0.7631107015839075);
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
+				\draw (124.740:0.763) arc (124.740:180:0.763);
 				\draw (0,0) circle (2cm);
-				\draw (-1.1396938257701044,1.643501744295242)-- (1.1396938257701044,-1.643501744295242);
-				\draw (1.0499141426476895,-1.5140344588914103)-- (1.0499141426476895,0.);
-				\draw (-1.1396938257701044,0.)-- (-1.1396938257701044,1.643501744295242);
+				\draw (-1.140,1.643)-- (1.140,-1.643);
+				\draw (1.050,-1.514)-- (1.050,0);
+				\draw (-1.140,0)-- (-1.140,1.644);
 				\draw (-2,0)-- (2,0);
 				
-				\draw (0,0) node [below left] {\small $N$};
-				\draw (-2,0) node [left] {\small $F$};
-				\draw (2,0) node [right] {\small $f$};
-				\draw (-1.1396938257701044,1.643501744295242) node [above] {\small $M$};
-				\draw (1.1396938257701044,-1.643501744295242) node [below right] {\small $m$};
-				\draw (-1.1396938257701044,0.) node [below] {\small $P$};
-				\draw (1.0499141426476895,-1.5140344588914103) node [below left,yshift=3pt] {\small $U$};
-				\draw (1.0499141426476895,0.) node [above] {\small $T$};
-				\draw (-0.4,0.2) node {\small $\phi$};
+				\draw (0,0) node [below left] {$N$};
+				\draw (-2,0) node [left] {$F$};
+				\draw (2,0) node [right] {$f$};
+				\draw (-1.140,1.643) node [above] {$M$};
+				\draw (1.140,-1.643) node [below right] {$m$};
+				\draw (-1.140,0) node [below] {$P$};
+				\draw (1.050,-1.514) node [below left,yshift=3pt] {$U$};
+				\draw (1.0450,0) node [above] {$T$};
+				\draw (-0.4,0.2) node {$\phi$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 6.}
@@ -956,7 +968,7 @@
 		\item Quia igitur est $\D t=p \,\D u$, iisdem casibus, quibus sit $\frac{\D t}{\D p}=0$, etiam fiet $\frac{\D u}{\D p}= 0$; unde patet, ubicunque abscissa $t$ fuerit vel maxima vel minima, ibidem quoque fore applicatam maximam vel minimam, quae propietas utique in cuspides convenit. Ex quo colligimus, ubicunque ambae coordinatae $p$ et $q$ simul fiunt vel maximae vel minimae, ibi quoque existere cuspides nostrae curvae; quare cum curva habeat tres cuspides, in tribus quoque locis tam $t$ quam $u$ maximum fieri necesse est.
 		
 		\switchenum
-		\item Omdat het zo is dat $\D t=p\, \D u$, de gevallen waarbij het zo is dat $\frac{\D t}{\D p}=0$, en is het ook zo dat $\frac{\D u}{\D p}= 0$; het is dus duidelijk dat, wanneer de abscis $t$ ofwel maximaal ofwel minimaal is, op dezelfde plaats maximaal ofwel minimaal zal zijn, wat de eigenschappen in de spitsen doet samenvallen. Van wat we verzamelen, zijn beide coördinaten $p$ en $q$ dus gelijktijdig ofwel maximaal ofwel minimaal, daar bestaan dan ook de spitsen van onze krommen; en gezien de kromme 3 spitsen hebben, moeten zowel $t$ als $u$ in 3 plaatsen maximaal zijn.
+		\item Omdat het zo is dat $\D t=p\, \D u$, de gevallen waarbij het zo is dat $\frac{\D t}{\D p}=0$, en het is dan ook zo dat $\frac{\D u}{\D p}= 0$; dan het is dus duidelijk dat, wanneer de abscis $t$ ofwel maximaal ofwel minimaal is, op dezelfde plaats de ordinaat ook maximaal ofwel minimaal zal zijn, wat de eigenschappen in de spitsen doet samenvallen. Van wat we verzamelen, zijn beide coördinaten {\color{red}$t$} en {\color{red}$q$} dus gelijktijdig ofwel maximaal ofwel minimaal, daar bestaan dan ook de spitsen van onze krommen; en gezien de kromme 3 spitsen hebben, moeten zowel $t$ als $u$ in 3 plaatsen maximaal zijn.
 
 
 
@@ -987,21 +999,21 @@
 		\switchenum
 		\item In het bijzonder wees erop gewezen dat het voldoende is, onze driehoekige kromme te herleiden, aangezien ze gelijk is aan de kromtestraal $MU$ van onze orbiforme kromme, en eruit geboren wordt. We zien dat
 		\begin{align*}
-			NU &= r = -\frac{\D \D S}{\D p^2}(1+pp)^\frac{3}{2}-\frac{p\,\D S}{\D p}\sqrt{1+pp}\\
-			& +S\sqrt{1+pp}; \quad \text{bij}\\
-			MN & = y\sqrt{1+pp} = \frac{p\, \D S\sqrt{1+pp}}{\D p}-S\sqrt{1+pp},
+			NU &= r = -\frac{\D^2 S}{\D p^2}(1+p^2)^\frac{3}{2}-\frac{p\,\D S}{\D p}\sqrt{1+p^2}\\
+			& +S\sqrt{1+p^2}; \quad \text{en}\\
+			MN & = y\sqrt{1+p^2} = \frac{p\, \D S\sqrt{1+p^2}}{\D p}-S\sqrt{1+p^2},
 		\end{align*}
-		en de kromtestraal
+		dus is de kromtestraal
 		\[
-			MU = -\frac{\D \D S}{\D p^2}(1+pp)^\frac{3}{2},
+			MU = -\frac{\D^2 S}{\D p^2}(1+p^2)^\frac{3}{2},
 		\]
-		die de lengte van onze driehoekige kromme uitdrukt; het is ook duidelijk van de observaties uit de bovenstaande eigenschap dat $\D t = p\, \D u$, en dus begint de kromme 
+		die bijgevolg de lengte van onze driehoekige kromme uitdrukt; het is ook duidelijk uit de observaties van de voorgaande eigenschap dat $\D t = p\, \D u$, en is een elementair stukje van de kromme
 		\[
-			\sqrt{\D t^2+\D u^2} = \D u\sqrt{1+pp} = -\frac{3p\, \D S}{\D p}\sqrt{1+pp}-\frac{\D^3S}{\D p^2}(1+pp)^\frac{3}{2}
+			\sqrt{\D t^2+\D u^2} = \D u\sqrt{1+p^2} = -\frac{3p\, \D S}{\D p}\sqrt{1+p^2}-\frac{\D^3S}{\D p^2}(1+p^2)^\frac{3}{2}
 		\]
 		waarbij de integraal duidelijk gegeven is door
 		\[
-			-\frac{\D \D S}{\D p^2}(1+pp)^\frac{3}{2}.
+			-\frac{\D^2 S}{\D p^2}(1+p^2)^\frac{3}{2}.
 		\]
 
 		\switchcolumn*
@@ -1009,7 +1021,7 @@
 		\item Quoniam hic tantum curvas triangulares investigare instituimus, parum solliciti, utrum sint rectificabiles nec ne, dummodo fuerint algebraicae: hac conditione omissa simpliciores formulas pro coordinatis $t$ et $u$ exhibere, atque adeo, sine ullo respectu ad curvas orbiformes habito, directe ex ipsa indole harum curvarum elicere poterimus. Cum enim esse debeat $\D t=p \D u$, erit $t=\int p\,\D u = pu-\int u \,\D p$. Iam statuamus $\int u \,\D p = \Pi$, ita ut fit $u=\frac{\D \Pi}{\D p}$, unde sit $t=\frac{p\,\D \Pi}{\D p}-\Pi$; ubi pro $\Pi$ eiusmodi functiones ipsius $p$ accipi debent, quae nullo casu fiant infinitae, quicunque valores literae $t$ tribuantur, cuiusmodi functiones iam supra descripsimus; tum vero etiam hae functiones $\Pi$ nulla signa radicalia, quae ambiguitatem involuant, involvere debent. Imprimis autem necesse est, ut ambae coordinatae $t$ et $u$ tribus casibus fiant maximae vel minimae, id quod eueniet, si, ob $u=\frac{\D \Pi}{\D p}$, haec aequatio: $\frac{\D\D \Pi}{\D p^2} = 0$, tres habeat radices reales, neque vero plures.
 
 		\switchenum
-		\item Omdat we hier enkel driehoekige krommen onderzoeken, maken we ons weinig zorgen, of ze al dan niet herleidbaar zijn, op voorwaarde dat ze algebraïsch zijn: deze voorwaarde laten vallen laat toe meer eenvoudige coördinaten $t$ en $u$ te vinden, en daarvoor, zonder rekening te houden met het liggen in de orbiforme krommen, als direct gevolg van de aard van deze krommen stellen we vast. Aangezien moet gelden dat $\D t = p\, \D u$, zal het zijn dat $t=\int p \, \D u= pu-\int u \, \D p$. Laten we nu $\int u \D p = \Pi$, zodat het is $u = \frac{\D \Pi}{\D p}$, waardoor $t=\frac{p\,\D \Pi}{\D p}-\Pi$; als voor $\Pi$ op deze manier een een functie van $p$ moet worden genomen, dat in geen geval oneindig is \ldots van welke aard functies hierboven reeds werden beschreven; maar zelfs dan heeft de functie $\Pi$ geen worteltekens moeten betrekken, wat gewikkeld is in onzekerheid. Maar bovenal is het noodzakelijk dat, beide coördinaten $t$ en $u$ in drie gevallen maximaal ofwel minimaal zijn, hetgeen tot gevolg heeft dat voor $u=\frac{\D \Pi }{\D p}$, als $\frac{\D \D \Pi}{\D p^2}=0$, drie reële wortels heeft, of echt meer.
+		\item Omdat we hier enkel driehoekige krommen onderzoeken, maken we ons weinig zorgen, of ze al dan niet herleidbaar zijn, op voorwaarde dat ze algebraïsch zijn: deze voorwaarde laten vallen laat toe meer eenvoudige coördinaten $t$ en $u$ te vinden, en daarvoor, zonder rekening te houden met het liggen in de orbiforme krommen, als direct gevolg van de aard van deze krommen stellen we vast. Aangezien moet gelden dat $\D t = p\, \D u$, zal het zijn dat $t=\int p \, \D u= pu-\int u \, \D p$. Laten we nu $\int u \D p = \Pi$, zodat het is $u = \frac{\D \Pi}{\D p}$, waardoor $t=\frac{p\,\D \Pi}{\D p}-\Pi$; als voor $\Pi$ op deze manier een een functie van $p$ moet worden genomen, dat in geen geval oneindig is, meer bepaald laten we waarden toe voor de letter $t$, van welke aard we hierboven reeds functies beschreven; maar zelfs dan heeft de functie $\Pi$ geen worteltekens moeten betrekken, wat gewikkeld is in onzekerheid. Maar bovenal is het noodzakelijk dat, beide coördinaten $t$ en $u$ in drie gevallen maximaal ofwel minimaal zijn, hetgeen tot gevolg heeft dat,  als $\frac{\D^2 \Pi}{\D p^2}=0$, $u=\frac{\D \Pi }{\D p}$ drie reële wortels heeft, en niet meer.
 		\switchcolumn*
 		
 		\item Sumamus exempli gratia $\Pi = \frac{a+bp}{1+fp+gpp}$, quae nullo casu fit infinita, si modo fuerit $ff< 4g$, tum autem erit
@@ -1031,21 +1043,21 @@
 		cuius tres radices nobis ternas cuspides monstrabunt.
 		
 		\switchenum
-		\item Laten we bijvoorbeeld $\Pi = \frac{a+bp}{1+fp+gpp}$, dat in geen geval oneindig is, als het maar $ff< 4g$, dan zal
+		\item Laten we bijvoorbeeld $\Pi = \frac{a+bp}{1+fp+gp^2}$, dat in geen geval oneindig is, als het maar $ff< 4g$, dan zal
 		\[
-			\frac{\D \Pi}{\D p} = \frac{b-af-2agp-bgpp}{(1+fp+gpp)^2} = u
+			\frac{\D \Pi}{\D p} = \frac{b-af-2agp-bgp^2}{(1+fp+gp^2)^2} = u
 		\]
 		wat leidt tot
 		\[
-			t = \frac{-a-2afp-3agp^2-2bgp^3}{(1+fp+gpp)^2}.
+			t = \frac{-a-2afp-3agp^2-2bgp^3}{(1+fp+gp^2)^2}.
 		\]
 		\par Om de drie spitsen te definiëren, 	overwegen we de vergelijking $\frac{\D u}{\D p}=0$, wat we eenvoudiger kunnen maken door 
 		\[
-			u  =  \frac{A+Bp+Cpp}{(1+fp+gpp)^2},
+			u  =  \frac{A+Bp+Cp^2}{(1+fp+gp^2)^2},
 		\]
 		\par waarbij $A=b-af; B= -2ag; C=-bg$; dan vindt men hier de volgende vergelijking:
 		\[
-			B-2Af+(2C-Bf-4Ag)p-3Bgpp-2Cgp^3 = 0
+			B-2Af+(2C-Bf-4Ag)p-3Bgp^2-2Cgp^3 = 0
 		\]
 		\par waarvan de drie wortels onze drie spitsen onthullen.
 		
@@ -1081,17 +1093,17 @@
 		haecque aequationes omnes continent determinationes, quibus nostro proposito satisfit.
 		
 		\switchenum
-		\item Laten we veronderstellen dat de wortels van deze vergelijking al gegeven zijn: $p=\alpha$, II\degree. $p=\beta$ ac III\degree. $p=\gamma$, of gelijk aan de formule gevonden door het product
+		\item Laten we veronderstellen dat de wortels van deze vergelijking al gegeven zijn: $p=\alpha$, II\degree. $p=\beta$ en III\degree. $p=\gamma$, of gelijk aan de formule gevonden door het product
 		\[
 			2Cg(a-p)(\beta-p)(\gamma-p)
 		\]
 		
 		\newpage
 		
-		\par die als ontwikkeling biedt
+		\par die als uitwerking biedt
 		
 		\[
-			2Cg\alpha \beta \gamma - 2Cg(\alpha {\color{red}\beta\;}+\alpha \gamma+\beta \gamma)p+2Cg(\alpha+\beta+\gamma)pp - 2Cgp^3
+			2Cg\alpha \beta \gamma - 2Cg(\alpha {\color{red}\beta\;}+\alpha \gamma+\beta \gamma)p+2Cg(\alpha+\beta+\gamma)p^2 - 2Cgp^3
 		\]
 		\par welke de vorm, gevonden uit de vergelijking, de volgende drie bepalingen produceert:
 		\begin{align*}
@@ -1105,11 +1117,11 @@
 		\]
 		\par welke waarden in de tweede vervangen worden geeft:
 		\[
-			2C+\frac{(2ff+4g)}{3f}C(\alpha+ \beta + \gamma)+\frac{4g}{f}Cg\alpha \beta \gamma  = -2Cg(\alpha \beta + \alpha \gamma+\beta \gamma)
+			2C+\frac{(2f^2+4g)}{3f}C(\alpha+ \beta + \gamma)+\frac{4g}{f}Cg\alpha \beta \gamma  = -2Cg(\alpha \beta + \alpha \gamma+\beta \gamma)
 		\]
 		\par Deze vergelijking met $\frac{3f}{2C}$ vermenigvuldigen, wijzigt naar:
 		\[
-			3f+(ff+2g)(\alpha+\beta+\gamma)+6gg\alpha  \beta \gamma = -3fg(\alpha \beta + \alpha \gamma + \beta \gamma)
+			3f+(f^2+2g)(\alpha+\beta+\gamma)+6g^2\alpha  \beta \gamma = -3fg(\alpha \beta + \alpha \gamma + \beta \gamma)
 		\]
 		\par de vergelijkingen hier bevatten alle bepalingen, om aan ons doel te voldoen.		
 		
@@ -1128,7 +1140,7 @@
 			&\gamma = 0 \text{ et } \beta = -\alpha, \quad \text{waardoor} \quad \alpha\beta\gamma = 0;\\
 			&\quad \alpha\beta+\alpha \gamma+\beta \gamma = -\alpha^2 \quad \text{en} \quad \alpha+\beta+ \gamma = 0,
 		\end{align*}
-		zo wordt de laatste vergelijking  $3f = 3\alpha \alpha f g$,  of $f=\alpha \alpha fg$; hieruit volgt ofwel $f=0$, ofwel $g=\frac{1}{\alpha \alpha}$. Beschouw het eerste geval, $f=0$, en dus $A = -\frac{0}{0}$, waarbij de letter $A$ niet kan worden bepaald, ofwel wordt eerder $A=0$, gezien ook $B=0$, vandaar ook $b=0$, of zelfs $b$ niet bepaald;  maar dan zal $a=0$. Aangezien we de finale vergelijking met $f$ vermenigvuldigd hebben, wordt de waarde $f=0$ als \textbf{glad} beschouwd. Laten we de tweede waarde bekijken $g=\frac{1}{\alpha \alpha}$, en gezien het moet zijn dat $ff<4g$, moet worden gevolgd $f< \frac{2}{\alpha}$; maar hieruit zal $A=0$ en $B=0$, daardoor is $b-af=0$, en $-2a g = 0$, en is $a=0$.
+		zo wordt de laatste vergelijking  $3f = 3\alpha^2 f g$,  of $f=\alpha^2 fg$; hieruit volgt ofwel $f=0$, ofwel $g=\frac{1}{\alpha^2}$. Beschouw het eerste geval, $f=0$, en dus $A = -\frac{0}{0}$, waarbij de letter $A$ niet kan worden bepaald, ofwel wordt $A=0$, verder ook $B=0$, vandaar ook $b=0$, of zelfs $b$ niet bepaald;  maar dan zal $a=0$. Aangezien we de finale vergelijking met $f$ vermenigvuldigd hebben, wordt de waarde $f=0$ als \textbf{verraderlijk}\footnote{of ludricus (belachelijk)?} beschouwd. Laten we de tweede waarde bekijken $g=\frac{1}{\alpha^2}$, en gezien het moet zijn dat $f^2<4g$, moet worden gevolgd $f< \frac{2}{\alpha}$; maar hieruit zal $A=0$ en $B=0$, daardoor is $b-af=0$, en $-2a g = 0$, en is $a=0$.
 
 		\switchcolumn*
 		
@@ -1145,7 +1157,7 @@
 		\par pro quarum prima habebimus $t=0$ et $u=\frac{b}{\alpha \alpha}$;
 		\par pro secunda:
 		\[
-			t = \frac{2b\sqrt{3}}{8\alpha} \quad \text{et} \quad u = -\frac{b}{8\alpha \alpha};
+			t = \frac{3b\sqrt{3}}{8\alpha} \quad \text{et} \quad u = -\frac{b}{8\alpha \alpha};
 		\]
 		pro tertia vero:
 		\[
@@ -1158,37 +1170,37 @@
 		\end{align*}
 		sicque ternae cuspides erunt in punctis $B, C, D$, ac ductis chordis erit
 		\[
-			BC = BD = \frac{3b\sqrt{3}(1+ \alpha \alpha)}{8\alpha \alpha} \quad \text{et} \quad CD = \frac{3b\sqrt{3}}{4\alpha},
+			BC = BD = \frac{3b\sqrt{3(1+ \alpha \alpha)}}{8\alpha \alpha} \quad \text{et} \quad CD = \frac{3b\sqrt{3}}{4\alpha},
 		\]
 		\par ita ut haec figura triangularis triangulum isosceles exhibeat.
 		
 		\switchenum
-		\item Laat het genoeg zijn deze in het algemene geval bekend te maken, en laten we eerder een meer bepaalde vorm beschouwen, neem
+		\item Het volstaat om dit als het algemene geval te benoemen, laten we nu eerder een meer bepaalde vorm beschouwen, neem
 		\begin{align*}
-			\Pi &= \frac{bp}{\alpha \alpha + pp},\quad \text{waardoor} \quad \frac{\D \Pi}{\D p} =u = \frac{b(\alpha\alpha- pp)}{(\alpha\alpha+pp)^2}\quad \text{en}\\
-			&t = \frac{2bp^3}{(\alpha \alpha+pp)^2}.
+			\Pi &= \frac{bp}{\alpha^2 + p^2},\quad \text{waardoor} \quad \frac{\D \Pi}{\D p} =u = \frac{b(\alpha^2- p^2)}{(\alpha^2+p^2)^2}\quad \text{en}\\
+			&t = \frac{2bp^3}{(\alpha^2+p^2)^2}.
 		\end{align*}
-		\par Maar als je voor de spits maakt $\frac{\D u}{\D p}=0$ hieruit wordt de vergelijking geboren: $p^3-3\alpha \alpha p = 0$, waarvan de wortels zijn
+		\par Maar als je voor de spits maakt $\frac{\D u}{\D p}=0$ hieruit wordt de vergelijking geboren: $p^3-3\alpha^2 p = 0$, waarvan de wortels zijn
 		\[
 			\text{I}\degree.\; p=0;\quad \text{II}\degree.\; p=+\alpha\sqrt{3};\quad  \text{III}\degree.\; p=-\alpha \sqrt{3}
 		\]
 		\par voor de eerste hebben we $t=0$ en $u=\frac{b}{\alpha \alpha}$;
 		\par voor de tweede:
 		\[
-			t = \frac{2b\sqrt{3}}{8\alpha} \quad \text{en} \quad u = -\frac{b}{8\alpha \alpha};
+			t = \frac{3b\sqrt{3}}{8\alpha} \quad \text{en} \quad u = -\frac{b}{8\alpha^2};
 		\]
 		\par voor de derde waarde:
 		\[
-			t = \frac{-3b\sqrt{3}}{8\alpha} \quad \text{en} \quad u = -\frac{b}{8\alpha \alpha},
+			t = \frac{-3b\sqrt{3}}{8\alpha} \quad \text{en} \quad u = -\frac{b}{8\alpha^2},
 		\]
 		\par waarbij de kromme de vorm geschetst in figuur 8 aanneemt, waar
 		\begin{align*}
-			FB &= \frac{b}{\alpha\alpha}, FG = FH = \frac{3b\sqrt{3}}{8\alpha} \qquad\text{en}\\
-			&GC=HD=\frac{-b}{8\alpha \alpha}
+			FB &= \frac{b}{\alpha^2}, FG = FH = \frac{3b\sqrt{3}}{8\alpha} \qquad\text{en}\\
+			&GC=HD=\frac{-b}{8\alpha^2}
 		\end{align*}
 		\par zodat de drie spitsen ontstaan in $B, C, D$, en de verbonden koorden zijn
 		\[
-			BC = BD = \frac{3b\sqrt{3}(1+ \alpha \alpha)}{8\alpha \alpha} \quad \text{en} \quad CD = \frac{3b\sqrt{3}}{4\alpha},
+			BC = BD = \frac{3b\sqrt{3(3+ \alpha^2)}}{8\alpha^2} \quad \text{en} \quad CD = \frac{3b\sqrt{3}}{4\alpha},
 		\]
 		\par en uit deze driehoekige figuur ontstaat een gelijkbenige driehoek.
 	
@@ -1198,8 +1210,19 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[scale=1.5, font=\scriptsize]
+				\draw (0,0)-- (2,0) -- (1,1.732) -- cycle;
+				\draw [shift={(4.236,2.446)}]  plot[domain=3.359:3.972,variable=\t]({3.314*cos(\t r)},{3.314*sin(\t r)});
+				\draw [shift={(-2.627,2.671)}]  plot[domain=5.489:6.030,variable=\t]({3.747*cos(\t r)},{3.747*sin(\t r)});
+				\draw [shift={(1,-3)}]  plot[domain=1.249:1.892,variable=\t]({3.163*cos(\t r)},{3.162*sin(\t r)});
+				\draw (0,0)-- (0,0.331) -- (2,0.331) -- (2,0);
+				\draw (1,1.732)-- (1,0.331);
+				\draw (0,0) node [below] {$D$};
+				\draw (2,0) node [below] {$C$};
+				\draw (1,1.732) node [above] {$B$};
+				\draw (0,0.331) node [above] {$H$};
+				\draw (2,0.331) node [above] {$G$};
+				\draw (1,0.331) node [below, yshift=2pt] {$F$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 8.}
@@ -1209,8 +1232,19 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[scale=1.5, font=\scriptsize]
+				\draw (0,0)-- (2,0) -- (1,1.732) -- cycle;
+				\draw [shift={(4.236,2.446)}]  plot[domain=3.359:3.972,variable=\t]({3.314*cos(\t r)},{3.314*sin(\t r)});
+				\draw [shift={(-2.627,2.671)}]  plot[domain=5.489:6.030,variable=\t]({3.747*cos(\t r)},{3.747*sin(\t r)});
+				\draw [shift={(1,-3)}]  plot[domain=1.249:1.892,variable=\t]({3.163*cos(\t r)},{3.162*sin(\t r)});
+				\draw (0,0)-- (0,0.331) -- (2,0.331) -- (2,0);
+				\draw (1,1.732)-- (1,0.331);
+				\draw (0,0) node [below] {$D$};
+				\draw (2,0) node [below] {$C$};
+				\draw (1,1.732) node [above] {$B$};
+				\draw (0,0.331) node [above] {$H$};
+				\draw (2,0.331) node [above] {$G$};
+				\draw (1,0.331) node [below, yshift=2pt] {$F$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 8.}
@@ -1239,6 +1273,31 @@
 			p = -\frac{\alpha}{\sqrt{3}}, \quad \text{erit} \quad t = -\frac{9a}{8\alpha \alpha} \quad \text{et} \quad u=+\frac{3a \sqrt{3}}{8\alpha^3}.
 		\]
 		\par Sumto igitur $FG = \frac{9\alpha}{8\alpha \alpha}$ binae reliquae cuspides erunt in $C$ et $D$, ita ut sit $GC = GD = \frac{3a \sqrt{3}}{8\alpha^3}$, ideoque earum distantia
+		
+		\switchenum
+		\item Laten we op een gelijkaardige manier het geval $\Pi = \frac{a}{\alpha^2 + p^2}$ evalueren, waarbij
+		\[
+			\frac{\D \Pi}{\D p} = u = -\frac{2a p}{(\alpha^2 + p^2)^2}, \quad \text{waardoor}\quad t = -\frac{a(\alpha^2+ 3p^2)}{(\alpha^2 +p^2)^2}.
+		\]
+		\par Nu voor de spitsen wordt
+		\[
+			\frac{\D u}{ \D p} = -\frac{2a(\alpha^2- 3p^2)}{(\alpha^2+ p^2)^3} = 0,
+		\]
+		\par waarbij de vergelijking alleen twee wortels heeft
+		\[
+			p = +\frac{\alpha}{\sqrt{3}} \quad \text{en} \quad p = -\frac{\alpha}{\sqrt{3}};
+		\]
+		\par en een andere derde wortel is $p=\infty$. Daarom geeft dit hier een eerste spits, dat is waar $p=\infty$, is $t=0$ en $u=0$, zodat het punt $B$ samenvalt met het punt $F$. De tweede spits wordt bekomen
+		\[
+			p = -\frac{\alpha}{\sqrt{3}}, \quad \text{en dan} \quad t = -\frac{9a}{8\alpha^2} \quad \text{en} \quad u=-\frac{3a \sqrt{3}}{8\alpha^3}.
+		\]
+		\par Voor de derde spits is
+		\[
+			p = -\frac{\alpha}{\sqrt{3}}, \quad \text{en dan} \quad t = -\frac{9a}{8\alpha^2} \quad \text{en} \quad u=+\frac{3a \sqrt{3}}{8\alpha^3}.
+		\]
+		\par Met $FG = \frac{9a}{8\alpha^2}$ zijn de twee resterende punten $C$ en $D$, zodat het kan dat $GC=GD=\frac{3a\sqrt{3}}{8\alpha^3}$, waardoor de afstand
+		
+		\switchcolumn*
 		\begin{align*}
 			CD& = \frac{3a \sqrt{3}}{4\alpha^3}, \quad \text{unde colligitur}\\
 			BC &= BD = \frac{3a \sqrt{9\alpha \alpha+3}}{8\alpha^3}
@@ -1248,36 +1307,15 @@
 			CD : BC = 2:\sqrt{3\alpha\alpha + 1}
 		\]
 		\par ex quo patet, casu $\alpha = 1$ triangulum fore aequilaterum.
+		\switchcolumn
 		
-		\switchenum
-		\item Laten we op een gelijkaardige manier het geval $\Pi = \frac{a}{\alpha\alpha + pp}$ evalueren, waarbij
-		\[
-			\frac{\D \Pi}{\D p} = u = -\frac{2a p}{(\alpha \alpha + pp)^2}, \quad \text{waardoor}\quad t = -\frac{a(\alpha \alpha+ 3pp)}{(\alpha \alpha +pp)^2}.
-		\]
-		\par Nu voor de spitsen wordt
-		\[
-			\frac{\D u}{ \D p} = -\frac{2a(\alpha\alpha- 3pp)}{(\alpha\alpha+ pp)^3} = 0,
-		\]
-		\par waarbij de vergelijking alleen twee wortels heeft
-		\[
-			p = +\frac{\alpha}{\sqrt{3}} \quad \text{en} \quad p = -\frac{\alpha}{\sqrt{3}};
-		\]
-		\par en een andere derde wortel is $p=\infty$. Daarom geeft dit hier een eerste spits, dat is waar $p=\infty$, is $t=0$ en $u=0$, zodat het punt $B$ samenvalt met het punt $F$. De tweede spits wordt bekomen
-		\[
-			p = -\frac{\alpha}{\sqrt{3}}, \quad \text{en dan} \quad t = -\frac{9a}{8\alpha \alpha} \quad \text{en} \quad u=-\frac{3a \sqrt{3}}{8\alpha^3}.
-		\]
-		\par Voor de derde spits is
-		\[
-			p = -\frac{\alpha}{\sqrt{3}}, \quad \text{en dan} \quad t = -\frac{9a}{8\alpha \alpha} \quad \text{en} \quad u=+\frac{3a \sqrt{3}}{8\alpha^3}.
-		\]
-		\par Met $FG = \frac{9a}{8\alpha \alpha}$ zijn de twee resterende punten $C$ en $D$, zodat het kan dat $GC=GD=\frac{3a\sqrt{3}}{8\alpha^3}$, waardoor de afstand
 		\begin{align*}
 			CD& = \frac{3a \sqrt{3}}{4\alpha^3}, \quad \text{vandaar dat}\\
-			BC &= BD = \frac{3a \sqrt{9\alpha \alpha+3}}{8\alpha^3}
+			BC &= BD = \frac{3a \sqrt{9\alpha^2+3}}{8\alpha^3}
 		\end{align*}
 		\par hieruit is het duidelijk dat
 		\[
-			CD : BC = 2:\sqrt{3\alpha\alpha + 1}
+			CD : BC = 2:\sqrt{3\alpha^2 + 1}
 		\]
 		\par uit het geval, $\alpha =1$ zou het een gelijkzijdige driehoek zijn.
 
@@ -1287,8 +1325,16 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
+				\draw (0,0)-- (3,0) -- (0,2) -- (0,-2) -- (3,0);
+				\draw [shift={(-4.935,0)}]  plot[domain=-0.385:0.385,variable=\t]({5.325*cos(\t r)},{5.325*sin(\t r)});
+				\draw [shift={(5,6.249)}]  plot[domain=3.846:4.403,variable=\t]({6.561*cos(\t r)},{6.561*sin(\t r)});
+				\draw [shift={(4.968,-6.202)}]  plot[domain=1.878:2.440,variable=\t]({6.507*cos(\t r)},{6.507*sin(\t r)});
+				\draw (0,0) node [left] {$G$};
+				\draw (3,0) node [above] {$B$};
+				\draw (3,0) node [below right] {$F$};
+				\draw (0,2) node [above] {$D$};
+				\draw (0,-2) node [below right] {$C$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 9.}
@@ -1298,8 +1344,16 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[scale=0.8, font=\scriptsize]
+				\draw (0,0)-- (3,0) -- (0,2) -- (0,-2) -- (3,0);
+				\draw [shift={(-4.935,0)}]  plot[domain=-0.385:0.385,variable=\t]({5.325*cos(\t r)},{5.325*sin(\t r)});
+				\draw [shift={(5,6.249)}]  plot[domain=3.846:4.403,variable=\t]({6.561*cos(\t r)},{6.561*sin(\t r)});
+				\draw [shift={(4.968,-6.202)}]  plot[domain=1.878:2.440,variable=\t]({6.507*cos(\t r)},{6.507*sin(\t r)});
+				\draw (0,0) node [left] {$G$};
+				\draw (3,0) node [above] {$B$};
+				\draw (3,0) node [below right] {$F$};
+				\draw (0,2) node [above] {$D$};
+				\draw (0,-2) node [below right] {$C$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 9.}
@@ -1326,7 +1380,7 @@
 			&+br^3+3brrs \cosg \phi + \frac{3}{2}brss \cosg 2\phi+ \frac{1}{4}bs^3\cosg 3\phi\\
 			&+\frac{3}{2}brss + \frac{3}{4}bs^3\cosg \phi + \frac{3}{2}ass \cosg 2\phi\\
 			&+3arr + 6ars \cosg \phi\\
-			&+\frac{3}{2}ass - 3b\alpha \alpha \cosg \phi\\
+			&+\frac{3}{2}ass - 3b\alpha \alpha s \cosg \phi\\
 			&-3b\alpha \alpha r\\
 			&-a \alpha \alpha.
 		\end{align*}
@@ -1340,13 +1394,51 @@
 			&\frac{3aas}{b}+\frac{3}{4}bs^3-\frac{6aas}{b}-3b\alpha \alpha s = 0, \quad \text{unde fit}\\
 			&ss = \frac{4(bb\alpha \alpha + aa)}{bb}, \quad \text{ideoque} \quad s = \frac{2\sqrt{bb\alpha \alpha + aa}}{b}.
 		\end{align*}
+				
+		\switchenum
+		\item Daarom kunnen we de voorgaande zaken combineren, en dus geldt $\Pi = \frac{a+bp}{\alpha^2+p^2}$, evenals kunnen we dit toepassen op de abscissen $t$ en $u$ gelijk aan de de som van de voorgaande formules, zodat het is
+		\[
+			t = \frac{2bp^3 - a(\alpha^2 + 3p^2)}{(\alpha^2 + p^2)^2} \quad \text{en} \quad u = \frac{b(\alpha ^2- p^2)-2ap}{(\alpha^2 + p^2)^2};
+		\]
+		\par en als voor de spitsen wordt gezet $\frac{\D u}{\D p}=0$, hebben we deze vergelijking
+		\begin{align*}
+			&2bp^3-6b\alpha^2 p -2a \alpha^2 +6a p^2 = 0, \quad \text{of}\\
+			&\qquad bp^3+3ap^2 -3b\alpha^2 p - a\alpha^2 = 0,
+		\end{align*}
+		\par het is dus nodig te zoeken naar de drie wortels, maar met de regel van \textit{Cardano} is dit eenvoudig volbracht, om gebruik te maken van een driedelige hoek, die we eindig veronderstellen is $p=r+s\cos \phi$, en dan
+		\begin{align*}
+			p^2 & = r^2 + \frac{1}{2}s^2 +2rs \cos\phi + \frac{1}{2}s^2 \cos 2\phi \quad \text{en}\\
+			p^3 & = r^3+{\color{red}\frac{3}{2}}rs^2 + (3r^2s+\frac{3}{4}s^3)\cos \phi + \frac{3}{2} rs^2 \cos 2\phi+\frac{1}{4}s^3\cos 3\phi
+		\end{align*}
+		\par waarbij deze waarden substitueren onze vergelijking in de volgende uitdrukking omzet:
+		\begin{align*}
+			&+br^3+3br^2s \cos \phi + \frac{3}{2}brs^2 \cos 2\phi+ \frac{1}{4}bs^3\cos 3\phi\\
+			&+\frac{3}{2}brs^2 + \frac{3}{4}bs^3\cos \phi + \frac{3}{2}as^2 \cos 2\phi\\
+			&+3ar^2 + 6ars \cos \phi\\
+			&+\frac{3}{2}as^2 - 3b\alpha^2 s \cos \phi\\
+			&-3b\alpha^2 r\\
+			&-a \alpha^2.
+		\end{align*}
+		\par Definieer nu de letters $r$ en $s$ op een zodanige manier, dat de leden van de tussenproducten, betrokken aan $\cos \phi$ en $\cos 2\phi$, afzonderlijk verdwijnen, hetgeen tot deze twee vergelijkingen leidt:
+		\begin{align*}
+			\text{I}\degree.\; &3br^2s + \frac{3}{4}bs^3+6ars-3b\alpha^2 s = 0;\\
+			\text{II}\degree.\;& \frac{3}{2}brs^2+\frac{3}{2}as^2 = 0;
+		\end{align*}
+		\par uit de laatste wordt $r=-\frac{a}{b}$, waarvan de waarde in de voormalige vervangen geeft:
+		\begin{align*}
+			&\frac{3a^2s}{b}+\frac{3}{4}bs^3-\frac{6a^2s}{b}-3b\alpha^2 s = 0, \quad \text{waardoor}\\
+			&s^2 = \frac{4(b^2\alpha^2 + a^2)}{b^2}, \quad \text{daarom} \quad s = \frac{2\sqrt{b^2\alpha^2 + a^2}}{b}.
+		\end{align*}
+		
+		\newpage
+		\switchcolumn*
 		\par Hi iam valores in nostra aequatione substituantur, fietque
 		\[
 			\frac{2a^3}{bb}+2a\alpha \alpha + \frac{1}{4}bs^3\cosg 3\phi = 0,
 		\]
 		\par unde fit
 		\[
-			\cosg 3\phi = - \frac{3a(aa + bb\alpha \alpha)}{b^3s^3} =-\frac{a}{\sqrt{aa+bb\alpha \alpha}}.
+			\cosg 3\phi = - \frac{8a(aa + bb\alpha \alpha)}{b^3s^3} =-\frac{a}{\sqrt{aa+bb\alpha \alpha}}.
 		\]
 		\par Quaeratur igitur angulus $\omega$, cuius Cosinus sit
 		\[
@@ -1359,7 +1451,7 @@
 		\end{align*}
 		\par unde omisso secundo valore, quippe qui a primo non discrepat, tres valores pro angulo $\phi$ erunt
 		\[
-			\text{I}\degree.\; \phi = \frac{1}{3}\omega, \quad \text{II}\degree.\; 120\degree - \frac{1}{3}\omega \quad \text{et}\quad  \phi = 120\degree +\frac{1}{3}\omega,
+			\text{I}\degree.\; \phi = \frac{1}{3}\omega, \quad \text{II}\degree.\; \phi = 120\degree - \frac{1}{3}\omega \quad \text{et}\quad  \phi = 120\degree +\frac{1}{3}\omega,
 		\]
 		\par quibus inventis terni valores litterae $p$ erunt
 		\begin{align*}
@@ -1368,67 +1460,35 @@
 			\text{III\textsuperscript{us}.}\; p & = -\frac{a}{b}+\frac{2\sqrt{bb\alpha \alpha+aa}}{b} \cosg (120\degree + \frac{1}{3}\omega).
 		\end{align*}
 		
-		\switchenum
-		\item Daarom kunnen we de voorgaande zaken combineren, en dus geldt $\Pi = \frac{a+bp}{\alpha\alpha+pp}$, evenals kunnen we dit toepassen op de abscissen $t$ en $u$ gelijk aan de de som van de voorgaande formules, zodat het is
-		\[
-			t = \frac{2bp^3 - a(\alpha \alpha + 3pp)}{(\alpha \alpha + pp)^2} \quad \text{en} \quad u = \frac{b(\alpha \alpha - pp)-2ap}{(\alpha \alpha + pp)^2};
-		\]
-		\par en als voor de spitsen wordt gezet $\frac{\D u}{\D p}=0$, hebben we deze vergelijking
-		\begin{align*}
-			&2bp^3-6b\alpha \alpha p -2a \alpha \alpha +6a pp = 0, \quad \text{of} \quad bp^3+3app\\
-			&\qquad-3b\alpha \alpha p - a\alpha \alpha = 0,
-		\end{align*}
-		\par het is dus nodig te zoeken naar de drie wortels, maar met de regel van \textit{Cardano} is dit eenvoudig volbracht, om gebruik te maken van een driedelige hoek, die we eindig veronderstellen is $p=r+s+\cosg \phi$, en dan
-		\begin{align*}
-			pp & = rr + \frac{1}{2}ss +2rs \cosg\phi + \frac{1}{2}ss \cosg 2\phi \quad \text{en}\\
-			p^3 & = r^3+\frac{2}{3}rss + (3rrs+\frac{3}{4}s^3)\cosg \phi + \frac{3}{2} rss \cosg 2\phi+\frac{1}{4}s^3\cosg 3\phi
-		\end{align*}
-		\par waarbij deze waarden substitueren onze vergelijking in de volgende uitdrukking omzet:
-		\begin{align*}
-			&+br^3+3brrs \cosg \phi + \frac{3}{2}brss \cosg 2\phi+ \frac{1}{4}bs^3\cosg 3\phi\\
-			&+\frac{3}{2}brss + \frac{3}{4}bs^3\cosg \phi + \frac{3}{2}ass \cosg 2\phi\\
-			&+3arr + 6ars \cosg \phi\\
-			&+\frac{3}{2}ass - 3b\alpha \alpha \cosg \phi\\
-			&-3b\alpha \alpha r\\
-			&-a \alpha \alpha.
-		\end{align*}
-		\par Definieer nu de letters $r$ en $s$ op een zodanige manier, dat de leden van de tussenproducten, betrokken aan $\cosg \phi$ en $\cosg 2\phi$, afzonderlijk verdwijnen, hetgeen tot deze twee vergelijkingen leidt:
-		\begin{align*}
-			\text{I}\degree.\; &3brrs + \frac{3}{4}bs^3+6ars-3b\alpha \alpha s = 0;\\
-			\text{II}\degree.\;& \frac{3}{2}brss+\frac{3}{2}ass = 0;
-		\end{align*}
-		\par uit de laatste wordt $r=-\frac{a}{b}$, waarvan de waarde in de voormalige vervangen geeft:
-		\begin{align*}
-			&\frac{3aas}{b}+\frac{3}{4}bs^3-\frac{6aas}{b}-3b\alpha \alpha s = 0, \quad \text{waardoor}\\
-			&ss = \frac{4(bb\alpha \alpha + aa)}{bb}, \quad \text{daarom} \quad s = \frac{2\sqrt{bb\alpha \alpha + aa}}{b}.
-		\end{align*}
+		\switchcolumn
+		
 		\par Deze waarden in onze vergelijking vervangen, leidt tot
 		\[
-			\frac{2a^3}{bb}+2a\alpha \alpha + \frac{1}{4}bs^3\cosg 3\phi = 0,
+			\frac{2a^3}{b^2}+2a\alpha^2 + \frac{1}{4}bs^3\cos 3\phi = 0,
 		\]
 		waardoor
 		\[
-			\cosg 3\phi = - \frac{3a(aa + bb\alpha \alpha)}{b^3s^3} =-\frac{a}{\sqrt{aa+bb\alpha \alpha}}.
+			\cos 3\phi = - \frac{8a(a^2 + b^2\alpha^2)}{b^3s^3} =-\frac{a}{\sqrt{a^2+b^2\alpha^2}}.
 		\]
 		\par Er wordt dus gevraagd een hoek $\omega$, zodat de Cosinus gegeven is door: 
 		\[
-			= -\frac{a}{\sqrt{aa+bb\alpha \alpha}},
+			= -\frac{a}{\sqrt{a^2+b^2\alpha^2}},
 		\]
 		hij is het ook eens met de Cosinus van een hoek $-\omega$; $2\pi - \omega$; en ook $2\pi+\omega$, we hebben de volgende waarden:
 		\begin{align*}
 			&\text{I}\degree.\;3\phi = \omega, \quad \text{II}\degree.\; 3\phi = -\omega, \quad \text{III}\degree.\; 3\phi = 2\pi - \omega, \\
-			&\qquad \text{IV}\degree.\; \quad \text{et} \quad 3\phi = 2\pi+\omega
+			&\qquad \text{IV}\degree.\; \quad \text{en} \quad 3\phi = 2\pi+\omega
 		\end{align*}
 		
 		\par waarvan we de waarde van de tweede hebben weggelaten, aangezien hij niet sterk verschilt met de eerste, de drie waarden voor de hoek $\phi$ zijn dus
 		\[
-			\text{I}\degree.\; \phi = \frac{1}{3}\omega, \quad \text{II}\degree.\; 120\degree - \frac{1}{3}\omega \quad \text{en}\quad  \phi = 120\degree +\frac{1}{3}\omega,
+			\text{I}\degree.\; \phi = \frac{1}{3}\omega, \quad \text{II}\degree.\; \phi = 120\degree - \frac{1}{3}\omega \quad \text{en}\quad  \phi = 120\degree +\frac{1}{3}\omega,
 		\]
 		\par de drie gevonden waarden voor de letter $p$ zijn
 		\begin{align*}
-			\text{I\textsuperscript{us}.}\;  p &= -\frac{a}{b}+\frac{2\sqrt{bb\alpha \alpha + aa}}{b} \cosg \frac{1}{3} \omega,\\
-			\text{II\textsuperscript{us}.}\; p &= -\frac{a}{b}+\frac{2\sqrt{bb\alpha \alpha + aa}}{b} \cosg (120\degree - \frac{1}{3}\omega),\\
-			\text{III\textsuperscript{us}.}\; p & = -\frac{a}{b}+\frac{2\sqrt{bb\alpha \alpha+aa}}{b} \cosg (120\degree + \frac{1}{3}\omega).
+			\text{I\textsuperscript{e}.}\;  p &= -\frac{a}{b}+\frac{2\sqrt{b^2\alpha^2 + a^2}}{b} \cos \frac{1}{3} \omega,\\
+			\text{II\textsuperscript{e}.}\; p &= -\frac{a}{b}+\frac{2\sqrt{b^2\alpha^2 + a^2}}{b} \cos (120\degree - \frac{1}{3}\omega),\\
+			\text{III\textsuperscript{e}.}\; p & = -\frac{a}{b}+\frac{2\sqrt{b^2\alpha^2+a^2}}{b} \cos (120\degree + \frac{1}{3}\omega).
 		\end{align*}
 		
 		\switchcolumn*
@@ -1445,9 +1505,9 @@
 		\]
 		\par hinc ternae nostrae aequationes erunt
 		\begin{align*}
-			\text{I}\degree. \;& -ag -bg+aff = -bgg\theta\\
-			\text{II}\degree. \;& 3b +3af = bg\eta\\
-			\text{III}\degree. \;& 3a=-b\zeta;		
+			\text{I}\degree. \;& -ag -bf + aff = -bgg\theta\\
+			\text{II}\degree. \;& 3b + 3af = bg\eta\\
+			\text{III}\degree. \;& 3a = -b\zeta;		
 		\end{align*}
 		\par ex quibus statim ternos valores pro fractione $\frac{a}{b}$ nanciscimur, qui sunt:
 		\[
@@ -1455,7 +1515,7 @@
 		\]
 		
 		\switchenum
-		\item Na het ontwikkelen van deze gevallen keren we terug naar onze algemene vraag, zodat ik zoek naar driehoekige krommen, waarbij voor de spitsen de letter $p$ drie waarden verkrijgt, namelijk $p=\alpha, p=\beta$ en $p=\gamma$. $\alpha\beta + \alpha \gamma + \beta \gamma = \eta$ et $\alpha \beta \gamma = \theta$. Laat ons nu eerst kortheidshalve verwelkomen  $\alpha+\beta+\gamma = \zeta$; $\alpha\beta + \alpha \gamma + \beta \gamma = \eta$ en $\alpha \beta \gamma = \theta$, en de drie vergelijkingen voldoen aan:
+		\item Na het ontwikkelen van deze gevallen keren we terug naar onze algemene vraag, zodat ik zoek naar driehoekige krommen, waarbij voor de spitsen de letter $p$ drie waarden verkrijgt, namelijk $p=\alpha, p=\beta$ en $p=\gamma$. Laat ons nu eerst kortheidshalve verwelkomen  $\alpha+\beta+\gamma = \zeta$; $\alpha\beta + \alpha \gamma + \beta \gamma = \eta$ en $\alpha \beta \gamma = \theta$, en de drie vergelijkingen voldoen aan:
 		\begin{align*}
 			\text{I}\degree. \;&B -2Af = 2Cg\theta\\
 			\text{II}\degree. \;& 2C-Bf-4Ag = -2Cg\eta\\
@@ -1467,13 +1527,13 @@
 		\]
 		\par hierdoor zijn onze drie vergelijkingen
 		\begin{align*}
-			\text{I}\degree. \;& -ag -bg+aff = -bgg\theta\\
-			\text{II}\degree. \;& -3b +3af = bg\eta\\
-			\text{III}\degree. \;& 3a=-b\zeta;		
+			\text{I}\degree. \;& -ag -bf + af^2 = -bg^2\theta\\
+			\text{II}\degree. \;& -3b + 3af = bg\eta\\
+			\text{III}\degree. \;& 3a = -b\zeta;		
 		\end{align*}
 		\par hieruit ontmoeten we onmiddellijk drie waarden voor de breuk $\frac{a}{b}$, die zijn:
 		\[
-			\text{I}\degree. \frac{a}{b} = \frac{f-gg\theta}{ff-g},\quad  \text{II}\degree. \frac{a}{b} = \frac{g\eta + 3}{3f} \quad \text{en}\quad \text{III}\degree. \frac{a}{b} = -\frac{\zeta}{3}.
+			\text{I}\degree. \frac{a}{b} = \frac{f-g^2\theta}{f^2-g},\quad  \text{II}\degree. \frac{a}{b} = \frac{g\eta + 3}{3f} \quad \text{en}\quad \text{III}\degree. \frac{a}{b} = -\frac{\zeta}{3}.
 		\]
 		
 		\switchcolumn*
@@ -1493,18 +1553,18 @@
 		\end{align*}
 		
 		\switchenum
-		\item Als deze tweede en derde waarden aan elkaar gelijk zijn, produceert dit $f=-\frac{g\eta -3}{\zeta}$. Is nu ook de eerste waarde gelijk aan de derde, er geldt
+		\item Als deze tweede en derde waarden aan elkaar gelijk zijn, produceert dit $f=\frac{{\color{red}-}\, g\eta -3}{\zeta}$. Is nu ook de eerste waarde gelijk aan de derde, er geldt
 		\[
-			3f-3gg\theta = -ff \zeta + g \zeta,
+			3f-3g^2\theta = -f^2 \zeta + g \zeta,
 		\]
 		en, als hier de ontdekte waarde $f$ wordt gesubstitueerd, produceert dit
 		\[
-			3g\eta -3gg\zeta \theta = g\zeta \zeta - gg\eta \eta
+			3g\eta -3g^2\zeta \theta = g\zeta^2 - g^2\eta^2
 		\]
 		\par deze vergelijking delen door $g$ 
 		\begin{align*}
-			&3\eta - 3g\zeta \theta = \zeta \zeta - g\eta \eta, \quad \text{en we besluiten}\\
-			&g= \frac{3\eta - \zeta \zeta}{3\zeta \theta - \eta \eta}, \quad \text{hetgeen leidt tot} \quad f = \frac{\zeta \eta - 9\theta}{3\zeta \theta - \eta \eta}.
+			&3\eta - 3g\zeta \theta = \zeta^2 - g\eta^2, \quad \text{en we besluiten}\\
+			&g= \frac{3\eta - \zeta^2}{3\zeta \theta - \eta^2}, \quad \text{hetgeen leidt tot} \quad f = \frac{\zeta \eta - 9\theta}{3\zeta \theta - \eta^2}.
 		\end{align*}
 
 		\switchcolumn*
@@ -1536,30 +1596,30 @@
 		\]
 		
 		\switchenum
-		\item Men vindt met deze waarden voor de bovenstaande noemer $1+fp+gpp$ de vorm
+		\item Men vindt met deze waarden voor de bovenstaande noemer $1+fp+gp^2$ de vorm
 		\[
-			\frac{3\zeta \theta - \eta \eta + (\zeta \eta - 9\theta)p + (3\eta -\zeta \zeta)pp}{3\zeta \theta - \eta \eta},
+			\frac{3\zeta \theta - \eta^2 + (\zeta \eta - 9\theta)p + (3\eta -\zeta^2)p^2}{3\zeta \theta - \eta^2},
 		\]
-		\par waarbij het zo moet zijn dat $ff< 4g$. Het is zo dat
+		\par waarbij het zo moet zijn dat $f^2< 4g$. Het is zo dat
 		\begin{align*}
-			ff &= \frac{\zeta \zeta \eta \eta -18\zeta \eta \theta + 81 \theta \theta}{(3\zeta \theta - \eta \eta)^2}\\
-			4g &= \frac{12\eta - 4\zeta \zeta }{3\zeta \theta-\eta \eta} = \frac{36\zeta \eta \theta - 12 \zeta ^3\theta - 12 \eta^3+4\zeta \zeta \eta \eta}{(3\zeta \theta - \eta \eta)^2}
+			f^2&= \frac{\zeta^2 \eta^2 -18\zeta \eta \theta + 81 \theta^2}{(3\zeta \theta - \eta^2)^2}\\
+			4g &= \frac{12\eta - 4\zeta^2 }{3\zeta \theta-\eta^2} = \frac{36\zeta \eta \theta - 12 \zeta ^3\theta - 12 \eta^3+4\zeta^2 \eta^2}{(3\zeta \theta - \eta^2)^2}
 		\end{align*}
 		\par Het moet dus noodzakelijk zijn dat
 		\[
-			\zeta \zeta \eta \eta -18 \zeta \eta \theta +81 \theta \theta < 36 \zeta \eta \theta - 12 \zeta^3\theta -12\eta^3 + 4 \zeta \zeta \eta \eta
+			\zeta^2 \eta^2 -18 \zeta \eta \theta +81 \theta^2 < 36 \zeta \eta \theta - 12 \zeta^3\theta -12\eta^3 + 4 \zeta^2 \eta^2
 		\]
 		\par hetgeen zonder twijfel zal gebeuren. Nemen we voor de teller
 		\[
-			a = - \frac{\zeta c}{3\zeta \theta - \eta \eta} \quad \text{en}\quad b = \frac{3c}{3\zeta \theta - \eta \eta},
+			a = - \frac{\zeta c}{3\zeta \theta - \eta^2} \quad \text{en}\quad b = \frac{3c}{3\zeta \theta - \eta^2},
 		\]
 		\par zodat voor de breuk $\Pi$ aangenomen wordt
 		\[
-			\Pi = \frac{-\zeta c + 3cp}{3\zeta \theta -\eta \eta +(\zeta \eta - 9\theta)p+(3\eta - \zeta \zeta)pp}.
+			\Pi = \frac{-\zeta c + 3cp}{3\zeta \theta -\eta^2 +(\zeta \eta - 9\theta)p+(3\eta - \zeta^2)p^2}.
 		\]
-		\par Omdat het altijd zo is dat $\zeta \zeta > 3\eta$ en $\eta \eta > 3\zeta \theta$, is het eleganter deze waarde uit te drukken als:
+		\par Omdat het altijd zo is dat $\zeta^2 > 3\eta$ en $\eta^2 > 3\zeta \theta$, is het eleganter deze waarde uit te drukken als:
 		\[
-			\Pi = \frac{\zeta c - 3cp }{\eta \eta - 3\zeta \theta +(9\theta - \zeta \eta)p + (\zeta \zeta - 3\eta)pp}.
+			\Pi = \frac{\zeta c - 3cp }{\eta^2 - 3\zeta \theta +(9\theta - \zeta \eta)p + (\zeta^2 - 3\eta)p^2}.
 		\]
 
 		
@@ -1572,10 +1632,10 @@
 		\par hincque propterea
 		\begin{align*}
 			&\eta \eta - 3\zeta \theta = \alpha \alpha (\beta \beta - \beta \gamma + \gamma \gamma);\\
-			&9\theta - \zeta = 9\alpha \beta \gamma - \alpha \alpha(\beta + \gamma) = - \alpha \alpha (\beta + \gamma)\quad \text{et}\\
+			&9\theta - \zeta\eta = 9\alpha \beta \gamma - \alpha \alpha(\beta + \gamma) = - \alpha \alpha (\beta + \gamma)\quad \text{et}\\
 			&\qquad (\zeta \zeta - 3\eta) = \alpha \alpha - 3\alpha (\beta + \gamma) = \alpha \alpha.
 		\end{align*}
-		\par Sumatur igitur $c= \alpha \alpha$, ut numerator etiam per $\alpha \alpha$ fiat divisibilis, eritque formla nostra
+		\par Sumatur igitur $c= \alpha a$, ut numerator etiam per $\alpha \alpha$ fiat divisibilis, eritque formla nostra
 		\[
 			\Pi = \frac{a}{\beta \beta -\beta \gamma+\gamma \gamma -(\beta + \gamma)p + pp},
 		\]
@@ -1592,19 +1652,18 @@
 		\]
 		\par dit is de reden waarom
 		\begin{align*}
-			&\eta \eta - 3\zeta \theta = \alpha \alpha (\beta \beta - \beta \gamma + \gamma \gamma);\\
-			&9\theta - \zeta = 9\alpha \beta \gamma - \alpha \alpha(\beta + \gamma) = - \alpha \alpha (\beta + \gamma)\quad \text{en}\\
-			&\qquad (\zeta \zeta - 3\eta) = \alpha \alpha - 3\alpha (\beta + \gamma) = \alpha \alpha.
+			&\eta^2 - 3\zeta \theta = \alpha^2 (\beta^2 - \beta \gamma + \gamma^2);\\
+			&9\theta - \zeta\eta = 9\alpha \beta \gamma - \alpha^2(\beta + \gamma) = - \alpha^2 (\beta + \gamma)\quad \text{en}\\
+			&\qquad (\zeta^2 - 3\eta) = \alpha^2 - 3\alpha (\beta + \gamma) = \alpha^2.
 		\end{align*}
-		\par Neem dan $c= \alpha \alpha$, en gezien de teller ook deelbaar is door $\alpha\alpha$, wordt onze formule
+		\par Neem dan $c= \alpha a$, en gezien de teller ook deelbaar is door $\alpha^2$, wordt onze formule
 		\[
-			\Pi = \frac{a}{\beta \beta -\beta \gamma+\gamma \gamma -(\beta + \gamma)p + pp},
+			\Pi = \frac{a}{\beta^2 -\beta \gamma+\gamma^2 -(\beta + \gamma)p + p^2},
 		\]
-		\par waarbij de noemer zeker geen reële factor bezit, maar is $\beta = \gamma$, \ldots
-		Uit de waarde aangenomen voor $\Pi$ volg onmiddellijk
+		\par waarbij de noemer zeker geen reële factor bezit, behalve indien $\beta = \gamma$, maar dit geval verwerpt zichzelf op een natuurlijke manier. Uit de waarde aangenomen voor $\Pi$ volg onmiddellijk
 		\begin{align*}
-			u &= \frac{\D \Pi}{\D p} = \frac{a(\beta + \gamma)-2ap}{(\beta \beta -\beta \gamma +\gamma \gamma - (\beta+\gamma)p+pp)^2} \quad \text{en}\\
-			t & = pu - \Pi = \frac{-a(\beta \beta - \beta \gamma\;{\color{red}+}\;\gamma \gamma)+2a(\beta+\gamma)p -3app}{(\beta \beta - \beta \gamma + \gamma \gamma -(\beta + \gamma)p+pp)^2}.
+			u &= \frac{\D \Pi}{\D p} = \frac{a(\beta + \gamma)-2ap}{(\beta^2 -\beta \gamma +\gamma^2 - (\beta+\gamma)p+p^2)^2} \quad \text{en}\\
+			t & = pu - \Pi = \frac{-a(\beta^2 - \beta \gamma\;{\color{red}+}\;\gamma^2)+2a(\beta+\gamma)p -3ap^2}{(\beta^2 - \beta \gamma + \gamma^2 -(\beta + \gamma)p+p^2)^2}.
 		\end{align*}
 		\switchcolumn*
 		
@@ -1622,7 +1681,7 @@
 		\]
 		
 		\switchenum
-		\item Definiëren we hier nu de spitsen, voor de eerste spits stellen we $p=\infty$, en dus bij $t=$, en $u=0$. Voor de tweede spits stel $p=\beta$, zodat de abscis
+		\item Definiëren we hier nu de spitsen, voor de eerste spits stellen we $p=\infty$, en dus zo $t=0$, dat $u=0$. Voor de tweede spits stel $p=\beta$, zodat de abscis
 		\[
 			t = -\frac{a(2\beta- \gamma)}{(\beta - \gamma)^3} \quad \text{en} \quad u = - \frac{a}{(\beta-\gamma)^3}.
 		\]
@@ -1641,8 +1700,20 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[font=\scriptsize]
+				\draw (0,0)-- (3,0) -- (1.995,1.721) -- (0,-1.702) -- cycle;
+				\draw (0,-1.702)-- (3,0);
+				\draw [shift={(4.716,2.155)}]  plot[domain=3.3:4.04,variable=\t]({2.7556*cos(\t r)},{2.755*sin(\t r)});
+				\draw [shift={(-5.201,3.623)}]  plot[domain=5.486:6.025,variable=\t]({7.444*cos(\t r)},{7.445*sin(\t r)});
+				\draw [shift={(4.373,-5.915)}]  plot[domain=1.799:2.375,variable=\t]({6.072*cos(\t r)},{6.072*sin(\t r)});
+				\draw (1.996,1.721)-- (1.996,0);
+				\draw (0,0) node [above] {$G$};
+				\draw (3,0) node [above right] {$A$};
+				\draw (3,0) node [below right] {$F$};
+				\draw (1.995,1.721) node [above] {$C$};
+				\draw (0,-1.702) node [below] {$B$};
+				\draw (1.995,0) node [below, yshift=2pt] {$H$};
+				\draw (0.992,0) node [above left] {$O$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 10.}
@@ -1652,8 +1723,20 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[font=\scriptsize]
+				\draw (0,0)-- (3,0) -- (1.995,1.721) -- (0,-1.702) -- cycle;
+				\draw (0,-1.702)-- (3,0);
+				\draw [shift={(4.716,2.155)}]  plot[domain=3.3:4.04,variable=\t]({2.7556*cos(\t r)},{2.755*sin(\t r)});
+				\draw [shift={(-5.201,3.623)}]  plot[domain=5.486:6.025,variable=\t]({7.444*cos(\t r)},{7.445*sin(\t r)});
+				\draw [shift={(4.373,-5.915)}]  plot[domain=1.799:2.375,variable=\t]({6.072*cos(\t r)},{6.072*sin(\t r)});
+				\draw (1.996,1.721)-- (1.996,0);
+				\draw (0,0) node [above] {$G$};
+				\draw (3,0) node [above right] {$A$};
+				\draw (3,0) node [below right] {$F$};
+				\draw (1.995,1.721) node [above] {$C$};
+				\draw (0,-1.702) node [below] {$B$};
+				\draw (1.995,0) node [below, yshift=2pt] {$H$};
+				\draw (0.992,0) node [above left] {$O$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 10.}
@@ -1692,11 +1775,11 @@
 		\item De reeds getrokken koorden $AB, AC$ en $BC$ zijn
 		\begin{align*}
 			AB &= \frac{a}{(\beta-\gamma)^3}\sqrt{(2\beta-\gamma)^2 +1} \quad \text{en}\\
-			AC & = \frac{a}{}(\beta-\gamma)^3\sqrt{(\beta - 2\gamma)^2+1}.
+			AC & = \frac{a}{(\beta-\gamma)^3}\sqrt{(\beta - 2\gamma)^2+1}.
 		\end{align*}
 		\par Voor de derde koorde $BC$ geldt
 		\[
-			BC^2 = (BG + HC)^2 + GH^2 = \frac{4aa+aa(\beta+ \gamma)^2}{(\beta - \gamma )^6}
+			BC^2 = (BG + HC)^2 + GH^2 = \frac{4a^2+a^2(\beta+ \gamma)^2}{(\beta - \gamma )^6}
 		\]
 		\par vandaar
 		\[
@@ -1706,15 +1789,15 @@
 		\[
 			\sqrt{(2\beta-\gamma)^2+1}; \quad \sqrt{(\beta-2\gamma)^2+1}; \quad \sqrt{4+(\beta+\gamma)^2}.
 		\]
-		\par Voor de positie van deze koorden zal worden opgemerkt dat de tangens van de hoek $BAG = \frac{1}{2\beta- \gamma}$ en tang. ang. $CAH = \frac{1}{\beta - 2\gamma}$, vandaar de tangens van de hoek $BAC$
+		\par Voor de positie van deze koorden zal worden opgemerkt dat de tangens van de hoek $BAG = \frac{1}{2\beta- \gamma}$ en tangens van de hoek $CAH = \frac{1}{\beta - 2\gamma}$, vandaar de tangens van de hoek $BAC$
 		\[
-			= \frac{3\beta - 3\gamma}{2\beta \beta - 5\beta \gamma + 2\gamma \gamma -1}.
+			= \frac{3\beta - 3\gamma}{2\beta^2 - 5\beta \gamma + 2\gamma^2 -1}.
 		\]
-		\par Voor de derde koorde is de tang. van de hoek $AOC=$
+		\par Voor de derde koorde is de tangens van de hoek $AOC=$
 		\[
-			\tang BOG = \frac{BG + CH}{GH} = \frac{2}{\beta + \gamma}.
+			\tan BOG = \frac{BG + CH}{GH} = \frac{2}{\beta + \gamma}.
 		\]
-		\par Daarom is het dat $ABC = GOB - GAB$ en zal $\tang ABC = \frac{3\beta \;{\color{red}-}\; 3\gamma}{(\beta+\gamma)(2\beta - \gamma)\;{\color{red}+2}}$. Tot slot, voor de hoek $COG$ $\tang = -\tang$ ang. $BOG = -\frac{2}{\beta+\gamma}$, en omdat de hoek  $ACB = COG-CAO$, zal $\tang ACB = \frac{3\gamma-3\beta}{(\beta \;{\color{red}+}\; \gamma)(\beta - 2\gamma)-2}$.
+		\par Daarom is het dat $ABC = GOB - GAB$ en zal $\tan ABC = \frac{3\beta \;{\color{red}-}\; 3\gamma}{(\beta+\gamma)(2\beta - \gamma)\;{\color{red}+2}}$. Tot slot, voor de hoek $COG$ $\tan = -\tan$ ang. $BOG = -\frac{2}{\beta+\gamma}$, en omdat de hoek  $ACB = COG-CAO$, zal $\tan ACB = \frac{3\gamma-3\beta}{(\beta \;{\color{red}+}\; \gamma)(\beta - 2\gamma)-2}$.
 		
 		\switchcolumn*
 		
@@ -1722,8 +1805,21 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[font=\scriptsize]
+				\draw (0,0)-- (3,0) -- (3,2) -- (0,-1.702) -- cycle;
+				\draw (0,-1.702)-- (3,0);
+				\begin{scope}
+					\clip (0,-2) rectangle (3,2.5);
+					\draw [rotate around={-154.32:(5.82,2.033)}] (5.82,2.03) ellipse (3.68cm and 1.656cm);
+				\end{scope}
+				\draw (2.56,0) -- (2.56,0.34)-- (3,0.34);
+				\draw (0,0) node [above] {$G$};
+				\draw (3,0) node [below right] {$A$};
+				\draw (3,2) node [above] {$C$};
+				\draw (0,-1.702) node [below right] {$B$};
+				\draw (2.559,0.339) node [left] {$M$};
+				\draw (2.559,0) node [below, yshift=2pt] {$T$};
+				\draw (3,0.338) node [right] {$S$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 11.}
@@ -1733,8 +1829,21 @@
 			\centering
 			\par {
 				\fontfamily{jkplvos}\selectfont
-				\begin{tikzpicture}[rotate=180, scale=1]
-				
+				\begin{tikzpicture}[font=\scriptsize]
+				\draw (0,0)-- (3,0) -- (3,2) -- (0,-1.702) -- cycle;
+				\draw (0,-1.702)-- (3,0);
+				\begin{scope}
+					\clip (0,-2) rectangle (3,2.5);
+					\draw [rotate around={-154.32:(5.82,2.033)}] (5.82,2.03) ellipse (3.68cm and 1.656cm);
+				\end{scope}
+				\draw (2.56,0) -- (2.56,0.34)-- (3,0.34);
+				\draw (0,0) node [above] {$G$};
+				\draw (3,0) node [below right] {$A$};
+				\draw (3,2) node [above] {$C$};
+				\draw (0,-1.702) node [below right] {$B$};
+				\draw (2.559,0.339) node [left] {$M$};
+				\draw (2.559,0) node [below, yshift=2pt] {$T$};
+				\draw (3,0.338) node [right] {$S$};
 				\end{tikzpicture}}
 			\fontfamily{cmr}\selectfont
 			\caption{Tab. I. Fig. 11.}
@@ -1754,7 +1863,7 @@
 		\switchenum
 		\item Laten we bijvoorbeeld $\beta = 2$ en $\gamma = 1$ zodat $AG=3a$, en $AH=0$, maar dan $GB = a$ et $HC=a$, en men heeft een kromme figuur, zoals fig. 11 vertegenwoordigt, waarin we dus een punt $u$ nemen, waarvan de coördinaten dus $AT$ en $TU$ zijn, geldt
 		\[
-			t = \frac{3a-6ap+3app}{(3-3p+pp)^2} \quad \text{en} \quad u = \frac{3a-2ap}{(3-3p+pp)^2}.
+			t = \frac{3a-6ap+3ap^2}{(3-3p+p^2)^2} \quad \text{en} \quad u = \frac{3a-2ap}{(3-3p+p^2)^2}.
 		\]
 		\par Merk op om een punt te laten voldoen aan de tak $AUC$, waarbij de rechte $AC$ de verste afstand; dan is het duidelijk dat er zal, waarbij de raaklijn langs de as normaal is, daarom zal door dit punt $p=0$ zijn, waardoor $AT=\frac{1}{3}a$, wat $US$ de maximale afstand laat verwerven, dan is er $TU=u=\frac{1}{3}a$. Omdat verder tang. angul. $GAB=\frac{1}{3}$, in de boog $AB$ worden de meeste punten van de koorde $AB$ verwijderd, dewelke de raaklijn aan de koorde $AB$ evenwijdig is; daarom vinden we voor $p=3$, waardoor $AT= t = \frac{4}{3}a$ en $TU=u=-\frac{1}{3}a$. Uit dit voorbeeld blijkt helder, hoe alle gevallen gemakkelijk ontward geraken, ook is het niet moeilijk, hier deze soort driehoekige krommen te vinden, ingeschreven in een gegeven driehoek $ABC$, aangezien zonder reden de zijden van de driehoek zich gekend verhouden als de volgende formules:
 		\[
@@ -1815,40 +1924,40 @@
 		\end{align*}
 		\par waaruit de kwadraten zijn
 		\begin{align*}
-			&(2\beta- \gamma)^2 = nnAA - 1; \quad (\beta-2\gamma )^2= nnBB-1\quad \text{en}\\
-			&\qquad (\beta+\gamma)^2= nnCC-4,
+			&(2\beta- \gamma)^2 = n^2A^2 - 1; \quad (\beta-2\gamma )^2= n^2B^2-1\quad \text{en}\\
+			&\qquad (\beta+\gamma)^2= n^2C^2-4,
 		\end{align*}
 		\par waardoor
 		\begin{align*}
-			&\text{1}\degree.\; 2\beta - \gamma = \sqrt{nnAA-1}; \quad \text{2}\degree.\; \beta - 2\gamma = \sqrt{nnBB-1}\quad \text{en}\\
-			&\qquad \quad \beta + \gamma = \sqrt{nnCC-4},
+			&\text{1}\degree.\; 2\beta - \gamma = \sqrt{n^2A^2-1}; \quad \text{2}\degree.\; \beta - 2\gamma = \sqrt{n^2B^2-1}\quad \text{en}\\
+			&\qquad \quad \beta + \gamma = \sqrt{n^2C^2-4},
 		\end{align*}
 		\par welke het verschil van de eerste en de tweede leidt tot
 		\[
-			\sqrt{nnAA-1}-\sqrt{nnBB-1} = \sqrt{nnCC-4},
+			\sqrt{n^2A^2-1}-\sqrt{n^2B^2-1} = \sqrt{n^2C^2-4},
 		\]
 		\par Uit deze vergelijking moet de waarde van $n$ bepaald worden, er wordt gevonden
 		\begin{align*}
-			&3\beta = \sqrt{nnAA-1}+\sqrt{nnCC-4} \quad \text{et}\\
-			&\qquad 3\gamma = \sqrt{nnCC-4}-\sqrt{nnBB-1};
+			&3\beta = \sqrt{n^2A^2-1}+\sqrt{n^2C^2-4} \quad \text{en}\\
+			&\qquad 3\gamma = \sqrt{n^2C^2-4}-\sqrt{n^2B^2-1};
 		\end{align*}
 		\par die het vinden van een driehoekige kromme die voldoet aan bovenstaande formules gemakkelijk bepalen, hieruit leiden we meer bepaald de vergelijking af
 		\[
-			nn = \frac{4(2AA+2BB-CC)}{2AABB+2AACC+2BBCC-A^4-B^4-C^4}.
+			n^2 = \frac{4(2A^2+2B^2-C^2)}{2A^2B^2+2A^2C^2+2B^2C^2-A^4-B^4-C^4}.
 		\]
-		\par Indien dus de driehoek, waarvan de zijden $A, B$ en $C$ zijn, een oppervlak $\triangle$ omvat, dan is de noemer $=16\triangle \triangle$, zodat het is 
+		\par Indien dus de driehoek, waarvan de zijden $A, B$ en $C$ zijn, een oppervlak $\triangle$ omvat, dan is de noemer $=16\triangle^2$, zodat het is 
 		\[
-			nn=\frac{2AA+2BB-CC}{4 \triangle \triangle}.
+			n^2 = \frac{2A^2+2B^2-C^2}{4 \triangle^2}.
 		\]
 		\par De gevonden waarden zijn dus
 		\begin{align*}
-			\text{I}. \;& \sqrt{nnAA-1} = \frac{3AA+BB-CC}{4\triangle};\\
-			\text{II}. \; & \sqrt{nnBB-1} = \frac{3BB+AA-CC}{4\triangle} \qquad \text{en}\\
-			\text{III}. \;& \sqrt{nnCC-4} = \frac{2AA-2BB}{4};
+			\text{I}. \;& \sqrt{n^2A^2-1} = \frac{3A^2+B^2-C^2}{4\triangle};\\
+			\text{II}. \; & \sqrt{n^2B^2-1} = \frac{3B^2+A^2-C^2}{4\triangle} \qquad \text{en}\\
+			\text{III}. \;& \sqrt{n^2C^2-4} = \frac{2A^2-2B^2}{4};
 		\end{align*}
 		\par kortom blijkt uit deze dat de waarde
 		\[
-			3{\color{red}\beta}\; = \frac{5AA-BB-CC}{4\triangle} \quad \text{et} \quad 3\gamma = \frac{AA-5BB+CC}{4\triangle},
+			3{\color{red}\beta}\; = \frac{5A^2-B^2-C^2}{4\triangle} \quad \text{et} \quad 3\gamma = \frac{A^2-5B^2+C^2}{4\triangle},
 		\]
 		zodat alles nu wordt bepaald, om een oplossing van dit probleem te beschouwen. Wat dan ook het doel dat een rechtlijnige driehoek, altijd het bevatten van een driehoekige kromme beschrijft, waarvan de spitsen samenvallen met de hoeken, en de zijden van de driehoek tegelijkertijd de koorden van de bogen zijn, die met een driehoekige vorm overeenkomen.
 		
@@ -1868,7 +1977,7 @@
 	\switchcolumn
 	\subsection*{Probleemstelling}
 	
-	\par Beschrijf een continue en algebraïsche kromme binnen een gegeven driehoek $ABC$, zodat alle spitsen in de hoeken van de driehoek $A,B$ en $C$ samenvallen.
+	\par Beschrijf een ononderbroken en algebraïsche kromme binnen een gegeven driehoek $ABC$, zodat alle spitsen in de hoeken van de driehoek $A,B$ en $C$ samenvallen.
 	
 	\switchcolumn*
 	
@@ -1923,7 +2032,10 @@
 	\item \S.3: $SX = f+c-a = CS$ moet $+CS$ zijn.
 	\item \S.5: Punt $X$ moet eigenlijk het punt $L$ zijn
 	\item \S.11: Breuk moet tot $pp$ staan (bij de $\delta$)
-	\item pagina 14: Breuk foutief na Pythagoras
+	\item \S.17: coördinaten $p$ en $q$ moet $t$ en $u$ zijn
+	\item \S.25: Foutieve breuk $\frac{2}{3}$ ipv $\frac{3}{2}$
+	\item \S.27: minteken
+ 	\item pagina 14: Breuk foutief na Pythagoras
 	\item pagina 22: $=$ moet een $-$ zijn
 	\item pagina 24: tekenfoutje
 	\item pagina 25: tekenfoutje
